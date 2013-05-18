@@ -150,10 +150,10 @@ targetUrl = target_groupurl;
 movendeleteIndex = 0;
 alert("finalurl = "+finalurl);
 if(globalAction == 'move'){
-//movenContents();
+movenContents();
 }
 else {
-//deleteContents()
+deleteContents()
 }
 
 
