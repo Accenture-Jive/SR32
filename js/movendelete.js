@@ -1,4 +1,4 @@
-
+alert("copied");
 var globalAction='';
 var targetUrl='';
 var dest_space_name='';
