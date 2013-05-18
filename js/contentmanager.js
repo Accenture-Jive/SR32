@@ -5068,3 +5068,14 @@ var hideTooltip = function() {
 $('div.tooltip').remove();
 };
 });
+function repopulateContents() {
+selected_cat = '';
+arrayIndex=0;
+addId=new Array();
+getDocs(space_url);
+getFiles(space_url);
+getDiscussions(space_url);
+getIdeas(space_url);
+getPolls(space_url);
+getBlogs(blog_url);
+}
