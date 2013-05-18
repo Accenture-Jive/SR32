@@ -142,7 +142,7 @@ style="display:none;margin-left:-75px;position:absolute; margin-top:110px;">
 <span id ="deleteTo" style="display:none;margin-left:-60px;font-weight:bold;position:absolute; margin-top:165px;"></span>
 </tr>
 <tr>
-<input type="button" id="del_select_items_button" value="Select Contents" name="select_items" style="display:none;margin-left:-86px;font-weight:bold;position:absolute; margin-top:190px;" onclick="javascript:showTab();javascript:highlightTab();"/>
+<input type="button" id="del_select_items_button" value="Select Contents" name="select_items" style="display:none;margin-left:-86px;font-weight:bold;position:absolute; margin-top:190px;" onclick="javascript:showTab();javascript:highlightTab();javascript:repopulateContents();"/>
 </tr>
 </div>
 
@@ -223,7 +223,7 @@ style="display:none;margin-left:-75px;position:absolute; margin-top:90px;">
 <tr>
 <td colspan="2">
 <div id="button_div" style="display:none;font-family:Tahoma;overflow-y:auto;height:150px;">
-<input type="button" id="select_items_button" value="Select Contents" name="select_items" style="margin-left:220px;float:left;" onclick="javascript:showTab();javascript:highlightTab();"/>
+<input type="button" id="select_items_button" value="Select Contents" name="select_items" style="margin-left:220px;float:left;" onclick="javascript:showTab();javascript:highlightTab();javascript:repopulateContents();"/>
 </div>
 <div id="change_selection_div" style="width:650px;display:none;font-family:Tahoma;margin-left:5px;">
 <br/>
