@@ -4264,7 +4264,7 @@ $("#idea_div").hide();
 $("#poll_div").hide();
 $("#blog_div").hide();
 if(sel_action_val=="move"){
-$("#selected_items").css("margin-top", "-90px");
+$("#selected_items").css("margin-top", "-10px");
 }
 
 $("#files_tab").click(function () {
