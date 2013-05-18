@@ -4263,7 +4263,7 @@ $("#disc_div").hide();
 $("#idea_div").hide();
 $("#poll_div").hide();
 $("#blog_div").hide();
-if(sel_action_val=="copy"){
+if(sel_action_val=="move"){
 $("#selected_items").css("margin-top", "-90px");
 }
 
