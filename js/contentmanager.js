@@ -1318,7 +1318,7 @@ document.getElementById("up_select_items_button").style.display="inline";
 $("#dwn_select_items_button").hide();
 $("#tag_select_items_button").hide();
 $("#tag_sel").show();
-$("#selTag").css("margin-left", parseInt($("#add_tag_button").css("margin-left"))+parseInt($("#add_tag_button").css("width"))+30+'px');
+$("#selTag").css("margin-left", parseInt($("#tag_sel").css("margin-left"))+parseInt($("#tag_sel").css("width"))+30+'px');
 $("#add_tag_button").show();
 $("#selTag").show();
 $("#up_select_items_button").hide();
