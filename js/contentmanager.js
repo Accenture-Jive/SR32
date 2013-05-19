@@ -1310,9 +1310,9 @@ else if(sel_action_val=="tags")
 
 $('#all_selected_items').css("margin-top", "80px");
 $('#selected_items').css("margin-top", "80px");
+$("#tagFrom").css("margin-top", "-30px");
+$("#tag_from_space").css("margin-top", "10px");
 $("#tag_place").css("margin-top", "40px");
-$("#tag_place").css("margin-top", "-40px");
-$("#tag_place").css("margin-top", "-10px");
 $("#selTag").css("margin-top", "60px");
 $("#tag_sel").css("margin-top", "90px");
 $("#add_tag_button").css("margin-top", "90px");
