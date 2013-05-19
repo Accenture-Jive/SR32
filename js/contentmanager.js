@@ -1317,12 +1317,13 @@ document.getElementById("tag_sel").style.display="inline";
 document.getElementById("up_select_items_button").style.display="inline";
 $("#dwn_select_items_button").hide();
 $("#tag_select_items_button").hide();
+$("#tagFrom").css("margin-top", parseInt($("#src_place").css("margin-top"))+(-32)+'px');
 $("#tag_place").css("margin-top", parseInt($("#tagFrom").css("margin-top"))+(30)+'px');
 $("#selTag").css("margin-left", parseInt($("#tag_place").css("margin-left"))+265+'px');
 alert(parseInt($("#tag_place").css("margin-top")));
 $("#selTag").css("margin-top", parseInt($("#tag_place").css("margin-top"))+20+'px');
 
-$("#tagFrom").css("margin-top", parseInt($("#src_place").css("margin-top"))+(-32)+'px');
+
 $("#tag_from_space").css("margin-top", parseInt($("#tagFrom").css("margin-top"))+(40)+'px');
 $("#tag_sel").show();
 $("#add_tag_button").show();
