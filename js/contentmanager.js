@@ -2981,15 +2981,15 @@ function filterCheckedUncheckTagUrl(){
                                 $(contentTypeCheckBoxIdArray[index]).each(function(i){
                                                 
                                 val[i] = $(this).val();
-                                 alert(contentTypeCheckBoxIdArray[index]);
+                                // alert(contentTypeCheckBoxIdArray[index]);
                                 if(val[i] != 'on'){
                                 if($(this).is(':checked')){
-                                alert("its true"+ "This "+$(this).val());
+                              //  alert("its true"+ "This "+$(this).val());
                                                 checkedItemsArray[checkedIndex] = $(this).val();
                                                 checkedIndex++;
                                 }
                                 else {
-                                                                alert("its false"+ "This "+$(this).val());
+                                                            //    alert("its false"+ "This "+$(this).val());
                                                 uncheckItemArray[uncheckedIndex] = $(this).val();
                                                 uncheckedIndex++;
                                 }
@@ -3015,7 +3015,7 @@ function filterCheckedUncheckTagUrl(){
                                 //console.log("uncheckItemArray.length = "+uncheckItemArray.length);
 				catIndex = 0;
 				dotIndex = 0;
-		       // updateTagsForNewContents1();
+		        updateTagsForNewContents1();
 		
 		}
 
