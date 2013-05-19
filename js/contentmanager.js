@@ -1318,8 +1318,8 @@ document.getElementById("up_select_items_button").style.display="inline";
 $("#dwn_select_items_button").hide();
 $("#tag_select_items_button").hide();
 $("#selTag").css("margin-left", parseInt($("#tag_place").css("margin-left"))+265+'px');
-alert(parseInt($("#src_place").css("margin-top")));
-$("#tagFrom").css("margin-top", parseInt($("#src_place").css("margin-top"))+20+'px');
+
+$("#tagFrom").css("margin-top", parseInt($("#src_place").css("margin-top"))+(-32)+'px');
 $("#tag_sel").show();
 $("#add_tag_button").show();
 $("#selTag").show();
