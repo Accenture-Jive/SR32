@@ -1044,13 +1044,7 @@ getBlogs(blog_url);
 
 function tagSel()
 {
-$('#selTag').text("Tag");
-//$("#selTag").css("margin-left", "180px");
-$("#selTag").css("margin-top", "80px");
-alert(parseInt($("#tag_place").css("margin-top")))
-alert(parseInt($("#tag_place").css("margin-top"))+(30)+'px');
-$("#selTag").css("margin-top", parseInt($("#tag_place").css("margin-top"))+30+'px');
-$('#selTag').show();
+
 selected_cat = '';
 
 var contentCheckedIndex =0;
@@ -1069,6 +1063,12 @@ $("#tagTo").hide();
 }
 else
 {
+$('#selTag').text("Tag");
+$("#selTag").css("margin-top", parseInt($("#tag_place").css("margin-top"))+30+'px');
+$('#selTag').show();
+$("#add_tag").css("margin-top", parseInt($("#selTag").css("margin-top"))+20+'px');
+
+
 $("#tagTo").show();
 $("#tag_select_items_button").show();
 
