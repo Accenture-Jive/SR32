@@ -3006,7 +3006,7 @@ function filterCheckedUncheckTagUrl(){
     }
   for(var index=0;index < uncheckItemArray.length;index++) {
       //alert("new unchecked items : "+uncheckedItemArrayUpdated[index]);
-      console.log("new unchecked items : "+uncheckedItemArrayUpdated[index]);
+      console.log("new unchecked items : "+uncheckItemArray[index]);
     }
 
                                 //alert("checkedItemsArray.length = "+checkedItemsArray.length);
