@@ -2981,15 +2981,15 @@ function filterCheckedUncheckTagUrl(){
                                 $(contentTypeCheckBoxIdArray[index]).each(function(i){
                                                 
                                 val[i] = $(this).val();
-                                // alert(val[i]);
+                                 alert(contentTypeCheckBoxIdArray[index]);
                                 if(val[i] != 'on'){
                                 if($(this).is(':checked')){
-                                alert("its true");
+                                alert("its true"+ "This "+$(this).val());
                                                 checkedItemsArray[checkedIndex] = $(this).val();
                                                 checkedIndex++;
                                 }
                                 else {
-                                                                alert("its false"+ "Thois "+$(this).val());
+                                                                alert("its false"+ "This "+$(this).val());
                                                 uncheckItemArray[uncheckedIndex] = $(this).val();
                                                 uncheckedIndex++;
                                 }
