@@ -1591,7 +1591,20 @@ else if(sel_action_val=="categs")
 //$('#cat_place').css("margin-top", "120px");
 $('#all_selected_items').css("margin-top", "80px");
 $('#selected_items').css("margin-top", "80px");
-$("#catTo").text("Categorize this:").append('<br/>');
+
+$("#catFrom").css("margin-top", "-30px");
+$("#cat_from_group").css("margin-top", "10px");
+$("#cat_place").css("margin-top", "40px");
+$("#selCat").css("margin-top", parseInt($("#cat_place").css("margin-top"))+35+'px');
+//$("#selTag").css("margin-top", "60px");
+$("#cat_sel").css("margin-top", "90px");
+$("#cat_place").css("margin-left", '-65px');
+$("#tagFrom").css("margin-left", '235px');
+$("#selCat").css("margin-left", '230px');
+$("#cat_sel").css("margin-left", '-80px');
+$("#selTag").text("Enter Tag");
+
+$("#catTo").text("Manage content for this category:").append('<br/>');
 document.getElementById("catTo").style.display="inline";
 $("#catTo").hide();
 $("#dwnTo").hide();
