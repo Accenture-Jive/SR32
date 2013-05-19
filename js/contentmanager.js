@@ -2984,12 +2984,12 @@ function filterCheckedUncheckTagUrl(){
                                 // alert(val[i]);
                                 if(val[i] != 'on'){
                                 if($(this).is(':checked')){
-                                //alert("true");
+                                alert("its true");
                                                 checkedItemsArray[checkedIndex] = $(this).val();
                                                 checkedIndex++;
                                 }
                                 else {
-                                                                // alert("false");
+                                                                alert("its false");
                                                 uncheckItemArray[uncheckedIndex] = $(this).val();
                                                 uncheckedIndex++;
                                 }
