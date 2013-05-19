@@ -2919,7 +2919,7 @@ else {
 		$('#catTo').show();
 		$('#catTo').text('Manage content for this category:');
 		$('#cat_select_items_button').show();
-		$('#cat_place').css("margin-left", "-270px");
+		$('#cat_place').css("margin-left", "-200px");
 		$('#catFrom').css("margin-top", "-340px");
 		$('#cat_from_space').css("margin-top", "-300px");
 		$('#cat_from_group').css("margin-top", "-300px");
