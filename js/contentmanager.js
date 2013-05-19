@@ -1317,6 +1317,8 @@ document.getElementById("tag_sel").style.display="inline";
 document.getElementById("up_select_items_button").style.display="inline";
 $("#dwn_select_items_button").hide();
 $("#tag_select_items_button").hide();
+$("#selTag").css("margin-left", parseInt($("#tag_place").css("margin-left"))+265+'px');
+
 $("#tag_sel").show();
 $("#add_tag_button").show();
 $("#selTag").show();
