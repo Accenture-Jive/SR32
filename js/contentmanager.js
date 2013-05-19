@@ -1063,6 +1063,7 @@ $("#tagTo").hide();
 }
 else
 {
+$("#selected_items").hide();
 $('#selTag').text("Tag");
 $("#selTag").css("margin-top", parseInt($("#tag_place").css("margin-top"))+30+'px');
 $('#selTag').show();
@@ -1073,6 +1074,7 @@ $("#tagTo").show();
 $("#tag_select_items_button").show();
 
 $("#add_tag_button").hide();
+
 $("#selTag").show();
 
 $("#tag_sel").hide();
