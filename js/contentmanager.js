@@ -1320,6 +1320,7 @@ $("#add_tag_button").css("margin-top", "90px");
 $("#tag_place").css("margin-left", '-65px');
 $("#tagFrom").css("margin-left", '225px');
 $("#selTag").css("margin-left", '205px');
+$("#tag_sel").css("margin-left", '-75px');
 $("#selTag").text("Enter Tag");
 
 
