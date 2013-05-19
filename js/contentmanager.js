@@ -1119,8 +1119,6 @@ src_space_name=from_place_name;
 space_url=data.resources.self.ref;
 blog_url=data.resources.blog.ref;
 source_html_url=data.resources.html.ref;
-	$("#tag_from_space").text('');
-	
 
 $("#del_place").hide();
 document.getElementById("from_space").innerHTML='<span id="myId" style="text-decoration:underline;">Space</span>'+': '+from_place_name;
@@ -1411,8 +1409,6 @@ function fromGroupRequest() {
 var from_place_name='';
 src_space_name='';
 dest_space_name='';
-$("#tag_from_group").text('');
-	
 document.getElementById("to_place").disabled = false;
 document.getElementById("from_project").innerHTML=msg2;
 document.getElementById("from_group").innerHTML=msg2;
@@ -1716,7 +1712,6 @@ function fromProjectRequest() {
 var from_place_name='';
 src_space_name='';
 dest_space_name='';
-$("#tag_from_project").text('');
 document.getElementById("to_place").disabled = false;
 document.getElementById("from_project").innerHTML=msg2;
 document.getElementById("from_group").innerHTML=msg2;
@@ -3330,15 +3325,15 @@ else {
 			$("#tag_place").show();
 			$('#tag_place').css("margin-top", "-235px");
 			$('#tag_place').css("margin-left", "250px");
-			if($("#tag_from_space").text() !='')
+			if($("#tag_from_space").text() !='Manage Tags in Space')
 			$("#tag_from_space").show();
 			else 
 			$("#tag_from_space").hide();
-			if($("#tag_from_group").text() !='')
+			if($("#tag_from_group").text() !='Manage Tags in Group')
 			$("#tag_from_group").show();
 			else 
 			$("#tag_from_group").hide();
-			if($("#tag_from_project").text() !='')
+			if($("#tag_from_project").text() !='Manage Tags in Project')
 			$("#tag_from_project").show();
 			else
 			$("#tag_from_project").hide();
