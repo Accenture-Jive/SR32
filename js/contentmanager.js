@@ -2931,7 +2931,7 @@ else {
 			$("#cat_from_group").show();
 			else 
 			$("#cat_from_group").hide();
-			if($("#cat_from_project").text() !='Change Category in Group')
+			if($("#cat_from_project").text() !='Change Category in Project')
 			$("#cat_from_project").show();
 			else
 			$("#cat_from_project").hide();
