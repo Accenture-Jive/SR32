@@ -1917,6 +1917,18 @@ else if(sel_action_val=="tags")
 //$('#tag_place').css("margin-top", "120px");
 $('#all_selected_items').css("margin-top", "80px");
 $('#selected_items').css("margin-top", "80px");
+$("#tagFrom").css("margin-top", "-30px");
+$("#tag_from_group").css("margin-top", "10px");
+$("#tag_place").css("margin-top", "40px");
+$("#selTag").css("margin-top", parseInt($("#tag_place").css("margin-top"))+35+'px');
+//$("#selTag").css("margin-top", "60px");
+$("#tag_sel").css("margin-top", "90px");
+$("#add_tag_button").css("margin-top", "90px");
+$("#tag_place").css("margin-left", '-65px');
+$("#tagFrom").css("margin-left", '235px');
+$("#selTag").css("margin-left", '205px');
+$("#tag_sel").css("margin-left", '-75px');
+$("#selTag").text("Enter Tag");
 $("#tagTo").text("Assign tag to this content:").append('<br/>');
 document.getElementById("tagTo").style.display="inline";
 $("#catTo").hide();
