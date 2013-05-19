@@ -2921,6 +2921,20 @@ else {
 		$('#cat_place').css("margin-left", "-270px");
 		$('#catFrom').css("margin-top", "-340px");
 		$('#cat_from_space').css("margin-top", "-300px");
+		$('#cat_from_group').css("margin-top", "-300px");
+		$('#cat_from_project').css("margin-top", "-300px");
+		if($("#cat_from_space").text() !='Change Category in Space')
+			$("#cat_from_space").show();
+			else 
+			$("#cat_from_space").hide();
+			if($("#cat_from_group").text() !='Change Category in Group')
+			$("#cat_from_group").show();
+			else 
+			$("#cat_from_group").hide();
+			if($("#cat_from_project").text() !='Change Category in Group')
+			$("#cat_from_project").show();
+			else
+			$("#cat_from_project").hide();
 		$('#cat_sel').css("margin-left", "250px");
 		$('#selected_items').css("margin-top", "135px");
 		$('#catTo').css("margin-top", "230px");
