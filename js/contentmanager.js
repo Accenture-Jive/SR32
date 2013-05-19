@@ -1594,7 +1594,7 @@ $('#selected_items').css("margin-top", "80px");
 
 $("#catFrom").css("margin-top", "-30px");
 $("#cat_from_group").css("margin-top", "10px");
-$("#cat_place").css("margin-top", "30px");
+$("#cat_place").css("margin-top", parseInt($("#cat_from_group").css("margin-top"))+20+'px');
 $("#selCat").css("margin-top", parseInt($("#cat_place").css("margin-top"))+15+'px');
 //$("#selTag").css("margin-top", "60px");
 $("#cat_sel").css("margin-top", "90px");
