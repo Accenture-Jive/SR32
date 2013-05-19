@@ -4354,7 +4354,7 @@ console.log("array Len: "+addId.length);
  document.getElementById(addId[i]).checked = true;
  }
 //end checking of checkboxes
-
+$("#cat_select_items_button").css("margin-top", "-210px");
 
 $("#stylized").hide();
 $("#selection_menu").show();
