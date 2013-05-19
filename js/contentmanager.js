@@ -1596,7 +1596,7 @@ $("#catFrom").css("margin-top", "-30px");
 $("#cat_from_group").css("margin-top", "10px");
 $("#cat_place").css("margin-top", "20px");
 //$("#selCat").css("margin-top", parseInt($("#cat_place").css("margin-top"))+15+'px');
-$("#selTag").css("margin-top", "55px");
+$("#selCat").css("margin-top", "55px");
 $("#cat_sel").css("margin-top", "90px");
 $("#cat_place").css("margin-left", '-65px');
 $("#tagFrom").css("margin-left", '235px');
