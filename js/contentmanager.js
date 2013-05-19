@@ -1047,7 +1047,7 @@ function tagSel()
 $('#selTag').text("Tag");
 $("#selTag").css("margin-left", "180px");
 $("#selTag").css("margin-top", "80px");
-alert($("#selTag").css("margin-top")+20px);
+alert(parseInt($("#selTag").css("margin-top")));
 $('#selTag').show();
 selected_cat = '';
 
