@@ -3914,7 +3914,7 @@ else if (sel_action_val=='tags')
 var tags=postIdea.tags;
 console.log("tags: "+tags);
 idea_row = idea_row + '<tr>'+
-'<td style="border:1px ;border: 1px solid #000000;text-align:right;padding:2px;">'+'<input type="checkbox" id="idea_cb'+index+'" name="idea_cb" class="idea_cb" onclick="javascript:checkUncheck(this.name);" value="'+postIdea.fileUrl+'">'+'</td>'+
+'<td style="border:1px ;border: 1px solid #000000;text-align:right;padding:2px;">'+'<input type="checkbox" id="idea_cb'+index+'" name="idea_cb" class="idea_cb" onclick="javascript:checkUncheck(this.name);" value="'+postIdea.ideaUrl+'">'+'</td>'+
 '<td style="border:1px ;border: 1px solid #000000;padding: 2px;">'+postIdea.title+'</td>'+
 '<td style="border:1px ;border: 1px solid #000000;padding: 2px;">'+postIdea.tags+'</td>'+
 '</tr>';
