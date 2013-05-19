@@ -1052,6 +1052,8 @@ var contentUnCheckedIndex =0;
 var mainCheckedItems = new Array();
 var mainUncheckItems = new Array();
 catSelection = true;
+var str='';
+document.getElementById("frame1").contentDocument.body.innerHTML = "<br><br><span id='mySpan' style='font-weight:bold;'>"+str.fontcolor("#3778C7")+"</span>";
 
 arrayIndex=0;
 //put the selected category to further use
@@ -1063,6 +1065,7 @@ $("#tagTo").hide();
 }
 else
 {
+
 $('#selTag').text("Tag");
 $("#selTag").css("margin-top", parseInt($("#tag_place").css("margin-top"))+30+'px');
 $('#selTag').show();
