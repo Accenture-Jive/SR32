@@ -1303,12 +1303,11 @@ categoryTest();
 else if(sel_action_val=="tags")
 {
 // actions when the user choses to download files.
-$('#tag_place').css("margin-top", "120px");
+//$('#tag_place').css("margin-top", "120px");
 $('#all_selected_items').css("margin-top", "80px");
 $('#selected_items').css("margin-top", "80px");
 $("#tagTo").text("Assign tag to this content:").append('<br/>');
 document.getElementById("tagTo").style.display="inline";
-
 $("#tagTo").hide();
 $("#dwnTo").hide();
 $("#upTo").hide();
@@ -1333,12 +1332,11 @@ document.getElementById("tag_place").style.display="inline";
 $("#dwn_place").hide();
 $("#tag_place").show();
 document.getElementById("tag_from_space").innerHTML='<span id="myId" style="text-decoration:underline;">Space</span>'+': '+from_place_name;
-$("#tag_place").css("margin-top", "140px");
+$("#tag_place").css("margin-top", "40px");
 $("#tag_from_space").show();
 $("#tag_from_group").hide();
 $("#tag_from_project").hide();
-console.log('space_url = '+space_url);
-//categoryTest();
+categoryTest();
 }
 
 else if(sel_action_val=="select_action")
