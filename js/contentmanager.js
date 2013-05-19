@@ -1319,7 +1319,7 @@ $("#dwn_select_items_button").hide();
 $("#tag_select_items_button").hide();
 $("#tagFrom").css("margin-top", parseInt($("#src_place").css("margin-top"))+(-32)+'px');
 alert("tagFrom margin top "+parseInt($("#tagFrom").css("margin-top")));
-$("#tag_place").css("margin-top", parseInt($("#tagFrom").css("margin-top"))+(30)+'px');
+$("#tag_place").css("margin-top", parseInt($("#tagFrom").css("margin-top"))+(40)+'px');
 $("#selTag").css("margin-left", parseInt($("#tag_place").css("margin-left"))+265+'px');
 alert(parseInt($("#tag_place").css("margin-top")));
 $("#selTag").css("margin-top", parseInt($("#tag_place").css("margin-top"))+20+'px');
