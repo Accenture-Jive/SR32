@@ -1320,6 +1320,7 @@ $("#tag_select_items_button").hide();
 $("#selTag").css("margin-left", parseInt($("#tag_place").css("margin-left"))+265+'px');
 
 $("#tagFrom").css("margin-top", parseInt($("#src_place").css("margin-top"))+(-32)+'px');
+$("#tag_from_space").css("margin-top", parseInt($("#tagFrom").css("margin-top"))+(40)+'px');
 $("#tag_sel").show();
 $("#add_tag_button").show();
 $("#selTag").show();
