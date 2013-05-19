@@ -1079,6 +1079,7 @@ $("#tag_select_items_button").show();
 $("#add_tag_button").hide();
 
 $("#selTag").show();
+$("#cmdu").hide();
 
 $("#tag_sel").hide();
 document.getElementById("add_tag").innerHTML=$('#tag_sel').val();
