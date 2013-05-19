@@ -4687,7 +4687,7 @@ document.getElementById("frame1").contentDocument.body.innerHTML = "Updating cat
 		//alert("mainUncheckItems.length = "+mainUncheckItems.length);
 		//console.log("mainUncheckItems.length = "+mainUncheckItems.length);
 		//***********************************
-		//filterCheckedUncheckCatgUrl1();
+		filterCheckedUncheckCatgUrl1();
 		
 	
 		catIndex = 0;
