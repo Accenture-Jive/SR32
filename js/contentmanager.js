@@ -2989,7 +2989,7 @@ function filterCheckedUncheckTagUrl(){
                                                 checkedIndex++;
                                 }
                                 else {
-                                                                alert("its false");
+                                                                alert("its false"+ "Thois "+$(this).val());
                                                 uncheckItemArray[uncheckedIndex] = $(this).val();
                                                 uncheckedIndex++;
                                 }
