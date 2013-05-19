@@ -3111,6 +3111,7 @@ if(catIndex < checkedItemsArray.length) {
 	
 	//alert("contentURL got is ="+contentURL);
 	console.log("contentURL got is ="+contentURL);
+	alert("catIndex = "+catIndex+"checkedItemsArray length ="+checkedItemsArray.length);
 	alert("contentURL="+contentURL);
 	
 	if(contentURL != 'undefined')
