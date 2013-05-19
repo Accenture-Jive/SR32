@@ -1067,8 +1067,8 @@ $('#selTag').text("Tag");
 $("#selTag").css("margin-top", parseInt($("#tag_place").css("margin-top"))+30+'px');
 $('#selTag').show();
 $("#add_tag").css("margin-top", parseInt($("#selTag").css("margin-top"))+20+'px');
-
-
+$("#tagTo").css("margin-top", parseInt($("#add_tag").css("margin-top"))+30+'px');
+$("#tag_select_items_button").css("margin-top", parseInt($("#tagTo").css("margin-top"))+30+'px');
 $("#tagTo").show();
 $("#tag_select_items_button").show();
 
