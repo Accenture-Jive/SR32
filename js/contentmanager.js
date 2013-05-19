@@ -1073,7 +1073,6 @@ $("#tagTo").show();
 $("#tag_select_items_button").show();
 
 $("#add_tag_button").hide();
-$("#selected_items").hide();
 $("#selTag").show();
 
 $("#tag_sel").hide();
