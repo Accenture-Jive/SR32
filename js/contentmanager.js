@@ -1303,11 +1303,12 @@ categoryTest();
 else if(sel_action_val=="tags")
 {
 // actions when the user choses to download files.
-//$('#tag_place').css("margin-top", "120px");
+$('#tag_place').css("margin-top", "120px");
 $('#all_selected_items').css("margin-top", "80px");
 $('#selected_items').css("margin-top", "80px");
 $("#tagTo").text("Assign tag to this content:").append('<br/>');
 document.getElementById("tagTo").style.display="inline";
+
 $("#tagTo").hide();
 $("#dwnTo").hide();
 $("#upTo").hide();
@@ -1317,16 +1318,7 @@ document.getElementById("tag_sel").style.display="inline";
 document.getElementById("up_select_items_button").style.display="inline";
 $("#dwn_select_items_button").hide();
 $("#tag_select_items_button").hide();
-$("#tagFrom").css("margin-top", parseInt($("#source_place").css("margin-top"))+30+'px');
-$("#tag_from_space").css("margin-top", parseInt($("#tagFrom").css("margin-top"))+30+'px');
-$("#tag_place").css("margin-top", parseInt($("#tag_from_space").css("margin-top"))+30+'px');
-$("#selTag").css("margin-left", parseInt($("#tag_place").css("margin-left"))+265+'px');
-$("#selTag").css("margin-top", parseInt($("#tag_from_space").css("margin-top"))+parseInt($("#tag_from_space").css("height"))+20+'px');
-$("#tag_sel").css("margin-top", parseInt($("#selTag").css("margin-top"))+parseInt($("#selTag").css("height"))+30+'px');
-$("#add_tag_button").css("margin-left", parseInt($("#tag_sel").css("margin-left"))+parseInt($("#tag_sel").css("width"))+20+'px');
-$("#add_tag_button").css("margin-top", parseInt($("#tag_sel").css("margin-top"))-3+'px');
 $("#tag_sel").show();
-
 $("#add_tag_button").show();
 $("#selTag").show();
 $("#up_select_items_button").hide();
@@ -1341,11 +1333,12 @@ document.getElementById("tag_place").style.display="inline";
 $("#dwn_place").hide();
 $("#tag_place").show();
 document.getElementById("tag_from_space").innerHTML='<span id="myId" style="text-decoration:underline;">Space</span>'+': '+from_place_name;
-
+$("#tag_place").css("margin-top", "140px");
 $("#tag_from_space").show();
 $("#tag_from_group").hide();
 $("#tag_from_project").hide();
-categoryTest();
+console.log('space_url = '+space_url);
+//categoryTest();
 }
 
 else if(sel_action_val=="select_action")
