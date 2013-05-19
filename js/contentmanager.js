@@ -1317,6 +1317,7 @@ document.getElementById("tag_sel").style.display="inline";
 document.getElementById("up_select_items_button").style.display="inline";
 $("#dwn_select_items_button").hide();
 $("#tag_select_items_button").hide();
+$("#tag_place").css("margin-top", parseInt($("#tagFrom").css("margin-top"))+(30)+'px');
 $("#selTag").css("margin-left", parseInt($("#tag_place").css("margin-left"))+265+'px');
 alert(parseInt($("#tag_place").css("margin-top")));
 $("#selTag").css("margin-top", parseInt($("#tag_place").css("margin-top"))+20+'px');
@@ -1338,7 +1339,7 @@ document.getElementById("tag_place").style.display="inline";
 $("#dwn_place").hide();
 $("#tag_place").show();
 document.getElementById("tag_from_space").innerHTML='<span id="myId" style="text-decoration:underline;">Space</span>'+': '+from_place_name;
-$("#tag_place").css("margin-top", "40px");
+
 $("#tag_from_space").show();
 $("#tag_from_group").hide();
 $("#tag_from_project").hide();
