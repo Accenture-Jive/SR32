@@ -1313,9 +1313,14 @@ $('#selected_items').css("margin-top", "80px");
 $("#tagFrom").css("margin-top", "-30px");
 $("#tag_from_space").css("margin-top", "10px");
 $("#tag_place").css("margin-top", "40px");
-$("#selTag").css("margin-top", "60px");
+$("#selTag").css("margin-top", parseInt($("#tag_place").css("margin-top"))+20+'px');
+//$("#selTag").css("margin-top", "60px");
 $("#tag_sel").css("margin-top", "90px");
 $("#add_tag_button").css("margin-top", "90px");
+$("#tag_place").css("margin-left", '-65px');
+$("#tagFrom").css("margin-left", '225px');
+
+
 $("#tagTo").text("Assign tag to this content:").append('<br/>');
 document.getElementById("tagTo").style.display="inline";
 $("#tagTo").hide();
