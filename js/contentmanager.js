@@ -1594,8 +1594,8 @@ $('#selected_items').css("margin-top", "80px");
 
 $("#catFrom").css("margin-top", "-30px");
 $("#cat_from_group").css("margin-top", "10px");
-$("#cat_place").css("margin-top", "40px");
-$("#selCat").css("margin-top", parseInt($("#cat_place").css("margin-top"))+35+'px');
+$("#cat_place").css("margin-top", "30px");
+$("#selCat").css("margin-top", parseInt($("#cat_place").css("margin-top"))+15+'px');
 //$("#selTag").css("margin-top", "60px");
 $("#cat_sel").css("margin-top", "90px");
 $("#cat_place").css("margin-left", '-65px');
