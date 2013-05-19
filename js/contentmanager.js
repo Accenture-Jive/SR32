@@ -5187,3 +5187,12 @@ getIdeas(space_url);
 getPolls(space_url);
 getBlogs(blog_url);
 }
+
+function repopulateContents1(){
+getDocs(space_url);
+getFiles(space_url);
+getDiscussions(space_url);
+getIdeas(space_url);
+getPolls(space_url);
+getBlogs(blog_url);
+}
