@@ -1068,7 +1068,8 @@ else
 {
 
 $('#selTag').text("Tag");
-$("#selTag").css("margin-top", parseInt($("#tag_place").css("margin-top"))+30+'px');
+$("#selTag").css("margin-top", parseInt($("#tag_place").css("margin-top"))+40+'px');
+$("#selTag").css("margin-left", parseInt($("#tag_place").css("margin-left"))+245+'px');
 $('#selTag').show();
 $("#add_tag").css("margin-top", parseInt($("#selTag").css("margin-top"))+20+'px');
 $("#tagTo").css("margin-top", parseInt($("#add_tag").css("margin-top"))+30+'px');
