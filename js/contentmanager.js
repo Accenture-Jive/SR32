@@ -3015,7 +3015,7 @@ function filterCheckedUncheckTagUrl(){
                                 //console.log("uncheckItemArray.length = "+uncheckItemArray.length);
 				catIndex = 0;
 				dotIndex = 0;
-		        updateTagsForNewContents1();
+		        //updateTagsForNewContents1();
 		
 		}
 
