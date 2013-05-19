@@ -3325,6 +3325,7 @@ else {
 			$("#tag_place").show();
 			$('#tag_place').css("margin-top", "-235px");
 			$('#tag_place').css("margin-left", "250px");
+			alert($("#tag_from_space").text());
 			$("#tag_from_space").show();
 			$("#tag_from_group").hide();
 			$("#tag_from_project").hide();
