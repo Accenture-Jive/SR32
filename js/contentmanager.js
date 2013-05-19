@@ -1322,7 +1322,7 @@ $("#selTag").css("margin-left", parseInt($("#tag_place").css("margin-left"))+265
 $("#selTag").css("margin-left", parseInt($("#tag_from_space").css("margin-top"))+20+'px');
 $("#tag_sel").css("margin-top", parseInt($("#selTag").css("margin-top"))+30+'px');
 $("#add_tag_button").css("margin-left", parseInt($("#tag_sel").css("margin-left"))+parseInt($("#tag_sel").css("width"))+30+'px');
-$("#add_tag_button").css("margin-top", parseInt($("#tag_sel").css("margin-top"))-10+'px');
+$("#add_tag_button").css("margin-top", parseInt($("#tag_sel").css("margin-top"))-3+'px');
 $("#tag_sel").show();
 
 $("#add_tag_button").show();
