@@ -2937,7 +2937,7 @@ else {
 			else
 			$("#cat_from_project").hide();
 		$('#cat_sel').css("margin-left", "250px");
-		$('#selected_items').css("margin-top", "135px");
+		$('#selected_items').css("margin-top", "-190px");
 		$('#catTo').css("margin-top", "230px");
 		var str='Updating categories has completed. Please click   <a href='+tempRedirectionUrl+'>here </a>  to review the result.';
 		document.getElementById("frame1").contentDocument.body.innerHTML = "Note:<br><br><span id='mySpan' style='font-weight:bold;'>"+str.fontcolor("#3778C7")+"</span>";
