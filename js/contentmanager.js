@@ -2911,9 +2911,8 @@ else {
 		$('#cmdu').hide();
 		$('#src_place').show();
 		$('#cat_place').show();
-		$('#selCat').css("margin-top", "-260px");
-		$('#cat_place').css("margin-top", "-280px");
-		$('#cat_sel').css("margin-top", "-230px");
+		$('#selCat').css("margin-top", "-290px");
+		$('#cat_sel').css("margin-top", "-250px");
 		$('#selCat').show();
 		$('#cat_sel').show();
 		$('#catTo').show();
@@ -2937,7 +2936,7 @@ else {
 			else
 			$("#cat_from_project").hide();
 		$('#cat_sel').css("margin-left", "250px");
-		$('#selected_items').css("margin-top", "-190px");
+		$('#selected_items').css("margin-top", "135px");
 		$('#catTo').css("margin-top", "230px");
 		var str='Updating categories has completed. Please click   <a href='+tempRedirectionUrl+'>here </a>  to review the result.';
 		document.getElementById("frame1").contentDocument.body.innerHTML = "Note:<br><br><span id='mySpan' style='font-weight:bold;'>"+str.fontcolor("#3778C7")+"</span>";
