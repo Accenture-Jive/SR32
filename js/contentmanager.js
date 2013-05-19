@@ -2911,8 +2911,9 @@ else {
 		$('#cmdu').hide();
 		$('#src_place').show();
 		$('#cat_place').show();
-		$('#selCat').css("margin-top", "-290px");
-		$('#cat_sel').css("margin-top", "-250px");
+		$('#selCat').css("margin-top", "-260px");
+		$('#cat_place').css("margin-top", "-280px");
+		$('#cat_sel').css("margin-top", "-230px");
 		$('#selCat').show();
 		$('#cat_sel').show();
 		$('#catTo').show();
