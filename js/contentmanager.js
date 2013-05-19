@@ -3194,7 +3194,7 @@ if(catIndex < uncheckItemArray.length) {
 	var toUpdateTags;
 	var toTagsArray;
 	var updatedCategoryList = new Array();
-	
+	alert("catIndex = "+catIndex+"uncheckItemArray length ="+uncheckItemArray.length);
 	//alert("contentURL got is ="+contentURL);
 	console.log("contentURL got is ="+contentURL);
 	osapi.jive.corev3.contents.get({
