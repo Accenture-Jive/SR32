@@ -2916,7 +2916,9 @@ else {
 		$('#catTo').show();
 		$('#catTo').text('Manage content for this category:');
 		$('#cat_select_items_button').show();
-		$('#cat_place').css("margin-left", "250px");
+		$('#cat_place').css("margin-left", "-270px");
+		$('#catFrom').css("margin-top", "-310px");
+		$('#cat_from_space').css("margin-top", "-300px");
 		$('#cat_sel').css("margin-left", "250px");
 		$('#selected_items').css("margin-top", "135px");
 		$('#catTo').css("margin-top", "230px");
