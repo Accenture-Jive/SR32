@@ -1104,6 +1104,10 @@ function fromSpaceRequest() {
 var from_place_name='';
 src_space_name='';
 dest_space_name='';
+selected_cat = '';
+selected_tag = '';
+arrayIndex=0;
+addId=new Array();
 document.getElementById("to_place").disabled = false;
 document.getElementById("from_project").innerHTML=msg2;
 document.getElementById("from_group").innerHTML=msg2;
@@ -1409,6 +1413,10 @@ function fromGroupRequest() {
 var from_place_name='';
 src_space_name='';
 dest_space_name='';
+selected_cat = '';
+selected_tag = '';
+arrayIndex=0;
+addId=new Array();
 document.getElementById("to_place").disabled = false;
 document.getElementById("from_project").innerHTML=msg2;
 document.getElementById("from_group").innerHTML=msg2;
@@ -1712,6 +1720,10 @@ function fromProjectRequest() {
 var from_place_name='';
 src_space_name='';
 dest_space_name='';
+selected_cat = '';
+selected_tag = '';
+arrayIndex=0;
+addId=new Array();
 document.getElementById("to_place").disabled = false;
 document.getElementById("from_project").innerHTML=msg2;
 document.getElementById("from_group").innerHTML=msg2;
