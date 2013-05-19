@@ -1935,6 +1935,7 @@ $("#catTo").hide();
 $("#tagTo").hide();
 $("#dwnTo").hide();
 $("#upTo").hide();
+$("#add_tag").hide();
 document.getElementById("dwn_select_items_button").style.display="inline";
 document.getElementById("tag_select_items_button").style.display="inline";
 document.getElementById("tag_sel").style.display="inline";
