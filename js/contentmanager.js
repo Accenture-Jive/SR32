@@ -3208,7 +3208,7 @@ if(catIndex < uncheckItemArray.length) {
 else {
 
 			alert("inside else ");
-			$("#cmdu").show();
+			$("#cmdu").hide();
 			$("#src_place").show();
 			$("#tag_place").show();
 			$('#tag_place').css("margin-top", "-235px");
