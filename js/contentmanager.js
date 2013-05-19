@@ -1663,6 +1663,7 @@ $("#tag_place").css("margin-top", "40px");
 $("#tag_from_space").hide();
 $("#tag_from_group").show();
 $("#tag_from_project").hide();
+$("#add_tag").hide();
 categoryTest();
 }
 
