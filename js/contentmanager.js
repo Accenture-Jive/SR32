@@ -1275,7 +1275,7 @@ else if(sel_action_val=="categs")
 //$('#cat_place').css("margin-top", "120px");
 $('#all_selected_items').css("margin-top", "80px");
 $('#selected_items').css("margin-top", "80px");
-$("#catTo").text("Categorize this:").append('<br/>');
+$("#catTo").text("Manage content for this category:").append('<br/>');
 document.getElementById("catTo").style.display="inline";
 $("#catTo").hide();
 $("#dwnTo").hide();
@@ -2828,12 +2828,12 @@ if(catIndex < uncheckItemArray.length) {
 					//alert(contentCatResponseObj.categories);
 					//alert("selected_cat = "+selected_cat);
 				toUpdateCategories = contentCatResponseObj.categories;
-				var str='Removing category '+selected_cat+' to '+contentCatResponseObj.type+'';
+				var str='Removing category '+selected_cat+' from '+contentCatResponseObj.type+'';
 				for(index =0;index < dotIndex;index++) 
 					str = str +'.';
 					dotIndex++;
 				if(dotIndex == 4) dotIndex = 0;
-				document.getElementById("frame1").contentDocument.body.innerHTML = "Updating Categories in Progress.<br>Please leave this window open until the moving process has been completed.<br><br><span id='mySpan' style='font-weight:bold;'>"+str.fontcolor("#3778C7")+"</span>";
+				document.getElementById("frame1").contentDocument.body.innerHTML = "Removing Categories in Progress.<br>Please leave this window open until the moving process has been completed.<br><br><span id='mySpan' style='font-weight:bold;'>"+str.fontcolor("#3778C7")+"</span>";
 				//toUpdateCategories = toUpdateCategories+','+selected_cat;
 				//toUpdateCategories = ["cat1","cat2","cat3"];
 				//toCategoriesArray = toUpdateCategories.split(",");
@@ -3180,7 +3180,7 @@ removeTagsForContents();
 
 function updateTagsForNewContents1() {
 	//alert("Into the updateCategories for new contents");
-	console.log("Into the updateCategories for new contents");
+	console.log("Into the updateTagsForNewContents1 for new contents");
 	for(var index=0; index < checkedItemsArray.length;index++) {
 			//alert("new checked items : "+checkedItemsArray[index]);
 			//console.log("new checked items : "+checkedItemsArray[index]);
@@ -3218,7 +3218,7 @@ if(catIndex < checkedItemsArray.length) {
 					//console.log(contentCatResponseObj.tags);
 					//alert("selected_cat = "+selected_cat);
 				toUpdateTags = contentCatResponseObj.tags;
-				var str='Applying category '+selected_cat+' to '+contentCatResponseObj.type+'';
+				var str='Applying tag '+selected_cat+' to '+contentCatResponseObj.type+'';
 				for(index =0;index < dotIndex;index++) 
 					str = str +'.';
 					dotIndex++;
@@ -3298,7 +3298,7 @@ if(catIndex < uncheckItemArray.length) {
 				
 					//alert(contentCatResponseObj.categories);
 					//alert("selected_cat = "+selected_cat);
-				var str='Removing category '+selected_cat+' to '+contentCatResponseObj.type+'';
+				var str='Removing tag '+selected_cat+' from '+contentCatResponseObj.type+'';
 				for(index =0;index < dotIndex;index++) 
 					str = str +'.';
 					dotIndex++;
