@@ -3004,7 +3004,7 @@ function filterCheckedUncheckTagUrl(){
       //alert("new checked items : "+checkedItemsArray[index]);
       console.log("new checked items : "+checkedItemsArray[index]);
     }
-  for(var index=0;index < uncheckedItemArrayUpdated.length;index++) {
+  for(var index=0;index < uncheckItemArray.length;index++) {
       //alert("new unchecked items : "+uncheckedItemArrayUpdated[index]);
       console.log("new unchecked items : "+uncheckedItemArrayUpdated[index]);
     }
@@ -3015,7 +3015,7 @@ function filterCheckedUncheckTagUrl(){
                                 //console.log("uncheckItemArray.length = "+uncheckItemArray.length);
 				catIndex = 0;
 				dotIndex = 0;
-		        updateTagsForNewContents1();
+		       // updateTagsForNewContents1();
 		
 		}
 
