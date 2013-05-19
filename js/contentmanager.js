@@ -1319,6 +1319,8 @@ $("#tag_sel").css("margin-top", "90px");
 $("#add_tag_button").css("margin-top", "90px");
 $("#tag_place").css("margin-left", '-65px');
 $("#tagFrom").css("margin-left", '225px');
+$("#selTag").css("margin-left", '205px');
+$("#selTag").text("Enter Tag");
 
 
 $("#tagTo").text("Assign tag to this content:").append('<br/>');
