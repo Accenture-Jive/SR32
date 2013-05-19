@@ -1320,7 +1320,6 @@ $("#tag_select_items_button").hide();
 $("#tag_sel").show();
 $("#add_tag_button").css("margin-left", parseInt($("#tag_sel").css("margin-left"))+parseInt($("#tag_sel").css("width"))+30+'px');
 $("#selTag").css("margin-left", parseInt($("#tag_sel").css("margin-left"))+30+'px');
-$("#selTag").css("margin-top", parseInt($("#tag_sel").css("margin-top"))+20+'px');
 $("#add_tag_button").show();
 $("#selTag").show();
 $("#up_select_items_button").hide();
