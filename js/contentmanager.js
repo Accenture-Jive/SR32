@@ -648,7 +648,7 @@ document.getElementById("tag_place").style.display="inline";
 $("#tag_place").show();
 $("#tagFrom").css("margin-top", "-190px");
 $("#tagFrom").show();
-$("#tag_place").css("margin-top", "-170px");
+$("#tag_place").css("margin-top", "-30px");
 $("#del_place").css("margin-top", "110px");
 //$('#tag_place').css("margin-top", "110px");
 $("#dwnFrom").hide();
