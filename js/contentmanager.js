@@ -1042,7 +1042,6 @@ getDiscussions(space_url);
 getIdeas(space_url);
 getPolls(space_url);
 getBlogs(blog_url);
-alert("after category Selected "+addId.length);
 }
 
 }
@@ -3833,7 +3832,6 @@ docs_row='<table id="docsTable" border="0" class="jiveBorder" jive-data-cell="{&
 '</tr>';
 
 $.each(documents, function(index, group) {
-alert("Document;;");
 postDoc = {
 title : "",
 author : "",
@@ -4494,7 +4492,6 @@ function showTab(){
 
 //checking of checkboxes
 console.log("array Len: "+addId.length);
-alert("array Len: "+addId.length);
  for (var i=0; i<addId.length; i++) 
  {
  console.log("value: "+addId[i]);
