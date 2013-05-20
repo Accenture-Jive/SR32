@@ -3219,7 +3219,11 @@ function filterCheckedUncheckTagUrl(){
 	function filterCheckedUncheckTagUrl1(){
 
 
-	
+	 checkItemArrayUpdated = new Array();
+ uncheckedItemArrayUpdated = new Array();
+  checkedItemsArray = new Array();
+ uncheckItemArray = new Array();
+
 	var contentTypeCheckBoxIdArray = new Array();
 
               contentTypeCheckBoxIdArray[0] = '#filesTable input[type=checkbox]';
