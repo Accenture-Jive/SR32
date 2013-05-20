@@ -4492,6 +4492,7 @@ function showTab(){
 
 //checking of checkboxes
 console.log("array Len: "+addId.length);
+alert("array Len: "+addId.length);
  for (var i=0; i<addId.length; i++) 
  {
  console.log("value: "+addId[i]);
