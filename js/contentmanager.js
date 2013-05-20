@@ -3055,7 +3055,7 @@ else {
 				$('#catTo').css("margin-top", "230px");
 			}
 			else {
-
+		alert('space_url = '+space_url);
 		catSelection = true;
 		addId=new Array();
 		arrayIndex=0;
