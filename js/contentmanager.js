@@ -3424,9 +3424,9 @@ function updateTagsForNewContents1() {
 		//alert("checkItemArrayUpdated.length = "+uncheckItemArray.length+" catIndex ="+catIndex);
 	//console.log("checkItemArrayUpdated.length = "+uncheckItemArray.length+" catIndex="+catIndex);
 		
-if(catIndex < checkedItemsArray.length) {
+if(catIndex < checkItemArrayUpdated.length) {
 
-	var contentURL = checkedItemsArray[catIndex];
+	var contentURL = checkItemArrayUpdated[catIndex];
 	var toUpdateTags;
 	var toTagsArray;
 	var updatedTagList = new Array();
@@ -3511,9 +3511,9 @@ removeTagsForContents();
 function removeTagsForContents() {
 	
 		
-if(catIndex < uncheckItemArray.length) {
+if(catIndex < uncheckedItemArrayUpdated.length) {
 
-	var contentURL = uncheckItemArray[catIndex];
+	var contentURL = uncheckedItemArrayUpdated[catIndex];
 	var toUpdateTags;
 	var toTagsArray;
 	var updatedCategoryList = new Array();
