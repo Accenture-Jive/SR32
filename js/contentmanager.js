@@ -2663,7 +2663,8 @@ function filterCheckedUncheckCatgUrl(){
 		
 	function filterCheckedUncheckCatgUrl1(){
 	var contentTypeCheckBoxIdArray = new Array();
-
+ checkItemArrayUpdated = new Array();
+ uncheckedItemArrayUpdated = new Array();
 	              contentTypeCheckBoxIdArray[0] = '#filesTable input[type=checkbox]';
                   contentTypeCheckBoxIdArray[1] = '#docsTable input[type=checkbox]';
                   contentTypeCheckBoxIdArray[2] = '#ideaTable input[type=checkbox]';
