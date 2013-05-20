@@ -1288,6 +1288,9 @@ document.getElementById("catTo").style.display="inline";
 $("#catTo").hide();
 $("#dwnTo").hide();
 $("#upTo").hide();
+$("#cat_sel option").each(function() {
+	$(this).remove();
+   });
 document.getElementById("dwn_select_items_button").style.display="inline";
 document.getElementById("cat_select_items_button").style.display="inline";
 document.getElementById("cat_sel").style.display="inline";
@@ -1344,6 +1347,9 @@ document.getElementById("tagTo").style.display="inline";
 $("#tagTo").hide();
 $("#dwnTo").hide();
 $("#upTo").hide();
+$("#tag_sel option").each(function() {
+	$(this).remove();
+   });
 document.getElementById("dwn_select_items_button").style.display="inline";
 document.getElementById("tag_select_items_button").style.display="inline";
 document.getElementById("tag_sel").style.display="inline";
@@ -1620,6 +1626,9 @@ document.getElementById("catTo").style.display="inline";
 $("#catTo").hide();
 $("#dwnTo").hide();
 $("#upTo").hide();
+$("#cat_sel option").each(function() {
+	$(this).remove();
+   });
 document.getElementById("dwn_select_items_button").style.display="inline";
 document.getElementById("cat_select_items_button").style.display="inline";
 document.getElementById("cat_sel").style.display="inline";
@@ -1635,6 +1644,7 @@ $("#catShow").show();
 $("#tagShow").hide();
 $("#upShow").hide();
 $("#up_place").hide();
+
 document.getElementById("dwn_place").style.display="inline";
 document.getElementById("cat_place").style.display="inline";
 $("#dwn_place").hide();
@@ -1670,6 +1680,9 @@ document.getElementById("catTo").style.display="inline";
 $("#tagTo").hide();
 $("#dwnTo").hide();
 $("#upTo").hide();
+$("#tag_sel option").each(function() {
+	$(this).remove();
+   });
 document.getElementById("dwn_select_items_button").style.display="inline";
 document.getElementById("tag_select_items_button").style.display="inline";
 document.getElementById("tag_sel").style.display="inline";
@@ -1932,6 +1945,9 @@ document.getElementById("catTo").style.display="inline";
 $("#catTo").hide();
 $("#dwnTo").hide();
 $("#upTo").hide();
+$("#cat_sel option").each(function() {
+	$(this).remove();
+   });
 document.getElementById("dwn_select_items_button").style.display="inline";
 document.getElementById("cat_select_items_button").style.display="inline";
 document.getElementById("cat_sel").style.display="inline";
@@ -1984,6 +2000,9 @@ $("#catTo").hide();
 $("#tagTo").hide();
 $("#dwnTo").hide();
 $("#upTo").hide();
+$("#tag_sel option").each(function() {
+	$(this).remove();
+   });
 $("#add_tag").hide();
 document.getElementById("dwn_select_items_button").style.display="inline";
 document.getElementById("tag_select_items_button").style.display="inline";
