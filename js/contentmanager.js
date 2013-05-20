@@ -1018,6 +1018,7 @@ var contentUnCheckedIndex =0;
 var mainCheckedItems = new Array();
 var mainUncheckItems = new Array();
 catSelection = true;
+addId=new Array();
 arrayIndex=0;
 //put the selected category to further use
 selected_cat=document.getElementById('cat_sel').value;
