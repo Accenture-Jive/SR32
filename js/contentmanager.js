@@ -3833,6 +3833,7 @@ docs_row='<table id="docsTable" border="0" class="jiveBorder" jive-data-cell="{&
 '</tr>';
 
 $.each(documents, function(index, group) {
+alert("Document;;");
 postDoc = {
 title : "",
 author : "",
