@@ -1032,6 +1032,7 @@ $("#catTo").hide();
 else
 {
 $("#catTo").css("margin-top", parseInt($("#cat_sel").css("margin-top"))+parseInt($("#cat_sel").css("height"))+10+'px');
+$("#catTo").css("margin-left", parseInt($("#cat_sel").css("margin-left"))-10+'px');
 $("#cat_select_items_button").css("margin-top", parseInt($("#catTo").css("margin-top"))+parseInt($("#catTo").css("height"))+10+'px');
 $("#cat_select_items_button").show();
 $("#catTo").show();
