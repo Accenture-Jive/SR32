@@ -3056,6 +3056,15 @@ else {
 			}
 			else {
 
+		catSelection = true;
+		addId=new Array();
+		arrayIndex=0;
+		getDocs(space_url);
+		getFiles(space_url);
+		getDiscussions(space_url);
+		getIdeas(space_url);
+		getPolls(space_url);
+		getBlogs(blog_url);
 		console.log("Category "+selected_cat+" succesfully updated");
 		//alert("Category "+selected_cat+" succesfully updated");
 		var tempRedirectionUrl = source_html_url+'/content?filterID=contentstatus[published]~category['+selected_cat+']';
