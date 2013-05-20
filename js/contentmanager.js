@@ -2780,7 +2780,7 @@ function filterCheckedUncheckCatgUrl(){
 				console.log("new unchecked update items : "+uncheckedItemArrayUpdated[index]);
 		}
 		catIndex=0;
-		//updateCategoriesForNewContents1();		
+		updateCategoriesForNewContents1();		
 
 
 		
@@ -2874,9 +2874,9 @@ function updateCategoriesForNewContents1() {
 		//alert("checkItemArrayUpdated.length = "+uncheckItemArray.length+" catIndex ="+catIndex);
 	//console.log("checkItemArrayUpdated.length = "+uncheckItemArray.length+" catIndex="+catIndex);
 		
-if(catIndex < checkedItemsArray.length) {
+if(catIndex < checkItemArrayUpdated.length) {
 
-	var contentURL = checkedItemsArray[catIndex];
+	var contentURL = checkItemArrayUpdated[catIndex];
 	var toUpdateCategories;
 	var toCategoriesArray;
 	var updatedCategoryList = new Array();
@@ -2956,9 +2956,9 @@ removeCategoriesForContents();
 function removeCategoriesForContents() {
 	
 		
-if(catIndex < uncheckItemArray.length) {
+if(catIndex < uncheckedItemArrayUpdated.length) {
 
-	var contentURL = uncheckItemArray[catIndex];
+	var contentURL = uncheckedItemArrayUpdated[catIndex];
 	var toUpdateCategories;
 	var toCategoriesArray;
 	var updatedCategoryList = new Array();
