@@ -4264,9 +4264,10 @@ if (categg6[ind]==selected_cat)
 {
 console.log("categg6= "+categg6);
 console.log("selected_cat= "+selected_cat);
-console.log(document.getElementById("poll_cb"+index).value);
 var temp_id="poll_cb"+index;
 console.log("temp_id= "+temp_id);
+console.log(document.getElementById("poll_cb"+index).value);
+
 addId[arrayIndex]=temp_id;
 console.log("Array val: "+addId[arrayIndex]);
 arrayIndex++;
