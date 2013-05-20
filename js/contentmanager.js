@@ -2747,10 +2747,7 @@ function filterCheckedUncheckCatgUrl(){
 			}
 		}
 		
-		for(var index=0; index < checkItemArrayUpdated.length;index++) {
-			alert("new checked items : "+checkItemArrayUpdated[index]);
-			console.log("new checked items : "+checkItemArrayUpdated[index]);
-		}
+		
 		
 		for(var outerIndex=0;outerIndex < uncheckItemArray.length;outerIndex++) {
 			for(var innerIndex=0;innerIndex< mainUncheckItems.length;innerIndex++) {
@@ -2768,9 +2765,19 @@ function filterCheckedUncheckCatgUrl(){
 			}
 		}
 		
+		alert("checkItemArrayUpdated.length = "+checkItemArrayUpdated.length);
+		console.log("checkItemArrayUpdated.length = "+checkItemArrayUpdated.length);
+		alert("uncheckedItemArrayUpdated.length = "+uncheckedItemArrayUpdated.length);
+		console.log("uncheckedItemArrayUpdated.length = "+uncheckedItemArrayUpdated.length);
+								
+		
+		for(var index=0; index < checkItemArrayUpdated.length;index++) {
+			//alert("new checked items : "+checkItemArrayUpdated[index]);
+			console.log("new checked update items : "+checkItemArrayUpdated[index]);
+		}
 		for(var index=0;index < uncheckedItemArrayUpdated.length;index++) {
-			alert("new unchecked items : "+uncheckedItemArrayUpdated[index]);
-				console.log("new unchecked items : "+uncheckedItemArrayUpdated[index]);
+			//alert("new unchecked items : "+uncheckedItemArrayUpdated[index]);
+				console.log("new unchecked update items : "+uncheckedItemArrayUpdated[index]);
 		}
 		catIndex=0;
 		//updateCategoriesForNewContents1();		
