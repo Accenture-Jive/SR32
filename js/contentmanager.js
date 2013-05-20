@@ -3290,6 +3290,7 @@ function filterCheckedUncheckTagUrl(){
 		var checkedIndex = 0;
 		var uncheckedIndex = 0;
 		for(var outerIndex=0;outerIndex < checkedItemsArray.length;outerIndex++) {
+			if(mainCheckedItems.length != 0) {
 			for(var innerIndex=0;innerIndex< mainCheckedItems.length;innerIndex++) {
 				//alert("checkedItemsArray[outerIndex] = mainCheckedItems[innerIndex] :" +checkedItemsArray[outerIndex] == mainCheckedItems[innerIndex]);
 				//alert("checkedItemsArray[outerIndex] = mainCheckedItems[innerIndex] :" +checkedItemsArray[outerIndex] == mainCheckedItems[innerIndex]);
@@ -3304,11 +3305,16 @@ function filterCheckedUncheckTagUrl(){
 					
 				}
 			}
+			}else {
+			checkItemArrayUpdated[checkedIndex] = checkedItemsArray[outerIndex];
+					checkedIndex++;
+					}
 		}
 		
 		
 		
 		for(var outerIndex=0;outerIndex < uncheckItemArray.length;outerIndex++) {
+			if(mainUncheckItems.length !=0) {
 			for(var innerIndex=0;innerIndex< mainUncheckItems.length;innerIndex++) {
 				//alert("checkedItemsArray[outerIndex] = mainCheckedItems[innerIndex] :" +checkedItemsArray[outerIndex] == mainCheckedItems[innerIndex]);
 				if(uncheckItemArray[outerIndex] == mainUncheckItems[innerIndex]) {
@@ -3321,6 +3327,11 @@ function filterCheckedUncheckTagUrl(){
 					}
 					
 				}
+			}
+			}
+			else {
+				uncheckedItemArrayUpdated[uncheckedIndex] = uncheckItemArray[outerIndex];
+				uncheckedIndex++;
 			}
 		}
 		
