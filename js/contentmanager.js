@@ -1030,6 +1030,8 @@ $("#catTo").hide();
 }
 else
 {
+$("#catTo").css("margin-top", parseInt($("#cat_place").css("margin-top"))+20+'px');
+$("#cat_select_items_button").css("margin-top", parseInt($("#catTo").css("margin-top"))+20+'px');
 $("#cat_select_items_button").show();
 $("#catTo").show();
 getDocs(space_url);
