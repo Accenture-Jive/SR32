@@ -3593,13 +3593,13 @@ console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
 console.log("Array val: "+addId[arrayIndex]);
 arrayIndex++;
-mainCheckedItems[contentCheckedIndex]=document.getElementById("doc_cb"+index).value;
+mainCheckedItems[contentCheckedIndex]=document.getElementById("file_cb"+index).value;
 contentCheckedIndex++;
 checkFlagItem = true;
 }
 }
 if(checkFlagItem == false && !(selected_cat == '')) {
-	mainUncheckItems[contentUnCheckedIndex] = document.getElementById("doc_cb"+index).value;
+	mainUncheckItems[contentUnCheckedIndex] = document.getElementById("file_cb"+index).value;
 	contentUnCheckedIndex++;
 }
 }
@@ -3736,13 +3736,13 @@ console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
 console.log("Array val: "+addId[arrayIndex]);
 arrayIndex++;
-mainCheckedItems[contentCheckedIndex]=document.getElementById("doc_cb"+index).value;
+mainCheckedItems[contentCheckedIndex]=document.getElementById("blog_cb"+index).value;
 contentCheckedIndex++;
 checkFlagItem = true;
 }
 }
 if(checkFlagItem == false && !(selected_cat == '')) {
-	mainUncheckItems[contentUnCheckedIndex] = document.getElementById("doc_cb"+index).value;
+	mainUncheckItems[contentUnCheckedIndex] = document.getElementById("blog_cb"+index).value;
 	contentUnCheckedIndex++;
 }
 }
@@ -4004,13 +4004,13 @@ console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
 console.log("Array val: "+addId[arrayIndex]);
 arrayIndex++;
-mainCheckedItems[contentCheckedIndex]=document.getElementById("doc_cb"+index).value;
+mainCheckedItems[contentCheckedIndex]=document.getElementById("disc_cb"+index).value;
 contentCheckedIndex++;
 checkFlagItem = true;
 }
 }
 if(checkFlagItem == false && !(selected_cat == '')) {
-	mainUncheckItems[contentUnCheckedIndex] = document.getElementById("doc_cb"+index).value;
+	mainUncheckItems[contentUnCheckedIndex] = document.getElementById("disc_cb"+index).value;
 	contentUnCheckedIndex++;
 }
 }
@@ -4137,13 +4137,13 @@ console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
 console.log("Array val: "+addId[arrayIndex]);
 arrayIndex++;
-mainCheckedItems[contentCheckedIndex]=document.getElementById("doc_cb"+index).value;
+mainCheckedItems[contentCheckedIndex]=document.getElementById("idea_cb"+index).value;
 contentCheckedIndex++;
 checkFlagItem = true;
 }
 }
 if(checkFlagItem == false && !(selected_cat == '')) {
-	mainUncheckItems[contentUnCheckedIndex] = document.getElementById("doc_cb"+index).value;
+	mainUncheckItems[contentUnCheckedIndex] = document.getElementById("idea_cb"+index).value;
 	contentUnCheckedIndex++;
 }
 
@@ -4269,13 +4269,13 @@ console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
 console.log("Array val: "+addId[arrayIndex]);
 arrayIndex++;
-mainCheckedItems[contentCheckedIndex]=document.getElementById("doc_cb"+index).value;
+mainCheckedItems[contentCheckedIndex]=document.getElementById("poll_cb"+index).value;
 contentCheckedIndex++;
 checkFlagItem = true;
 }
 }
 if(checkFlagItem == false && !(selected_cat == '')) {
-	mainUncheckItems[contentUnCheckedIndex] = document.getElementById("doc_cb"+index).value;
+	mainUncheckItems[contentUnCheckedIndex] = document.getElementById("poll_cb"+index).value;
 	contentUnCheckedIndex++;
 }
 
