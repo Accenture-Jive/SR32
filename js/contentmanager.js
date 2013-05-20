@@ -1918,7 +1918,7 @@ else if(sel_action_val=="categs")
 $('#all_selected_items').css("margin-top", "80px");
 $('#selected_items').css("margin-top", "80px");
 $("#catFrom").css("margin-top", "-30px");
-$("#cat_from_group").css("margin-top", "10px");
+$("#cat_from_project").css("margin-top", "10px");
 $("#cat_place").css("margin-top", "20px");
 //$("#selCat").css("margin-top", parseInt($("#cat_place").css("margin-top"))+15+'px');
 $("#selCat").css("margin-top", "55px");
