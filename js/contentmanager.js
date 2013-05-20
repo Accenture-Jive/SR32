@@ -905,9 +905,6 @@ function catFromPlace()
 // Identifies which space/group/project user has chosen to edit categories into and calls the appropriate method.
 var cat_place = document.getElementById("cat_place");
 var cat_sel_place = cat_place.options[cat_place.selectedIndex].value;
-$("#cat_from_space").text('Change Category in Space');
-$("#cat_from_group").text('Change Category in Group');
-$("#cat_from_project").text('Change Category in Project');
 if(cat_sel_place=="select_space"){
 fromSpaceRequest();
 document.getElementById("copyTo").style.visibility="hidden";
@@ -1124,6 +1121,11 @@ success : ( function(data){
 //consolelog("DATA: "+JSON.stringify(data));
 
 // Assigns values to the variables from the received response.
+//Assigning the values 
+$("#cat_from_space").text('Change Category in Space');
+$("#cat_from_group").text('Change Category in Group');
+$("#cat_from_project").text('Change Category in Project');
+//**************
 from_place_name=data.name;
 src_space_name=from_place_name;
 space_url=data.resources.self.ref;
@@ -1433,6 +1435,9 @@ success : ( function(data){
 //console.log("DATA: "+JSON.stringify(data));
 
 // assigning values to the variables from the received response.
+$("#cat_from_space").text('Change Category in Space');
+$("#cat_from_group").text('Change Category in Group');
+$("#cat_from_project").text('Change Category in Project');
 from_place_name=data.name;
 src_space_name=from_place_name;
 space_url=data.resources.self.ref;
@@ -1753,6 +1758,9 @@ success : ( function(data){
 //console.log("DATA: "+JSON.stringify(data));
 
 // assigning values to the variables from the received response.
+$("#cat_from_space").text('Change Category in Space');
+$("#cat_from_group").text('Change Category in Group');
+$("#cat_from_project").text('Change Category in Project');
 from_place_name=data.name;
 src_space_name=from_place_name;
 space_url=data.resources.self.ref;
