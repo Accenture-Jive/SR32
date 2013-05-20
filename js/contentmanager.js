@@ -770,7 +770,9 @@ function fromPlace()
 // Identifies which space/group/project the user  has chosen the content to copy/move and calls the relevant method.
 var from_place = document.getElementById("from_place");
 var from_sel_place = from_place.options[from_place.selectedIndex].value;
-
+$("#cat_from_group").text('');
+$("#cat_from_group").text('');
+$("#cat_from_project").text('');
 if(from_sel_place=="select_space"){
 src_space_name='';
 dest_space_name='';
