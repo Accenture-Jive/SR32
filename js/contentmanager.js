@@ -2701,8 +2701,31 @@ function filterCheckedUncheckCatgUrl(){
                                 console.log("checkedItemsArray.length = "+checkedItemsArray.length);
                                 alert("uncheckItemArray.length = "+uncheckItemArray.length);
                                 console.log("uncheckItemArray.length = "+uncheckItemArray.length);
+								
+									
+									for(var index=0; index < checkedItemsArray.length;index++) {
+										console.log("checked items : "+checkedItemsArray[index]);
+									}
+									
+									for(var index=0;index < uncheckItemArray.length;index++) {
+										console.log("unchecked items : "+uncheckItemArray[index]);
+									}
+									
+									alert("mainUncheckItems.length = "+mainUncheckItems.length);
+                                console.log("mainUncheckItems.length = "+mainUncheckItems.length);
+                                alert("mainUncheckItems.length = "+mainUncheckItems.length);
+                                console.log("mainUncheckItems.length = "+mainUncheckItems.length);
+								
+									
+									for(var index=0; index < checkedItemsArray.length;index++) {
+										console.log("checked items : "+checkedItemsArray[index]);
+									}
+									alert("uncheckItemArray .length = "+uncheckItemArray.length);
+									for(var index=0;index < uncheckItemArray.length;index++) {
+										console.log("unchecked items : "+uncheckItemArray[index]);
+									}
 		catIndex=0;
-		updateCategoriesForNewContents1();		
+		//updateCategoriesForNewContents1();		
 
 
 		
