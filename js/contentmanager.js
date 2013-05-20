@@ -3593,7 +3593,14 @@ console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
 console.log("Array val: "+addId[arrayIndex]);
 arrayIndex++;
+mainCheckedItems[contentCheckedIndex]=document.getElementById("doc_cb"+index).value;
+contentCheckedIndex++;
+checkFlagItem = true;
 }
+}
+if(checkFlagItem == false && !(selected_cat == '')) {
+	mainUncheckItems[contentUnCheckedIndex] = document.getElementById("doc_cb"+index).value;
+	contentUnCheckedIndex++;
 }
 }
 else if (sel_action_val=='tags')
@@ -3729,10 +3736,15 @@ console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
 console.log("Array val: "+addId[arrayIndex]);
 arrayIndex++;
-
+mainCheckedItems[contentCheckedIndex]=document.getElementById("doc_cb"+index).value;
+contentCheckedIndex++;
+checkFlagItem = true;
 }
 }
-
+if(checkFlagItem == false && !(selected_cat == '')) {
+	mainUncheckItems[contentUnCheckedIndex] = document.getElementById("doc_cb"+index).value;
+	contentUnCheckedIndex++;
+}
 }
 
 else if (sel_action_val=='tags')
