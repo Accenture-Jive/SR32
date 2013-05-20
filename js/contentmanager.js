@@ -2725,6 +2725,52 @@ function filterCheckedUncheckCatgUrl(){
 									for(var index=0;index < mainUncheckItems.length;index++) {
 										console.log("unchecked items : "+mainUncheckItems[index]);
 									}
+									
+									/*Filter the the list */
+		var checkedIndex = 0;
+		var uncheckedIndex = 0;
+		for(var outerIndex=0;outerIndex < checkedItemsArray.length;outerIndex++) {
+			for(var innerIndex=0;innerIndex< mainCheckedItems.length;innerIndex++) {
+				//alert("checkedItemsArray[outerIndex] = mainCheckedItems[innerIndex] :" +checkedItemsArray[outerIndex] == mainCheckedItems[innerIndex]);
+				//alert("checkedItemsArray[outerIndex] = mainCheckedItems[innerIndex] :" +checkedItemsArray[outerIndex] == mainCheckedItems[innerIndex]);
+				if(checkedItemsArray[outerIndex] == mainCheckedItems[innerIndex]) {
+					break;
+				}
+				else {
+					if(innerIndex == (mainCheckedItems.length - 1)) {
+					checkItemArrayUpdated[checkedIndex] = checkedItemsArray[outerIndex];
+					checkedIndex++;
+					}
+					
+				}
+			}
+		}
+		
+		for(var index=0; index < checkItemArrayUpdated.length;index++) {
+			alert("new checked items : "+checkItemArrayUpdated[index]);
+			console.log("new checked items : "+checkItemArrayUpdated[index]);
+		}
+		
+		for(var outerIndex=0;outerIndex < uncheckItemArray.length;outerIndex++) {
+			for(var innerIndex=0;innerIndex< mainUncheckItems.length;innerIndex++) {
+				//alert("checkedItemsArray[outerIndex] = mainCheckedItems[innerIndex] :" +checkedItemsArray[outerIndex] == mainCheckedItems[innerIndex]);
+				if(uncheckItemArray[outerIndex] == mainUncheckItems[innerIndex]) {
+					break;
+				}
+				else {
+					if(innerIndex == (mainUncheckItems.length - 1)) {
+					uncheckedItemArrayUpdated[uncheckedIndex] = uncheckItemArray[outerIndex];
+					uncheckedIndex++;
+					}
+					
+				}
+			}
+		}
+		
+		for(var index=0;index < uncheckedItemArrayUpdated.length;index++) {
+			alert("new unchecked items : "+uncheckedItemArrayUpdated[index]);
+				console.log("new unchecked items : "+uncheckedItemArrayUpdated[index]);
+		}
 		catIndex=0;
 		//updateCategoriesForNewContents1();		
 
