@@ -3836,8 +3836,14 @@ console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
 console.log("Array val: "+addId[arrayIndex]);
 arrayIndex++;
-
+mainCheckedItems[contentCheckedIndex]=document.getElementById("doc_cb"+index).value;
+contentCheckedIndex++;
+checkFlagItem = true;
 }
+}
+if(checkFlagItem == false && !(selected_cat == '')) {
+	mainUncheckItems[contentUnCheckedIndex] = document.getElementById("doc_cb"+index).value;
+	contentUnCheckedIndex++;
 }
 
 }
@@ -3963,10 +3969,15 @@ console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
 console.log("Array val: "+addId[arrayIndex]);
 arrayIndex++;
-
+mainCheckedItems[contentCheckedIndex]=document.getElementById("doc_cb"+index).value;
+contentCheckedIndex++;
+checkFlagItem = true;
 }
 }
-
+if(checkFlagItem == false && !(selected_cat == '')) {
+	mainUncheckItems[contentUnCheckedIndex] = document.getElementById("doc_cb"+index).value;
+	contentUnCheckedIndex++;
+}
 }
 else if (sel_action_val=='tags')
 {
@@ -4091,8 +4102,14 @@ console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
 console.log("Array val: "+addId[arrayIndex]);
 arrayIndex++;
-
+mainCheckedItems[contentCheckedIndex]=document.getElementById("doc_cb"+index).value;
+contentCheckedIndex++;
+checkFlagItem = true;
 }
+}
+if(checkFlagItem == false && !(selected_cat == '')) {
+	mainUncheckItems[contentUnCheckedIndex] = document.getElementById("doc_cb"+index).value;
+	contentUnCheckedIndex++;
 }
 
 }
@@ -4217,8 +4234,14 @@ console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
 console.log("Array val: "+addId[arrayIndex]);
 arrayIndex++;
-
+mainCheckedItems[contentCheckedIndex]=document.getElementById("doc_cb"+index).value;
+contentCheckedIndex++;
+checkFlagItem = true;
 }
+}
+if(checkFlagItem == false && !(selected_cat == '')) {
+	mainUncheckItems[contentUnCheckedIndex] = document.getElementById("doc_cb"+index).value;
+	contentUnCheckedIndex++;
 }
 
 }
@@ -4971,9 +4994,9 @@ if (pos!=-1)
 {
 // redirects to target place when the final message is received.
 document.getElementById("frame1").contentDocument.body.innerHTML = "Copying in Progress.<br>Please leave this window open until the copying process has been completed.<br><br><span id='mySpan' style='font-weight:bold;'>"+str.fontcolor("#3778C7")+"</span>";
-$("#stylized").fadeOut(5000,function(){
+/*$("#stylized").fadeOut(5000,function(){
 window.location = redirection_url+'/content';
-});
+});*/
 }
 }
 else
