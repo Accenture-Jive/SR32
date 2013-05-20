@@ -3588,19 +3588,19 @@ if (categg1[ind]==selected_cat)
 {
 console.log("categg1= "+categg1);
 console.log("selected_cat= "+selected_cat);
-console.log(document.getElementById("file_cb"+index).value);
+//console.log(document.getElementById("file_cb"+index).value);
 var temp_id="file_cb"+index;
 console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
 console.log("Array val: "+addId[arrayIndex]);
 arrayIndex++;
-mainCheckedItems[contentCheckedIndex]=document.getElementById("file_cb"+index).value;
+mainCheckedItems[contentCheckedIndex]=postFiles.fileUrl;
 contentCheckedIndex++;
 checkFlagItem = true;
 }
 }
 if(checkFlagItem == false && !(selected_cat == '')) {
-	mainUncheckItems[contentUnCheckedIndex] = document.getElementById("file_cb"+index).value;
+	mainUncheckItems[contentUnCheckedIndex] = postFiles.fileUrl;
 	contentUnCheckedIndex++;
 }
 }
@@ -3620,7 +3620,7 @@ if (tags[ind]==selected_tag)
 {
 console.log("tags= "+tags);
 console.log("selected_tag= "+selected_tag);
-console.log(document.getElementById("file_cb"+index).value);
+//console.log(document.getElementById("file_cb"+index).value);
 var temp_id="file_cb"+index;
 console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
@@ -3731,19 +3731,19 @@ if (categg2[ind]==selected_cat)
 {
 console.log("categg2= "+categg2);
 console.log("selected_cat= "+selected_cat);
-console.log(document.getElementById("blog_cb"+index).value);
+//console.log(document.getElementById("blog_cb"+index).value);
 var temp_id="blog_cb"+index;
 console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
 console.log("Array val: "+addId[arrayIndex]);
 arrayIndex++;
-mainCheckedItems[contentCheckedIndex]=document.getElementById("blog_cb"+index).value;
+mainCheckedItems[contentCheckedIndex]=postBlogs.fileUrl;
 contentCheckedIndex++;
 checkFlagItem = true;
 }
 }
 if(checkFlagItem == false && !(selected_cat == '')) {
-	mainUncheckItems[contentUnCheckedIndex] = document.getElementById("blog_cb"+index).value;
+	mainUncheckItems[contentUnCheckedIndex] = postBlogs.fileUrl;
 	contentUnCheckedIndex++;
 }
 }
@@ -3764,7 +3764,7 @@ if (tags[ind]==selected_tag)
 {
 console.log("tags= "+tags);
 console.log("selected_tag= "+selected_tag);
-console.log(document.getElementById("blog_cb"+index).value);
+//console.log(document.getElementById("blog_cb"+index).value);
 var temp_id="blog_cb"+index;
 console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
@@ -3866,19 +3866,19 @@ if (categg3[ind]==selected_cat)
 {
 console.log("categg3= "+categg3);
 console.log("selected_cat= "+selected_cat);
-console.log(document.getElementById("doc_cb"+index).value);
+//console.log(document.getElementById("doc_cb"+index).value);
 var temp_id="doc_cb"+index;
 console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
 console.log("Array val: "+addId[arrayIndex]);
 arrayIndex++;
-mainCheckedItems[contentCheckedIndex]=document.getElementById("doc_cb"+index).value;
+mainCheckedItems[contentCheckedIndex]=postDoc.docUrl;
 contentCheckedIndex++;
 checkFlagItem = true;
 }
 }
 if(checkFlagItem == false && !(selected_cat == '')) {
-	mainUncheckItems[contentUnCheckedIndex] = document.getElementById("doc_cb"+index).value;
+	mainUncheckItems[contentUnCheckedIndex] = postDoc.docUrl;
 	contentUnCheckedIndex++;
 }
 
@@ -3899,7 +3899,7 @@ if (tags[ind]==selected_tag)
 {
 console.log("tags= "+tags);
 console.log("selected_tag= "+selected_tag);
-console.log(document.getElementById("doc_cb"+index).value);
+//console.log(document.getElementById("doc_cb"+index).value);
 var temp_id="doc_cb"+index;
 console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
@@ -3999,19 +3999,19 @@ if (categg4[ind]==selected_cat)
 {
 console.log("categg4= "+categg4);
 console.log("selected_cat= "+selected_cat);
-console.log(document.getElementById("disc_cb"+index).value);
+//console.log(document.getElementById("disc_cb"+index).value);
 var temp_id="disc_cb"+index;
 console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
 console.log("Array val: "+addId[arrayIndex]);
 arrayIndex++;
-mainCheckedItems[contentCheckedIndex]=document.getElementById("disc_cb"+index).value;
+mainCheckedItems[contentCheckedIndex]=postDisc.discUrl;
 contentCheckedIndex++;
 checkFlagItem = true;
 }
 }
 if(checkFlagItem == false && !(selected_cat == '')) {
-	mainUncheckItems[contentUnCheckedIndex] = document.getElementById("disc_cb"+index).value;
+	mainUncheckItems[contentUnCheckedIndex] = postDisc.discUrl;
 	contentUnCheckedIndex++;
 }
 }
@@ -4031,7 +4031,7 @@ if (tags[ind]==selected_tag)
 {
 console.log("tags= "+tags);
 console.log("selected_tag= "+selected_tag);
-console.log(document.getElementById("disc_cb"+index).value);
+//console.log(document.getElementById("disc_cb"+index).value);
 var temp_id="disc_cb"+index;
 console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
@@ -4132,19 +4132,19 @@ if (categg5[ind]==selected_cat)
 {
 console.log("categg5= "+categg5);
 console.log("selected_cat= "+selected_cat);
-console.log(document.getElementById("idea_cb"+index).value);
+//console.log(document.getElementById("idea_cb"+index).value);
 var temp_id="idea_cb"+index;
 console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
 console.log("Array val: "+addId[arrayIndex]);
 arrayIndex++;
-mainCheckedItems[contentCheckedIndex]=document.getElementById("idea_cb"+index).value;
+mainCheckedItems[contentCheckedIndex]=postIdea.ideaUrl;
 contentCheckedIndex++;
 checkFlagItem = true;
 }
 }
 if(checkFlagItem == false && !(selected_cat == '')) {
-	mainUncheckItems[contentUnCheckedIndex] = document.getElementById("idea_cb"+index).value;
+	mainUncheckItems[contentUnCheckedIndex] = postIdea.ideaUrl;
 	contentUnCheckedIndex++;
 }
 
@@ -4165,7 +4165,7 @@ if (tags[ind]==selected_tag)
 {
 console.log("tags= "+tags);
 console.log("selected_tag= "+selected_tag);
-console.log(document.getElementById("idea_cb"+index).value);
+//console.log(document.getElementById("idea_cb"+index).value);
 var temp_id="idea_cb"+index;
 console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
@@ -4264,19 +4264,19 @@ if (categg6[ind]==selected_cat)
 {
 console.log("categg6= "+categg6);
 console.log("selected_cat= "+selected_cat);
-console.log(document.getElementById("poll_cb"+index).value);
+//console.log(document.getElementById("poll_cb"+index).value);
 var temp_id="poll_cb"+index;
 console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
 console.log("Array val: "+addId[arrayIndex]);
 arrayIndex++;
-mainCheckedItems[contentCheckedIndex]=document.getElementById("poll_cb"+index).value;
+mainCheckedItems[contentCheckedIndex]=postPolls.fileUrl;
 contentCheckedIndex++;
 checkFlagItem = true;
 }
 }
 if(checkFlagItem == false && !(selected_cat == '')) {
-	mainUncheckItems[contentUnCheckedIndex] = document.getElementById("poll_cb"+index).value;
+	mainUncheckItems[contentUnCheckedIndex] = postPolls.fileUrl;
 	contentUnCheckedIndex++;
 }
 
