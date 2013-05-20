@@ -2711,8 +2711,8 @@ function filterCheckedUncheckCatgUrl(){
 										console.log("unchecked items : "+uncheckItemArray[index]);
 									}
 									
-									alert("mainUncheckItems.length = "+mainUncheckItems.length);
-                                console.log("mainUncheckItems.length = "+mainUncheckItems.length);
+									alert("mainCheckedItems.length = "+mainCheckedItems.length);
+                                console.log("mainCheckedItems.length = "+mainCheckedItems.length);
                                 alert("mainUncheckItems.length = "+mainUncheckItems.length);
                                 console.log("mainUncheckItems.length = "+mainUncheckItems.length);
 								
