@@ -1042,7 +1042,7 @@ getDiscussions(space_url);
 getIdeas(space_url);
 getPolls(space_url);
 getBlogs(blog_url);
-alert("after category Selected "+addId.l
+alert("after category Selected "+addId.length);
 }
 
 }
