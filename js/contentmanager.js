@@ -3349,7 +3349,7 @@ function filterCheckedUncheckTagUrl(){
 			//alert("new unchecked items : "+uncheckedItemArrayUpdated[index]);
 				console.log("new unchecked update items : "+uncheckedItemArrayUpdated[index]);
 		}
-		        //updateTagsForNewContents1();
+		        updateTagsForNewContents1();
 		
 		}
 
