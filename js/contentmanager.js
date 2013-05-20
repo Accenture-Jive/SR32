@@ -2994,6 +2994,7 @@ else {
 		$('#cat_from_space').css("margin-top", "-300px");
 		$('#cat_from_group').css("margin-top", "-300px");
 		$('#cat_from_project').css("margin-top", "-300px");
+		$('#cat_select_items_button').css("margin-top", "-190px");
 		if($("#cat_from_space").text() !='Change Category in Space')
 			$("#cat_from_space").show();
 			else 
