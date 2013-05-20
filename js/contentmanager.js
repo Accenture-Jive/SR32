@@ -770,9 +770,7 @@ function fromPlace()
 // Identifies which space/group/project the user  has chosen the content to copy/move and calls the relevant method.
 var from_place = document.getElementById("from_place");
 var from_sel_place = from_place.options[from_place.selectedIndex].value;
-$("#cat_from_group").text('');
-$("#cat_from_group").text('');
-$("#cat_from_project").text('');
+
 if(from_sel_place=="select_space"){
 src_space_name='';
 dest_space_name='';
@@ -907,7 +905,9 @@ function catFromPlace()
 // Identifies which space/group/project user has chosen to edit categories into and calls the appropriate method.
 var cat_place = document.getElementById("cat_place");
 var cat_sel_place = cat_place.options[cat_place.selectedIndex].value;
-
+$("#cat_from_group").text('');
+$("#cat_from_group").text('');
+$("#cat_from_project").text('');
 if(cat_sel_place=="select_space"){
 fromSpaceRequest();
 document.getElementById("copyTo").style.visibility="hidden";
