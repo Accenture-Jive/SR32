@@ -1022,7 +1022,9 @@ catSelection = true;
 arrayIndex=0;
 //put the selected category to further use
 selected_cat=document.getElementById('cat_sel').value;
-
+var str='';
+if(document.getElementById("frame1") != null)
+document.getElementById("frame1").contentDocument.body.innerHTML = "<br><br><span id='mySpan' style='font-weight:bold;'>"+str.fontcolor("#3778C7")+"</span>";
 if (selected_cat=="val1")
 {
 $("#cat_select_items_button").hide();
@@ -1033,7 +1035,6 @@ else
 $("#catTo").css("margin-top", parseInt($("#cat_sel").css("margin-top"))+parseInt($("#cat_sel").css("height"))+10+'px');
 $("#cat_select_items_button").css("margin-top", parseInt($("#catTo").css("margin-top"))+parseInt($("#catTo").css("height"))+10+'px');
 $("#cat_select_items_button").show();
-$("#selected_items").hide();
 $("#catTo").show();
 getDocs(space_url);
 getFiles(space_url);
