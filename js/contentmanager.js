@@ -4297,7 +4297,7 @@ if (tags[ind]==selected_tag)
 {
 console.log("tags= "+tags);
 console.log("selected_tag= "+selected_tag);
-console.log(document.getElementById("poll_cb"+index).value);
+//console.log(document.getElementById("poll_cb"+index).value);
 var temp_id="poll_cb"+index;
 console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
