@@ -1056,6 +1056,7 @@ var contentCheckedIndex =0;
 var contentUnCheckedIndex =0;
 var mainCheckedItems = new Array();
 var mainUncheckItems = new Array();
+addId=new Array();
 catSelection = true;
 var str='';
 if(document.getElementById("frame1") != null)
@@ -3824,7 +3825,14 @@ console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
 console.log("Array val: "+addId[arrayIndex]);
 arrayIndex++;
+mainCheckedItems[contentCheckedIndex]=postBlogs.fileUrl;
+contentCheckedIndex++;
+checkFlagItem = true;
 }
+}
+if(checkFlagItem == false && !(selected_cat == '')) {
+	mainUncheckItems[contentUnCheckedIndex] = postBlogs.fileUrl;
+	contentUnCheckedIndex++;
 }
 }
 else
@@ -3959,7 +3967,14 @@ console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
 console.log("Array val: "+addId[arrayIndex]);
 arrayIndex++;
+mainCheckedItems[contentCheckedIndex]=postDoc.docUrl;
+contentCheckedIndex++;
+checkFlagItem = true;
 }
+}
+if(checkFlagItem == false && !(selected_cat == '')) {
+	mainUncheckItems[contentUnCheckedIndex] = postDoc.docUrl;
+	contentUnCheckedIndex++;
 }
 }
 else
@@ -4091,7 +4106,14 @@ console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
 console.log("Array val: "+addId[arrayIndex]);
 arrayIndex++;
+mainCheckedItems[contentCheckedIndex]=postDisc.discUrl;
+contentCheckedIndex++;
+checkFlagItem = true;
 }
+}
+if(checkFlagItem == false && !(selected_cat == '')) {
+	mainUncheckItems[contentUnCheckedIndex] = postDisc.discUrl;
+	contentUnCheckedIndex++;
 }
 }
 else
@@ -4225,7 +4247,14 @@ console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
 console.log("Array val: "+addId[arrayIndex]);
 arrayIndex++;
+mainCheckedItems[contentCheckedIndex]=postIdea.ideaUrl;
+contentCheckedIndex++;
+checkFlagItem = true;
 }
+}
+if(checkFlagItem == false && !(selected_cat == '')) {
+	mainUncheckItems[contentUnCheckedIndex] = postIdea.ideaUrl;
+	contentUnCheckedIndex++;
 }
 }
 else
@@ -4357,7 +4386,14 @@ console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
 console.log("Array val: "+addId[arrayIndex]);
 arrayIndex++;
+mainCheckedItems[contentCheckedIndex]=postPolls.fileUrl;
+contentCheckedIndex++;
+checkFlagItem = true;
 }
+}
+if(checkFlagItem == false && !(selected_cat == '')) {
+	mainUncheckItems[contentUnCheckedIndex] = postPolls.fileUrl;
+	contentUnCheckedIndex++;
 }
 }
 else
