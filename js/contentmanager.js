@@ -4675,6 +4675,20 @@ function showTab(){
 // actions when user choses to select content he wants to copy/move/delete/download.
 
 //checking of checkboxes
+ contentCheckedIndex =0;
+ contentUnCheckedIndex =0;
+ mainCheckedItems = new Array();
+ mainUncheckItems = new Array();
+catSelection = true;
+addId=new Array();
+arrayIndex=0;
+getDocs(space_url);
+getFiles(space_url);
+getDiscussions(space_url);
+getIdeas(space_url);
+getPolls(space_url);
+getBlogs(blog_url);
+
 console.log("array Len: "+addId.length);
  for (var i=0; i<addId.length; i++) 
  {
