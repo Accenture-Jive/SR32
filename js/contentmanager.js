@@ -2717,12 +2717,12 @@ function filterCheckedUncheckCatgUrl(){
                                 console.log("mainUncheckItems.length = "+mainUncheckItems.length);
 								
 									
-									for(var index=0; index < checkedItemsArray.length;index++) {
-										console.log("checked items : "+checkedItemsArray[index]);
+									for(var index=0; index < mainCheckedItems.length;index++) {
+										console.log("checked items : "+mainCheckedItems[index]);
 									}
-									alert("uncheckItemArray .length = "+uncheckItemArray.length);
-									for(var index=0;index < uncheckItemArray.length;index++) {
-										console.log("unchecked items : "+uncheckItemArray[index]);
+									
+									for(var index=0;index < mainUncheckItems.length;index++) {
+										console.log("unchecked items : "+mainUncheckItems[index]);
 									}
 		catIndex=0;
 		//updateCategoriesForNewContents1();		
