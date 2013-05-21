@@ -5267,6 +5267,7 @@ $("#to_label").show();
 
 $("#from_place").show();
 $("#to_place").show();
+$("#button_div").show();
 $("#select_items_button").show();
 $("#copyTo").text("Copy this:");
 
