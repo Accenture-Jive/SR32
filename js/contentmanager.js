@@ -5540,10 +5540,12 @@ function populateContent(){
 // fetches the files from the selected space/group/project using the SPACE_URL.
 addId=new Array();
 arrayIndex=0;
-var contentCheckedIndex =0;
-var contentUnCheckedIndex =0;
+ contentCheckedIndex =0;
+ contentUnCheckedIndex =0;
  mainCheckedItems = new Array();
  mainUncheckItems = new Array();
+ alert("mainCheckedItems.length = "+mainCheckedItems.length);
+ alert("mainUncheckItems.length = "+mainUncheckItems.length);
 alert("Please wait , as this operation may take some time . Press ok");
 osapi.jive.corev3.contents.get({
 type : 'file',
