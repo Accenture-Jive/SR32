@@ -5677,12 +5677,12 @@ files_row=files_row+'</table>';
 
 // writing the files table to the files tab.
 document.getElementById("files_div").innerHTML=files_row;	
-populateBlogContent(blog_url);
+populateBlogContent(space_url,blog_url);
 });
 
 }
 
-function populateBlogContent(blog_url) {
+function populateBlogContent(space_url,blog_url) {
 
 // getting the blogs from the selected space/group/project using the BLOG_URL.
 
