@@ -5542,8 +5542,8 @@ addId=new Array();
 arrayIndex=0;
 var contentCheckedIndex =0;
 var contentUnCheckedIndex =0;
-var mainCheckedItems = new Array();
-var mainUncheckItems = new Array();
+ mainCheckedItems = new Array();
+ mainUncheckItems = new Array();
 alert("Please wait , as this operation may take some time . Press ok");
 osapi.jive.corev3.contents.get({
 type : 'file',
