@@ -5529,7 +5529,12 @@ getBlogs(blog_url);
 
 
 //-----------------------------Populate content---------------------
-function populateContent(space_url,blog_url){
+function populateContent1() {
+console.log("Space url : "+space_url);
+console.log("blog url : "+blog_url);
+//populateContent();
+}
+function populateContent(){
 // fetches the files from the selected space/group/project using the SPACE_URL.
 addId=new Array();
 arrayIndex=0;
