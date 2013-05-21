@@ -3571,7 +3571,7 @@ if(catIndex < uncheckedItemArrayUpdated.length) {
 				//toTagsArray = toUpdateTags.split(",");
 				var tempIndex =0;
 				for(var index=0;index < toUpdateTags.length;index++) {
-						if(selected_cat != toUpdateTags[index]){
+						if(selected_tag != toUpdateTags[index]){
 						//	alert("---cc-"+toUpdateTags[index]);
 							console.log("---cc-"+toUpdateTags[index]);
 							updatedCategoryList[tempIndex]=toUpdateTags[index];
