@@ -4817,7 +4817,7 @@ Grp_idea_json='';
 Grp_disc_json='';
 Grp_blog_json='';
 Grp_poll_json='';
-$('#selected_items').css("margin-top", "-75px");
+$('#selected_items').css("margin-top", "-45px");
 $("#button_div").hide();
 document.getElementById("copyTo").style.visibility="visible";
 document.getElementById("start_copying_button").disabled = false;
