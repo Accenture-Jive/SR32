@@ -5531,7 +5531,9 @@ getBlogs(blog_url);
 //-----------------------------Populate content---------------------
 function populateContent(space_url,blog_url){
 // fetches the files from the selected space/group/project using the SPACE_URL.
-
+addId=new Array();
+arrayIndex=0;
+alert("Please wait , as this openration may take some time . Press ok");
 osapi.jive.corev3.contents.get({
 type : 'file',
 fields : '@all',
@@ -6375,7 +6377,7 @@ poll_row = poll_row + '<tr>'+
 }
 poll_row=poll_row+'</table>';	
 document.getElementById("poll_div").innerHTML=poll_row;	
-
+javascript:showTab();javascript:highlightTab();
 });
 }
 //--End
