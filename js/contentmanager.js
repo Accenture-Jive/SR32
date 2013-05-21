@@ -5531,6 +5531,8 @@ getBlogs(blog_url);
 //-----------------------------Populate content---------------------
 function populateContent(space_url,blog_url){
 // fetches the files from the selected space/group/project using the SPACE_URL.
+addId=new Array();
+arrayIndex=0;
 alert("Please wait , as this openration may take some time");
 osapi.jive.corev3.contents.get({
 type : 'file',
