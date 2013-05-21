@@ -2922,17 +2922,17 @@ if(catIndex < checkItemArrayUpdated.length) {
 						//alert("---cc-"+toUpdateCategories[index]);
 						//console.log("---cc-"+toUpdateCategories[index]);
 						updatedCategoryList[tempIndex]=toUpdateCategories[index];
-						if(toUpdateCategories[index] == selected_cat) {
+						/*if(toUpdateCategories[index] == selected_cat) {
 						isCategoryExisting = true;
-						}
+						}*/
 						
 						
 				}
 			//	alert("isCategoryExisting = "+isCategoryExisting);
-					if(!isCategoryExisting){
+					/*if(!isCategoryExisting){
 						updatedCategoryList[tempIndex]=selected_cat;
 						isCategoryExisting = false;
-					}
+					}*/
 					
 				for(var index=0;index < updatedCategoryList.length;index++,tempIndex++) {
 					//console.log("VVVV-- "+updatedCategoryList[index]);
