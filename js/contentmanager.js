@@ -3284,15 +3284,15 @@ function filterCheckedUncheckTagUrl(){
       console.log("new unchecked items : "+uncheckItemArray[index]);
     }
 
-                               alert("checkedItemsArray.length = "+checkedItemsArray.length);
+                           //    alert("checkedItemsArray.length = "+checkedItemsArray.length);
                                 //console.log("checkedItemsArray.length = "+checkedItemsArray.length);
-                                alert("uncheckItemArray.length = "+uncheckItemArray.length);
+                           //     alert("uncheckItemArray.length = "+uncheckItemArray.length);
                                 //console.log("uncheckItemArray.length = "+uncheckItemArray.length);
 				catIndex = 0;
 				dotIndex = 0;
-	alert("mainCheckedItems.length = "+mainCheckedItems.length);
+	//alert("mainCheckedItems.length = "+mainCheckedItems.length);
                                 console.log("mainCheckedItems.length = "+mainCheckedItems.length);
-                                alert("mainUncheckItems.length = "+mainUncheckItems.length);
+                           //     alert("mainUncheckItems.length = "+mainUncheckItems.length);
                                 console.log("mainUncheckItems.length = "+mainUncheckItems.length);
 								
 									
@@ -3353,9 +3353,9 @@ function filterCheckedUncheckTagUrl(){
 			}
 		}
 		
-		alert("checkItemArrayUpdated.length = "+checkItemArrayUpdated.length);
+		//alert("checkItemArrayUpdated.length = "+checkItemArrayUpdated.length);
 		console.log("checkItemArrayUpdated.length = "+checkItemArrayUpdated.length);
-		alert("uncheckedItemArrayUpdated.length = "+uncheckedItemArrayUpdated.length);
+	//	alert("uncheckedItemArrayUpdated.length = "+uncheckedItemArrayUpdated.length);
 		console.log("uncheckedItemArrayUpdated.length = "+uncheckedItemArrayUpdated.length);
 								
 		
@@ -3595,8 +3595,30 @@ if(catIndex < uncheckedItemArrayUpdated.length) {
 
 }
 else {
+			for(var index = 0;index < errorReferenceCatArray.length;index++) {
+              console.log("Could Not Reference "+errorReferenceCatArray[index]);
+            } 
 
-			alert("inside else ");
+            for(var index = 0;index < errorDeReferenceCatArray.length;index++) {
+              console.log("Could Not De-Reference "+errorDeReferenceCatArray[index]);
+            }  
+			if(errorReferenceCatArray.length > 0 || errorDeReferenceCatArray.length>0) {
+				alert('Message:\n\nYou have insufficient rights to update all the content selected.\n\nYou need to have group administration or space moderation rights to update content with restricted authorship (e.g. discussions started by other users).\n\nPlease contact your group or space admin to get the necessary rights.');
+				$('#cmdu').hide();
+				$('#src_place').show();
+				$('#cat_place').show();
+				$('#selCat').show();
+				$('#cat_sel').show();
+				$('#catTo').show();
+				$('#catTo').text('Manage content for this category:');
+				$('#cat_select_items_button').show();
+				$('#cat_place').css("margin-left", "250px");
+				$('#cat_sel').css("margin-left", "250px");
+				$('#selected_items').hide();
+				$('#catTo').css("margin-top", "230px");
+			}
+			else {
+			//alert("inside else ");
 			$("#cmdu").hide();
 			$("#src_place").show();
 			$("#tag_place").show();
@@ -3643,6 +3665,7 @@ else {
 		/*document.getElementById("frame1").contentDocument.body.innerHTML = "Updating is in Progress.<br>Please leave this window open until the updating process has been completed.<br><br><span id='mySpan' style='font-weight:bold;'>"+"'Moving completed. Please click   <a href='+tempRedirectionUrl+'>here </a>  for the new location of your content.'.fontcolor("#3778C7")+"</span>";*/
 		var str='Updating tags is completed. Please click   <a href='+tempRedirectionUrl+'>here </a>  for the new location of your content.';
 		document.getElementById("frame1").contentDocument.body.innerHTML = "Note.<br><br><span id='mySpan' style='font-weight:bold;'>"+str.fontcolor("#3778C7")+"</span>";
+		}
 		
 		
 }
