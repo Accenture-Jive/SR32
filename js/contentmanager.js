@@ -5269,7 +5269,6 @@ $("#from_place").show();
 $("#to_place").show();
 $("#button_div").show();
 $('#select_items_button').css("margin-top", "20px");
-$('#select_items').css("margin-top", "-150px");
 $("#select_items_button").show();
 $("#copyTo").text("Copy this:");
 
