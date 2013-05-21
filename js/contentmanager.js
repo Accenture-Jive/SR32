@@ -2668,6 +2668,11 @@ function filterCheckedUncheckCatgUrl(){
  uncheckItemArray = new Array();
  checkItemArrayUpdated = new Array();
  uncheckedItemArrayUpdated = new Array();
+ errorReferenceCatArray = new Array();
+ errorReferenceCatArray = new Array();
+ referenceCatArrayIndex = 0;
+ deReferenceCatArrayIndex = 0;
+ 
 	              contentTypeCheckBoxIdArray[0] = '#filesTable input[type=checkbox]';
                   contentTypeCheckBoxIdArray[1] = '#docsTable input[type=checkbox]';
                   contentTypeCheckBoxIdArray[2] = '#ideaTable input[type=checkbox]';
@@ -3237,6 +3242,10 @@ function filterCheckedUncheckTagUrl(){
  uncheckedItemArrayUpdated = new Array();
   checkedItemsArray = new Array();
  uncheckItemArray = new Array();
+  errorReferenceCatArray = new Array();
+ errorReferenceCatArray = new Array();
+ referenceCatArrayIndex = 0;
+ deReferenceCatArrayIndex = 0;
 
 	var contentTypeCheckBoxIdArray = new Array();
 
