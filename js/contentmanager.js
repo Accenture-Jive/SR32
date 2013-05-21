@@ -5532,7 +5532,7 @@ getBlogs(blog_url);
 function populateContent1() {
 console.log("Space url : "+space_url);
 console.log("blog url : "+blog_url);
-//populateContent();
+populateContent(space_url,blog_url);
 }
 function populateContent(){
 // fetches the files from the selected space/group/project using the SPACE_URL.
