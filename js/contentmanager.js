@@ -2795,7 +2795,7 @@ function filterCheckedUncheckCatgUrl(){
 				console.log("new unchecked update items : "+uncheckedItemArrayUpdated[index]);
 		}
 		catIndex=0;
-		updateCategoriesForNewContents1();		
+		//updateCategoriesForNewContents1();		
 
 
 		
