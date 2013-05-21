@@ -3604,18 +3604,22 @@ else {
             }  
 			if(errorReferenceCatArray.length > 0 || errorDeReferenceCatArray.length>0) {
 				alert('Message:\n\nYou have insufficient rights to update all the content selected.\n\nYou need to have group administration or space moderation rights to update content with restricted authorship (e.g. discussions started by other users).\n\nPlease contact your group or space admin to get the necessary rights.');
-				$('#cmdu').hide();
-				$('#src_place').show();
-				$('#cat_place').show();
-				$('#selCat').show();
-				$('#cat_sel').show();
-				$('#catTo').show();
-				$('#catTo').text('Manage content for this category:');
-				$('#cat_select_items_button').show();
-				$('#cat_place').css("margin-left", "250px");
-				$('#cat_sel').css("margin-left", "250px");
-				$('#selected_items').hide();
-				$('#catTo').css("margin-top", "230px");
+				$("#cmdu").hide();
+				$("#src_place").show();
+				$("#tag_place").show();
+				$('#tag_place').css("margin-top", "-235px");
+				$('#tag_place').css("margin-left", "250px");
+				$("#tag_from_project").hide();
+				$('#selTag').css("margin-top", "-200px");
+				$('#selTag').css("margin-left", "200px");
+				$("#selTag").show();
+				$('#tag_sel').css("margin-top", "-190px");
+				$('#tag_sel').css("margin-left", "250px");
+				$("#tag_sel").show();
+				$('#add_tag_button').css("margin-top", "-190px");
+				$('#add_tag_button').css("margin-left", "390px");
+				$("#add_tag_button").show();
+				
 			}
 			else {
 			//alert("inside else ");
