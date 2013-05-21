@@ -2664,6 +2664,8 @@ function filterCheckedUncheckCatgUrl(){
 		
 	function filterCheckedUncheckCatgUrl1(){
 	var contentTypeCheckBoxIdArray = new Array();
+	  checkedItemsArray = new Array();
+ uncheckItemArray = new Array();
  checkItemArrayUpdated = new Array();
  uncheckedItemArrayUpdated = new Array();
 	              contentTypeCheckBoxIdArray[0] = '#filesTable input[type=checkbox]';
@@ -5538,6 +5540,10 @@ function populateContent(){
 // fetches the files from the selected space/group/project using the SPACE_URL.
 addId=new Array();
 arrayIndex=0;
+var contentCheckedIndex =0;
+var contentUnCheckedIndex =0;
+var mainCheckedItems = new Array();
+var mainUncheckItems = new Array();
 alert("Please wait , as this operation may take some time . Press ok");
 osapi.jive.corev3.contents.get({
 type : 'file',
