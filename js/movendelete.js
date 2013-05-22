@@ -339,7 +339,11 @@ if(movendeleteIndex < totalContentSelfUrlArray.length) {
 				
 			
 				contentMoveResponseObj.categories = updatedCategoryList;
+				if(contentMoveResponseObj.type="post") {
+				contentMoveResponseObj.parent=to_place_blog_url1;
+				}else{
 				contentMoveResponseObj.parent=targetUrl;
+				}
 				contentMoveResponseObj.update().execute(function(contentUpdateResponse){
 				//alert(JSON.stringify(contentUpdateResponse));
 				console.log("UPDated -- "+JSON.stringify(contentUpdateResponse));
