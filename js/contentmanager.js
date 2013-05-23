@@ -5556,7 +5556,7 @@ $("#dwnTo").text("Downloading this:");
 
 document.getElementById("dwnloadDataSend").value=Grp_file_json;
 document.getElementById("logged_user_download").value=loggedUser;
-
+dataRefreshiframe();
 // submits the form to server for processing download.
 document.getElementById("form3").submit();
 var strDwnload="Closing this browser window will abort the operation.";
@@ -5565,7 +5565,7 @@ var ieSpan='<span id="ieSpan" style="font-family:Tahoma;font-size:12px;font-colo
 '<span id="ieSpan2" style="font-weight:bold;">'+strDwnload.fontcolor("#3778C7")+'</span>';
 
 document.getElementById("selected_items").innerHTML=ieSpan;
-dataRefreshiframe();
+
 }
 
 
