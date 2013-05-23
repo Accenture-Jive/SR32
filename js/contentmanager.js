@@ -982,7 +982,8 @@ uri: space_url
 }
 
 function tagtest() {
-	osapi.jive.corev3.places.get({
+alert("here also");
+	osapi.jive.corev3.contents.get({
 	uri: space_url
 }).execute(onContentFetchForTags);
 }
