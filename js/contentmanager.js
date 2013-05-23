@@ -2946,7 +2946,7 @@ if(catIndex < checkItemArrayUpdated.length) {
 				}
 				
 				//console.log("toUpdateCategories = "+toUpdateCategories);
-				
+				alert("Title = "+contentCatResponseObj.subject);
 				contentCatResponseObj.categories = updatedCategoryList;
 				contentCatResponseObj.update().execute(function(catUpdateResponse){
 				
