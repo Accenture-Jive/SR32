@@ -31,6 +31,7 @@ dest_space_name=dest_space_name1;
 redirection_url=redirection_url1;
 source_html_url=source_html_url1;
 src_space_name=src_space_name1;
+to_place_blog_url = to_place_blog_url1;
 browserName=browserName1;
 alert("redirection_url = "+redirection_url);
 finalurl=redirection_url+'/content';
@@ -144,10 +145,10 @@ document.getElementById("frame1").contentDocument.body.style.fontSize = "12px";
 document.getElementById("frame1").contentDocument.body.style.color='Grey';
 document.getElementById("frame1").contentDocument.body.innerHTML = str+"in Progress.<br>Please leave this window open until the "+str+"process has been completed.<br><br><span id='mySpan' style='font-weight:bold;'>"+str2.fontcolor("#3778C7")+"</span>";	
 }
-alert("totalContentSelfUrlArray.length = "+totalContentSelfUrlArray.length);
+
 targetUrl = target_groupurl;
 movendeleteIndex = 0;
-alert("finalurl = "+finalurl);
+
 if(globalAction == 'move'){
 movenContents();
 }
