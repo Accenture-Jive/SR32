@@ -5584,7 +5584,7 @@ osapi.http.get({
 function dataRefreshFrameResponse(response) 
 {
 	var str = response.content;
-	if(str == ''){
+	if(str == '' || str == 'undefined'){
 		dataRefreshiframe();
 	}else {
 	alert("Into else part");
