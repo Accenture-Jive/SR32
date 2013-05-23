@@ -5587,7 +5587,7 @@ function dataRefreshFrameResponse(response)
 	if(str == ''){
 		dataRefreshiframe();
 	}
-	setTimeout("dataRefreshiframe()",1000); 
+	//setTimeout("dataRefreshiframe()",1000); 
 	var compare='DOWNLOAD READY';
 	var pos=str.indexOf(compare);
 	if (pos!=-1)
