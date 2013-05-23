@@ -985,10 +985,7 @@ function tagtest() {
 osapi.jive.corev3.places.get({
 uri: space_url
 }).execute(function(placeResponse){
-alert("here also");
-	osapi.jive.corev3.contents.get({
-	uri: placeResponse.resources.contents.ref;
-}).execute(onContentFetchForTags);});
+console.log("placeResponse = "+JSON.stringify(placeResponse)});
 }
 
 function onContentFetchForTags(response) {
