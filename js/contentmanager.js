@@ -4836,6 +4836,9 @@ Grp_idea_json='';
 Grp_disc_json='';
 Grp_blog_json='';
 Grp_poll_json='';
+if(sel_action_val == "download") 
+$('#selected_items').css("margin-top", "95px");
+else
 $('#selected_items').css("margin-top", "-10px");
 $("#button_div").hide();
 document.getElementById("copyTo").style.visibility="visible";
