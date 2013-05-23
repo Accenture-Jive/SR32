@@ -345,7 +345,7 @@ if(movendeleteIndex < totalContentSelfUrlArray.length) {
 				contentMoveResponseObj.subject = title;
 				contentMoveResponseObj.categories = updatedCategoryList;
 				if(contentMoveResponseObj.type="post") {
-				contentMoveResponseObj.parent=to_place_blog_url1;
+				contentMoveResponseObj.parent=to_place_blog_url;
 				}else{
 				contentMoveResponseObj.parent=targetUrl;
 				}
