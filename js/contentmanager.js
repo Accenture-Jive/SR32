@@ -2947,8 +2947,14 @@ if(catIndex < checkItemArrayUpdated.length) {
 				
 				//console.log("toUpdateCategories = "+toUpdateCategories);
 				alert("Title = "+contentCatResponseObj.subject);
+				var df = contentCatResponseObj.subject;
+				df = df.replace('&amp;','&');
+				df = df.replace('&lt;','<');
+				df = df.replace('&gt;','>');
+				alert(df);
+				
 				contentCatResponseObj.categories = updatedCategoryList;
-				contentCatResponseObj.update().execute(function(catUpdateResponse){
+				//contentCatResponseObj.update().execute(function(catUpdateResponse){
 				
 				//console.log("updated --"+JSON.stringify(catUpdateResponse));
 				if (catUpdateResponse.error){
