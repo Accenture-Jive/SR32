@@ -976,7 +976,7 @@ document.getElementById("copyTo").style.visibility="hidden";
 //Code for category test
 
 function categoryTest() {
-osapi.jive.corev3.groups.get({
+osapi.jive.corev3.places.get({
 uri: space_url
 }).execute(onPlaceFetchBlog);
 }
