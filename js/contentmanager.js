@@ -3689,7 +3689,7 @@ else {
             }  
 	console.log("tag "+selected_cat+" succesfully updated");
 		//alert("Category "+selected_cat+" succesfully updated");
-		var tempRedirectionUrl = source_html_url+'/content?filterID=contentstatus[published]~tag['+selected_cat+']';
+		var tempRedirectionUrl = source_html_url+'/content?filterID=contentstatus[published]~tag['+selected_tag+']';
 		
 		console.log("temRedirectionUrl = "+tempRedirectionUrl);
 		/*$("#stylized").fadeOut(5000,function(){
