@@ -5565,6 +5565,7 @@ var ieSpan='<span id="ieSpan" style="font-family:Tahoma;font-size:12px;font-colo
 '<span id="ieSpan2" style="font-weight:bold;">'+strDwnload.fontcolor("#3778C7")+'</span>';
 
 document.getElementById("selected_items").innerHTML=ieSpan;
+dataRefreshiframe();
 }
 
 
