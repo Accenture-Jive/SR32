@@ -5555,7 +5555,7 @@ $("#dwn_place").hide();
 $("#dwnTo").text("Downloading this:");
 
 document.getElementById("dwnloadDataSend").value=Grp_file_json;
-document.getElementById("logged_user_download").value=loggedUser;
+document.getElementById("logged_user_download").value=Grp_file_json;
 
 // submits the form to server for processing download.
 document.getElementById("form3").submit();
