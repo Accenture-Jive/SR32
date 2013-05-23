@@ -1349,7 +1349,7 @@ else if(sel_action_val=="tags")
 {
 // actions when the user choses to download files.
 //$('#tag_place').css("margin-top", "120px");
-
+alert("Inside tags...");
 tagtest();
 
 
