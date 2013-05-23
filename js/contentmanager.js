@@ -2954,7 +2954,7 @@ if(catIndex < checkItemArrayUpdated.length) {
 				alert(df);
 				
 				contentCatResponseObj.categories = updatedCategoryList;
-				/*contentCatResponseObj.update().execute(function(catUpdateResponse){
+				contentCatResponseObj.update().execute(function(catUpdateResponse){
 				
 				//console.log("updated --"+JSON.stringify(catUpdateResponse));
 				if (catUpdateResponse.error){
@@ -2966,7 +2966,7 @@ if(catIndex < checkItemArrayUpdated.length) {
         }
 
 				
-				});*/
+				});
 				catIndex++;
 				updateCategoriesForNewContents1();
 				
