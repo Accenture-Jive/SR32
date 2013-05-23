@@ -5588,9 +5588,11 @@ function dataRefreshFrameResponse(response)
 		dataRefreshiframe();
 	}else {
 	alert("Into else part");
+	alert("str = "+str);
 	//setTimeout("dataRefreshiframe()",1000); 
 	var compare='DOWNLOAD READY';
 	var pos=str.indexOf(compare);
+	alert("pos = "+pos);
 	if (pos!=-1)
 	{
 	alert("Getting it!!!");
