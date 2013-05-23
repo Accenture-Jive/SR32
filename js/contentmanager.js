@@ -989,6 +989,9 @@ uri: space_url
 
 function onPlaceFetchResponse(placeResponse) {
 	console.log("placeResponse = "+JSON.stringify(placeResponse));
+	osapi.jive.corev3.places.get({
+	uri: space_url
+	}).execute(onPlaceFetchResponse);
 }
 function onContentFetchForTags(response) {
 	console.log(JSON.stringify(response));
@@ -5552,6 +5555,7 @@ $("#dwn_place").hide();
 $("#dwnTo").text("Downloading this:");
 
 document.getElementById("dwnloadDataSend").value=Grp_file_json;
+document.getElementById("logged_user_download").value=loggedUser;
 
 // submits the form to server for processing download.
 document.getElementById("form3").submit();
