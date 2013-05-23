@@ -5556,9 +5556,9 @@ $("#dwnTo").text("Downloading this:");
 
 document.getElementById("dwnloadDataSend").value=Grp_file_json;
 document.getElementById("logged_user_download").value=loggedUser;
-alert("value = "+document.getElementById("logged_user_download").value);
+
 // submits the form to server for processing download.
-//document.getElementById("form3").submit();
+document.getElementById("form3").submit();
 var strDwnload="Closing this browser window will abort the operation.";
 
 var ieSpan='<span id="ieSpan" style="font-family:Tahoma;font-size:12px;font-color:#3778C7;"><br/>Download is being prepared. DO NOT CLOSE THIS WINDOW.<br/>A zip file containing all selected contents is being assembled by the server.<br/>After that process is complete a download dialog will pop up giving you the option to save the zip file on your local hard drive.<br/><br/></span>'+
@@ -5566,6 +5566,34 @@ var ieSpan='<span id="ieSpan" style="font-family:Tahoma;font-size:12px;font-colo
 
 document.getElementById("selected_items").innerHTML=ieSpan;
 }
+
+
+function dataRefreshiframe() 
+{ 
+// to hit the logger servlet and get the response of which action is being done right now.
+flag=true;
+osapi.http.get({
+'href' : 'http://54.247.84.129:8081/UAT/LoggerServlet?logged-user='+loggedUser+'&logged-userName='+loggedUserName,
+'format' : 'text',
+'authz' : 'signed'
+}).execute(dataRefreshFrameResponse);
+};
+
+function dataRefreshFrameResponse(response) 
+{
+	var str = response.content;
+	if(str == ''){
+		dataRefreshiframe();
+	}
+	setTimeout("dataRefreshiframe()",1000); 
+	var compare='DOWNLOAD READY';
+	var pos=str.indexOf(compare);
+	if (pos!=-1)
+	{
+	alert("Getting it!!!");
+	}
+}
+
 
 $(document).ready(function() {
 
