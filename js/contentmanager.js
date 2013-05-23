@@ -2952,7 +2952,7 @@ if(catIndex < checkItemArrayUpdated.length) {
 				df = df.replace('&lt;','<');
 				df = df.replace('&gt;','>');
 				alert(df);
-				
+				contentCatResponseObj.subject = df;
 				contentCatResponseObj.categories = updatedCategoryList;
 				contentCatResponseObj.update().execute(function(catUpdateResponse){
 				
