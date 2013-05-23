@@ -2951,7 +2951,6 @@ if(catIndex < checkItemArrayUpdated.length) {
 				title = title.replace('&amp;','&');
 				title = title.replace('&lt;','<');
 				title = title.replace('&gt;','>');
-				alert(title);
 				contentCatResponseObj.subject = title;
 				contentCatResponseObj.categories = updatedCategoryList;
 				contentCatResponseObj.update().execute(function(catUpdateResponse){
@@ -3026,6 +3025,11 @@ if(catIndex < uncheckedItemArrayUpdated.length) {
 				//alert("toUpdateCategories = "+toUpdateCategories);
 				console.log("toUpdateCategories = "+toUpdateCategories);
 				//contentCatResponseObj.categories = toUpdateCategories;
+				var title = contentCatResponseObj.subject;
+				title = title.replace('&amp;','&');
+				title = title.replace('&lt;','<');
+				title = title.replace('&gt;','>');
+				contentCatResponseObj.subject = title;
 				contentCatResponseObj.categories = updatedCategoryList;
 				contentCatResponseObj.update().execute(function(catUpdateResponse){
 				//alert(JSON.stringify(catUpdateResponse));
@@ -3524,7 +3528,11 @@ if(catIndex < checkItemArrayUpdated.length) {
 				}
 				
 				//console.log("toUpdateTags = "+toUpdateTags);
-				
+				var title = contentCatResponseObj.subject;
+				title = title.replace('&amp;','&');
+				title = title.replace('&lt;','<');
+				title = title.replace('&gt;','>');
+				contentCatResponseObj.subject = title;
 				contentCatResponseObj.tags = updatedTagList;
 				                
 				contentCatResponseObj.update().execute(function(catUpdateResponse){
@@ -3582,6 +3590,11 @@ if(catIndex < uncheckedItemArrayUpdated.length) {
 				if(dotIndex == 4) dotIndex = 0;
 				document.getElementById("frame1").contentDocument.body.innerHTML = "Removing tags in Progress.<br>Please leave this window open until the updating process has been completed.<br><br><span id='mySpan' style='font-weight:bold;'>"+str.fontcolor("#3778C7")+"</span>";
 
+				var title = contentCatResponseObj.subject;
+				title = title.replace('&amp;','&');
+				title = title.replace('&lt;','<');
+				title = title.replace('&gt;','>');
+				contentCatResponseObj.subject = title;
 				toUpdateTags = contentCatResponseObj.tags;
 				//toUpdateTags = toUpdateTags+','+selected_cat;
 				//toUpdateTags = ["cat1","cat2","cat3"];
