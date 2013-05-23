@@ -984,10 +984,12 @@ uri: space_url
 function tagtest() {
 osapi.jive.corev3.places.get({
 uri: space_url
-}).execute(function(placeResponse){
-console.log("placeResponse = "+JSON.stringify(placeResponse)});
+}).execute(onPlaceFetchBlog);
 }
 
+function onPlaceFetchBlog(placeResponse) {
+	console.log("placeResponse = "+JSON.stringify(placeResponse));
+}
 function onContentFetchForTags(response) {
 	console.log(JSON.stringify(response));
 }
