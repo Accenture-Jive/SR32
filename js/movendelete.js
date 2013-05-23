@@ -337,7 +337,11 @@ if(movendeleteIndex < totalContentSelfUrlArray.length) {
 				document.getElementById("frame1").contentDocument.body.innerHTML = "Moving in Progress.<br>Please leave this window open until the moving process has been completed.<br><br><span id='mySpan' style='font-weight:bold;'>"+str2.fontcolor("#3778C7")+"</span>";
 				}
 				
-			
+				var title = contentMoveResponseObj.subject;
+				title = title.replace('&amp;','&');
+				title = title.replace('&lt;','<');
+				title = title.replace('&gt;','>');
+				contentMoveResponseObj.subject = title;
 				contentMoveResponseObj.categories = updatedCategoryList;
 				if(contentMoveResponseObj.type="post") {
 				contentMoveResponseObj.parent=to_place_blog_url1;
