@@ -5571,6 +5571,7 @@ dataRefreshiframe();
 
 function dataRefreshiframe() 
 { 
+alert("asdsadsdsdfs");
 // to hit the logger servlet and get the response of which action is being done right now.
 flag=true;
 osapi.http.get({
