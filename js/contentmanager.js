@@ -981,6 +981,16 @@ uri: space_url
 }).execute(onPlaceFetchBlog);
 }
 
+function tagtest() {
+	osapi.jive.corev3.places.get({
+	uri: space_url
+}).execute(onContentFetchForTags);
+}
+
+function onContentFetchForTags(response) {
+	console.log(JSON.stringify(response));
+}
+
 function onPlaceFetchBlog(response){
 //console.log(JSON.stringify(response));
 //alert(response.resources.categories.ref);
@@ -1340,7 +1350,7 @@ else if(sel_action_val=="tags")
 // actions when the user choses to download files.
 //$('#tag_place').css("margin-top", "120px");
 
-
+tagtest();
 
 
 $('#all_selected_items').css("margin-top", "80px");
