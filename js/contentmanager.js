@@ -5586,13 +5586,14 @@ function dataRefreshFrameResponse(response)
 	var str = response.content;
 	if(str == ''){
 		dataRefreshiframe();
-	}
+	}else {
 	//setTimeout("dataRefreshiframe()",1000); 
 	var compare='DOWNLOAD READY';
 	var pos=str.indexOf(compare);
 	if (pos!=-1)
 	{
 	alert("Getting it!!!");
+	}
 	}
 }
 
