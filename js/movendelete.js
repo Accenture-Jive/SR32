@@ -344,7 +344,7 @@ if(movendeleteIndex < totalContentSelfUrlArray.length) {
 				title = title.replace('&gt;','>');
 				contentMoveResponseObj.subject = title;
 				contentMoveResponseObj.categories = updatedCategoryList;
-				if(contentMoveResponseObj.type="post") {
+				if(contentMoveResponseObj.type=="post") {
 				contentMoveResponseObj.parent=to_place_blog_url;
 				}else{
 				contentMoveResponseObj.parent=targetUrl;
