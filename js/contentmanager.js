@@ -3357,15 +3357,15 @@ function filterCheckedUncheckTagUrl(){
       console.log("new unchecked items : "+uncheckItemArray[index]);
     }
 
-                  alert("checkedItemsArray.length = "+checkedItemsArray.length);
+                //  alert("checkedItemsArray.length = "+checkedItemsArray.length);
                    console.log("checkedItemsArray.length = "+checkedItemsArray.length);
-                 alert("uncheckItemArray.length = "+uncheckItemArray.length);
+                // alert("uncheckItemArray.length = "+uncheckItemArray.length);
                  console.log("uncheckItemArray.length = "+uncheckItemArray.length);
 				catIndex = 0;
 				dotIndex = 0;
-			alert("mainCheckedItems.length = "+mainCheckedItems.length);
+			//alert("mainCheckedItems.length = "+mainCheckedItems.length);
              console.log("mainCheckedItems.length = "+mainCheckedItems.length);
-                 alert("mainUncheckItems.length = "+mainUncheckItems.length);
+             //    alert("mainUncheckItems.length = "+mainUncheckItems.length);
              console.log("mainUncheckItems.length = "+mainUncheckItems.length);
 								
 									
@@ -3426,9 +3426,9 @@ function filterCheckedUncheckTagUrl(){
 			}
 		}
 		
-		alert("checkItemArrayUpdated.length = "+checkItemArrayUpdated.length);
+		//alert("checkItemArrayUpdated.length = "+checkItemArrayUpdated.length);
 		console.log("checkItemArrayUpdated.length = "+checkItemArrayUpdated.length);
-		alert("uncheckedItemArrayUpdated.length = "+uncheckedItemArrayUpdated.length);
+		//alert("uncheckedItemArrayUpdated.length = "+uncheckedItemArrayUpdated.length);
 		console.log("uncheckedItemArrayUpdated.length = "+uncheckedItemArrayUpdated.length);
 								
 		
