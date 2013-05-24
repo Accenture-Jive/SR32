@@ -5458,14 +5458,8 @@ document.getElementById("frame1").contentDocument.body.innerHTML = "<span id='my
 
 document.getElementById('redirectVal').value=redirection_url;
 
-document.getElementById("form2").submit();
-
-
-}
-
-$(document).ready(function()
-{   
-        $('form2').ajaxForm({
+//document.getElementById("form2").submit();
+$('form2').ajaxForm({
         beforeSubmit: function() {
            // $('#results').html('Submitting...');
 		   console.log('Submitting...');
@@ -5482,6 +5476,13 @@ $(document).ready(function()
 alert(JSON.stringify(data));
         }
     });
+
+
+}
+
+$(document).ready(function()
+{   
+        
 })    
 var flag=false;
 
