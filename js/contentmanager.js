@@ -5840,6 +5840,7 @@ files_row = files_row + '<tr>'+
 
 for(var ind=0;ind<tags.length;ind++)
 {
+checkFlagItem = false;
 if (tags[ind]==selected_tag)
 {
 console.log("tags= "+tags);
@@ -5993,6 +5994,7 @@ blog_row = blog_row + '<tr>'+
 
 for(var ind=0;ind<tags.length;ind++)
 {
+checkFlagItem = false;
 if (tags[ind]==selected_tag)
 {
 console.log("tags= "+tags);
@@ -6133,6 +6135,7 @@ docs_row = docs_row + '<tr>'+
 
 for(var ind=0;ind<tags.length;ind++)
 {
+checkFlagItem = false;
 if (tags[ind]==selected_tag)
 {
 console.log("tags= "+tags);
@@ -6273,6 +6276,7 @@ disc_row = disc_row + '<tr>'+
 
 for(var ind=0;ind<tags.length;ind++)
 {
+checkFlagItem = false;
 if (tags[ind]==selected_tag)
 {
 console.log("tags= "+tags);
@@ -6414,6 +6418,7 @@ idea_row = idea_row + '<tr>'+
 
 for(var ind=0;ind<tags.length;ind++)
 {
+checkFlagItem = false;
 if (tags[ind]==selected_tag)
 {
 console.log("tags= "+tags);
@@ -6556,6 +6561,7 @@ for(var ind=0;ind<tags.length;ind++)
 {
 if (tags[ind]==selected_tag)
 {
+checkFlagItem = false;
 console.log("tags= "+tags);
 console.log("selected_tag= "+selected_tag);
 //console.log(document.getElementById("poll_cb"+index).value);
