@@ -994,9 +994,10 @@ console.log("placeResponse.resources.contents.ref ="+ placeResponse.resources.se
 		console.log("place content Response "+JSON.stringify(placeContentResponse));
 		alert("length =="+placeContentResponse.list.length);
 		alert("nexpage =="+placeContentResponse.getNextPage);
-		if (placeContentResponse.getNextPage) {
-		//console.log("getNextPage: "+JSON.stringify(response.getNextPage()));
-		//} 
+		console.log("getNextPage: "+JSON.stringify(placeContentResponse.getNextPage()));
+		/*if (placeContentResponse.getNextPage) {
+		console.log("getNextPage: "+JSON.stringify(placeContentResponse.getNextPage()));
+		} */
 
 	});
 	});
