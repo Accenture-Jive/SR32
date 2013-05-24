@@ -6638,7 +6638,7 @@ function populateContentforTags(space_url, blog_url) {
             }
 
         });
-        populateBlogforTags(blog_url);
+        populateBlogforTags(blog_url,space_url);
     });
 
 }
