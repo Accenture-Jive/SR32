@@ -6608,7 +6608,7 @@ $.each(files, function(index, group) {
 
 
 var tags=group.tags;
-
+alert("The tags length = "+tags.length);
 for(var ind=0;ind<tags.length;ind++)
 {
 	for(var indexTag=0;indexTag<tagPopulatList.length;indexTag++) {
