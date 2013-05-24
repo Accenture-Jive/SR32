@@ -6604,6 +6604,7 @@ place : space_url
 var files = response.list;
 var postFiles;
 var files_length=response.list.length;
+var tagExist = false;
 $.each(files, function(index, group) {
 
 
@@ -6611,8 +6612,9 @@ var tags=group.tags;
 alert("The tags length = "+tags.length);
 for(var ind=0;ind<tags.length;ind++)
 {
+	tagExist = false;
 	for(var indexTag=0;indexTag<tagPopulatList.length;indexTag++) {
-		tagExist = true;
+		
 		if(tagPopulatList[indexTag] == tags[ind]) {
 		tagExist  = true;
 		}
@@ -6620,7 +6622,7 @@ for(var ind=0;ind<tags.length;ind++)
 	if(!tagExist) {
 			tagPopulatList[completeTagIndex]= tags[ind];
 			completeTagIndex++;
-		}
+	}
 
 }
 
