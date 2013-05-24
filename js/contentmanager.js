@@ -5847,9 +5847,14 @@ console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
 console.log("Array val: "+addId[arrayIndex]);
 arrayIndex++;
-
+mainCheckedItems[contentCheckedIndex]=postFiles.fileUrl;
+contentCheckedIndex++;
+checkFlagItem = true;
 }
-
+if(checkFlagItem == false && !(selected_cat == '')) {
+	mainUncheckItems[contentUnCheckedIndex] = postFiles.fileUrl;
+	contentUnCheckedIndex++;
+}
 
 }
 
