@@ -986,7 +986,7 @@ osapi.jive.corev3.places.get({
 uri: space_url
 }).execute(function(placeResponse){
 console.log("placeResponse = "+JSON.stringify(placeResponse));
-
+console.log("placeResponse.resources.contents.ref ="+ placeResponse.resources.contents.ref);
 	 osapi.jive.corev3.contents.get({
 	uri: placeResponse.resources.contents.ref
 	}).execute(function (placeContentResponse){
