@@ -6896,7 +6896,7 @@ function populatePollsForTags(space_url) {
 			document.getElementById("tag_place").style.display="inline";
 			$("#dwn_place").hide();
 			$("#tag_place").show();
-			document.getElementById("tag_from_space").innerHTML='<span id="myId" style="text-decoration:underline;">Space</span>'+': '+from_place_name;
+			document.getElementById("tag_from_space").innerHTML='<span id="myId" style="text-decoration:underline;">Space</span>'+': '+global_from_place_name;
 
 			$("#tag_from_space").show();
 			$("#tag_from_group").hide();
@@ -6945,7 +6945,7 @@ function populatePollsForTags(space_url) {
 			document.getElementById("tag_place").style.display="inline";
 			$("#dwn_place").hide();
 			$("#tag_place").show();
-			document.getElementById("tag_from_group").innerHTML='<span id="myId" style="text-decoration:underline;">Group</span>'+': '+from_place_name;
+			document.getElementById("tag_from_group").innerHTML='<span id="myId" style="text-decoration:underline;">Group</span>'+': '+global_from_place_name;
 			$("#tag_place").css("margin-top", "40px");
 			$("#tag_from_space").hide();
 			$("#tag_from_group").show();
@@ -6999,7 +6999,7 @@ function populatePollsForTags(space_url) {
 			document.getElementById("tag_place").style.display="inline";
 			$("#dwn_place").hide();
 			$("#tag_place").show();
-			document.getElementById("tag_from_project").innerHTML='<span id="myId" style="text-decoration:underline;">Project</span>'+': '+from_place_name;
+			document.getElementById("tag_from_project").innerHTML='<span id="myId" style="text-decoration:underline;">Project</span>'+': '+global_from_place_name;
 			$("#tag_place").css("margin-top", "40px");
 			$("#tag_from_space").hide();
 			$("#tag_from_group").hide();
