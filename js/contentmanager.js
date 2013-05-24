@@ -6628,7 +6628,7 @@ function populateContentforTags(space_url, blog_url) {
             }
 
         });
-        populateBlogContent(blog_url);
+        populateBlogforTags(blog_url);
     });
 
 }
@@ -6713,7 +6713,7 @@ function populateDocContentforTags(space_url) {
     });
 
 }
-function populateDocContentforTags(space_url) {
+function populateDiscussionsForTags(space_url) {
     osapi.jive.corev3.contents.get({
         type: 'discussion',
         fields: '@all',
