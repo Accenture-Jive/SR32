@@ -6543,3 +6543,34 @@ javascript:showTab();javascript:highlightTab();
 });
 }
 //--End
+//-- for auto completion of tags
+ $(function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#tag_sel" ).autocomplete({
+      source: availableTags
+    });
+  });
+///--end
