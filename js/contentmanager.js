@@ -6589,56 +6589,255 @@ javascript:showTab();javascript:highlightTab();
   });
 ///--end
 
-function populateContentforTags(){
+function populateContentforTags(space_url, blog_url) {
 
-alert("Please wait , as this operation may take some time . Press ok");
-osapi.jive.corev3.contents.get({
-type : 'file',
-fields : '@all',
-count : 50,
-place : space_url
-}).execute(function(response) {
-//console.log("Files: "+JSON.stringify(response));
+    alert("Please wait , as this operation may take some time . Press ok");
+    osapi.jive.corev3.contents.get({
+        type: 'file',
+        fields: '@all',
+        count: 50,
+        place: space_url
+    }).execute(function (response) {
+        //console.log("Files: "+JSON.stringify(response));
 
-var files = response.list;
-var postFiles;
-var files_length=response.list.length;
-var tagExist = false;
-$.each(files, function(index, group) {
+        var files = response.list;
+        var postFiles;
+        var files_length = response.list.length;
+        var tagExist = false;
+        $.each(files, function (index, group) {
 
 
-var tags=group.tags;
-alert("The tags length = "+tags.length);
-for(var ind=0;ind<tags.length;ind++)
-{
-	tagExist = false;
-	for(var indexTag=0;indexTag<tagPopulatList.length;indexTag++) {
-		
-		if(tagPopulatList[indexTag] == tags[ind]) {
-		tagExist  = true;
-		}
-	}
-	if(!tagExist) {
-			tagPopulatList[completeTagIndex]= tags[ind];
-			completeTagIndex++;
-	}
-	availableTags = tagPopulatList;
-	$( "#tag_sel" ).autocomplete({
+            var tags = group.tags;
+            for (var ind = 0; ind < tags.length; ind++) {
+                tagExist = false;
+                for (var indexTag = 0; indexTag < tagPopulatList.length; indexTag++) {
+
+                    if (tagPopulatList[indexTag] == tags[ind]) {
+                        tagExist = true;
+                    }
+                }
+                if (!tagExist) {
+                    tagPopulatList[completeTagIndex] = tags[ind];
+                    completeTagIndex++;
+                }
+                availableTags = tagPopulatList;
+                /*$( "#tag_sel" ).autocomplete({
       source: availableTags
+    });*/
+
+            }
+
+        });
+        populateBlogContent(blog_url);
     });
 
 }
 
+function populateBlogforTags(blog_url) {
+    osapi.jive.corev3.contents.get({
+        type: 'post',
+        fields: '@all',
+        count: 50,
+        place: blog_url
+    }).execute(function (response) {
+        //console.log("Files: "+JSON.stringify(response));
+
+        var blogs = response.list;
+        var files_length = response.list.length;
+        var tagExist = false;
+        $.each(blogs, function (index, group) {
 
 
-		
-});
-alert("tagPopulatList = "+tagPopulatList.length);
-for(var i =0;i< tagPopulatList.length;i++) {
-	console.log("Got tag -->"+tagPopulatList[i]);
+            var tags = group.tags;
+            for (var ind = 0; ind < tags.length; ind++) {
+                tagExist = false;
+                for (var indexTag = 0; indexTag < tagPopulatList.length; indexTag++) {
+
+                    if (tagPopulatList[indexTag] == tags[ind]) {
+                        tagExist = true;
+                    }
+                }
+                if (!tagExist) {
+                    tagPopulatList[completeTagIndex] = tags[ind];
+                    completeTagIndex++;
+                }
+                availableTags = tagPopulatList;
+				/*$( "#tag_sel" ).autocomplete({
+				  source: availableTags
+				});*/
+
+            }
+
+        });
+        populateDocContentForTags(space_url);
+    });
+
 }
+function populateDocContentforTags(space_url) {
+    osapi.jive.corev3.contents.get({
+        type: 'post',
+        fields: '@all',
+        count: 50,
+        place: space_url
+    }).execute(function (response) {
+        //console.log("Files: "+JSON.stringify(response));
 
-//populateBlogContent(space_url,blog_url);
-});
+        var docs = response.list;
+        var files_length = response.list.length;
+        var tagExist = false;
+        $.each(docs, function (index, group) {
+
+
+            var tags = group.tags;
+            for (var ind = 0; ind < tags.length; ind++) {
+                tagExist = false;
+                for (var indexTag = 0; indexTag < tagPopulatList.length; indexTag++) {
+
+                    if (tagPopulatList[indexTag] == tags[ind]) {
+                        tagExist = true;
+                    }
+                }
+                if (!tagExist) {
+                    tagPopulatList[completeTagIndex] = tags[ind];
+                    completeTagIndex++;
+                }
+                availableTags = tagPopulatList;
+				/*$( "#tag_sel" ).autocomplete({
+				  source: availableTags
+				});*/
+
+            }
+
+        });
+        populateDiscussionsForTags(space_url);
+    });
+
+}
+function populateDocContentforTags(space_url) {
+    osapi.jive.corev3.contents.get({
+        type: 'discussion',
+        fields: '@all',
+        count: 50,
+        place: space_url
+    }).execute(function (response) {
+        //console.log("Files: "+JSON.stringify(response));
+
+        var discs = response.list;
+        var files_length = response.list.length;
+        var tagExist = false;
+        $.each(discs, function (index, group) {
+
+
+            var tags = group.tags;
+            for (var ind = 0; ind < tags.length; ind++) {
+                tagExist = false;
+                for (var indexTag = 0; indexTag < tagPopulatList.length; indexTag++) {
+
+                    if (tagPopulatList[indexTag] == tags[ind]) {
+                        tagExist = true;
+                    }
+                }
+                if (!tagExist) {
+                    tagPopulatList[completeTagIndex] = tags[ind];
+                    completeTagIndex++;
+                }
+                availableTags = tagPopulatList;
+				/*$( "#tag_sel" ).autocomplete({
+				  source: availableTags
+				});*/
+
+            }
+
+        });
+        populateIdeasForTags(space_url);
+    });
+
+}
+function populateIdeasForTags(space_url) {
+    osapi.jive.corev3.contents.get({
+        type: 'idea',
+        fields: '@all',
+        count: 50,
+        place: space_url
+    }).execute(function (response) {
+        //console.log("Files: "+JSON.stringify(response));
+
+        var ideas = response.list;
+        var files_length = response.list.length;
+        var tagExist = false;
+        $.each(ideas, function (index, group) {
+
+
+            var tags = group.tags;
+            for (var ind = 0; ind < tags.length; ind++) {
+                tagExist = false;
+                for (var indexTag = 0; indexTag < tagPopulatList.length; indexTag++) {
+
+                    if (tagPopulatList[indexTag] == tags[ind]) {
+                        tagExist = true;
+                    }
+                }
+                if (!tagExist) {
+                    tagPopulatList[completeTagIndex] = tags[ind];
+                    completeTagIndex++;
+                }
+                availableTags = tagPopulatList;
+				/*$( "#tag_sel" ).autocomplete({
+				  source: availableTags
+				});*/
+
+            }
+
+        });
+        populatePollsForTags(space_url);
+    });
+
+}
+function populatePollsForTags(space_url) {
+    osapi.jive.corev3.contents.get({
+        type: 'poll',
+        fields: '@all',
+        count: 50,
+        place: space_url
+    }).execute(function (response) {
+        //console.log("Files: "+JSON.stringify(response));
+
+        var ideas = response.list;
+        var files_length = response.list.length;
+        var tagExist = false;
+        $.each(ideas, function (index, group) {
+
+
+            var tags = group.tags;
+            for (var ind = 0; ind < tags.length; ind++) {
+                tagExist = false;
+                for (var indexTag = 0; indexTag < tagPopulatList.length; indexTag++) {
+
+                    if (tagPopulatList[indexTag] == tags[ind]) {
+                        tagExist = true;
+                    }
+                }
+                if (!tagExist) {
+                    tagPopulatList[completeTagIndex] = tags[ind];
+                    completeTagIndex++;
+                }
+                availableTags = tagPopulatList;
+				/*$( "#tag_sel" ).autocomplete({
+				  source: availableTags
+				});*/
+
+            }
+
+        });
+       // populateIdeasForTags(space_url);
+	   for(var indexTag1 = 0;indexTag1 < availableTags.length;indexTag1++){
+		console.log("availableTags .. "+availableTags[i]);
+	   }
+	   $( "#tag_sel" ).autocomplete({
+				  source: availableTags
+				});
+
+	   alert("Done");
+    });
 
 }
