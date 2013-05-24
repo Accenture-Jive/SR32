@@ -992,6 +992,8 @@ console.log("placeResponse.resources.contents.ref ="+ placeResponse.resources.se
 	}).execute(function (placeContentResponse){
 		alert(JSON.stringify(placeContentResponse));
 		console.log("place content Response "+JSON.stringify(placeContentResponse));
+		alert("length =="+placeContentResponse.list.length);
+		alert("nexpage =="+response.getNextPage);
 	});
 	});
 }
