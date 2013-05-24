@@ -5877,7 +5877,11 @@ files_row=files_row+'</table>';
 
 // writing the files table to the files tab.
 document.getElementById("files_div").innerHTML=files_row;	
-populateBlogContent(space_url,blog_url);
+alert("mainCheckedItems.length = "+mainCheckedItems.length);
+             console.log("mainCheckedItems.length = "+mainCheckedItems.length);
+                 alert("mainUncheckItems.length = "+mainUncheckItems.length);
+             console.log("mainUncheckItems.length = "+mainUncheckItems.length);
+//populateBlogContent(space_url,blog_url);
 });
 
 }
