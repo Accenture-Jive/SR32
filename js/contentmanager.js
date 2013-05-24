@@ -6607,7 +6607,7 @@ var files_length=response.list.length;
 $.each(files, function(index, group) {
 
 
-var tags=postFiles.tags;
+var tags=group.tags;
 
 for(var ind=0;ind<tags.length;ind++)
 {
