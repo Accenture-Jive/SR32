@@ -6,6 +6,7 @@ var dotIndex  =0;
 var tagPopulatList = new Array();
 var completeTagIndex = 0;
 var fromRequestAction = '';
+var global_from_place_name='';
 
 //for categories
 var contentCheckedIndex =0;
@@ -1172,6 +1173,7 @@ src_space_name=from_place_name;
 space_url=data.resources.self.ref;
 blog_url=data.resources.blog.ref;
 source_html_url=data.resources.html.ref;
+global_from_place_name = src_space_name;
 
 $("#del_place").hide();
 document.getElementById("from_space").innerHTML='<span id="myId" style="text-decoration:underline;">Space</span>'+': '+from_place_name;
@@ -1505,6 +1507,7 @@ src_space_name=from_place_name;
 space_url=data.resources.self.ref;
 blog_url=data.resources.blog.ref;
 source_html_url=data.resources.html.ref;
+global_from_place_name = src_space_name;
 
 $("#del_place").hide();
 document.getElementById("from_group").innerHTML='<span id="myId" style="text-decoration:underline;">Group</span>'+': '+from_place_name;
@@ -1840,6 +1843,7 @@ src_space_name=from_place_name;
 space_url=data.resources.self.ref;
 blog_url=data.resources.blog.ref;
 source_html_url=data.resources.html.ref;
+global_from_place_name = src_space_name;
 
 $("#del_place").hide();
 document.getElementById("from_project").innerHTML='<span id="myId" style="text-decoration:underline;">Project</span>'+': '+from_place_name;
