@@ -3,6 +3,8 @@ var errorDeReferenceCatArray = new Array();
 var referenceCatArrayIndex =0;
 var deReferenceCatArrayIndex =0;
 var dotIndex  =0;
+var tagPopulatList = new Array();
+var completeTagIndex = 0;
 
 //for categories
 var contentCheckedIndex =0;
@@ -981,6 +983,8 @@ uri: space_url
 }).execute(onPlaceFetchBlog);
 }
 
+
+
 function tagtest() {
 osapi.jive.corev3.places.get({
 uri: space_url
@@ -1146,6 +1150,7 @@ selected_cat = '';
 selected_tag = '';
 arrayIndex=0;
 addId=new Array();
+tagPopulatList = new Array();
 document.getElementById("to_place").disabled = false;
 document.getElementById("from_project").innerHTML=msg2;
 document.getElementById("from_group").innerHTML=msg2;
@@ -1370,7 +1375,9 @@ else if(sel_action_val=="tags")
 // actions when the user choses to download files.
 //$('#tag_place').css("margin-top", "120px");
 alert("Inside tags...");
-tagtest();
+tagPopulatList =  new Array()l
+completeTagIndex = 0;
+populateContentforTags();
 
 
 $('#all_selected_items').css("margin-top", "80px");
@@ -1424,7 +1431,7 @@ document.getElementById("tag_from_space").innerHTML='<span id="myId" style="text
 $("#tag_from_space").show();
 $("#tag_from_group").hide();
 $("#tag_from_project").hide();
-categoryTest();
+//categoryTest();
 }
 
 else if(sel_action_val=="select_action")
@@ -5821,6 +5828,8 @@ console.log("Array val: "+addId[arrayIndex]);
 arrayIndex++;
 
 }
+
+
 }
 
 }
@@ -6550,7 +6559,7 @@ javascript:showTab();javascript:highlightTab();
 //--End
 //-- for auto completion of tags
  $(function() {
-    var availableTags = [
+    /*var availableTags = [
       "ActionScript",
       "AppleScript",
       "Asp",
@@ -6573,9 +6582,57 @@ javascript:showTab();javascript:highlightTab();
       "Ruby",
       "Scala",
       "Scheme"
-    ];
+    ];*/
+	availableTags = tagPopulatList;
     $( "#tag_sel" ).autocomplete({
       source: availableTags
     });
   });
 ///--end
+
+function populateContentforTags(){
+
+alert("Please wait , as this operation may take some time . Press ok");
+osapi.jive.corev3.contents.get({
+type : 'file',
+fields : '@all',
+count : 50,
+place : space_url
+}).execute(function(response) {
+//console.log("Files: "+JSON.stringify(response));
+
+var files = response.list;
+var postFiles;
+var files_length=response.list.length;
+$.each(files, function(index, group) {
+
+
+var tags=postFiles.tags;
+
+for(var ind=0;ind<tags.length;ind++)
+{
+	for(var indexTag=0;indexTag<tagPopulatList.length;indexTag++) {
+		tagExist = true;
+		if(tagPopulatList[indexTag] == tags[ind]) {
+		tagExist  = true;
+		}
+		if(!tagExist) {
+			tagPopulatList[completeTagIndex]= tags[ind];
+		}
+	}
+
+}
+
+
+
+		
+});
+
+
+//populateBlogContent(space_url,blog_url);
+});
+
+for(var i =0;i< tagPopulatList.length;i++) {
+	console.log("Got tag -->"+tagPopulatList[i];
+}
+}
