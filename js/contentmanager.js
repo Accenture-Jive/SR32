@@ -5743,7 +5743,7 @@ place : space_url
 var files = response.list;
 var postFiles;
 var files_length=response.list.length;
-
+alert("files_length = "+files_length);
 if (files_length==0)
 {
 // action when the selected space/group/project has no files.
