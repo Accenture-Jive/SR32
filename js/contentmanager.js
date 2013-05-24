@@ -3363,7 +3363,7 @@ function filterCheckedUncheckTagUrl(){
                  console.log("uncheckItemArray.length = "+uncheckItemArray.length);
 				catIndex = 0;
 				dotIndex = 0;
-			//alert("mainCheckedItems.length = "+mainCheckedItems.length);
+			alert("mainCheckedItems.length = "+mainCheckedItems.length);
              console.log("mainCheckedItems.length = "+mainCheckedItems.length);
                  alert("mainUncheckItems.length = "+mainUncheckItems.length);
              console.log("mainUncheckItems.length = "+mainUncheckItems.length);
