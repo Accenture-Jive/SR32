@@ -5831,6 +5831,7 @@ if(checkFlagItem == false && !(selected_cat == '')) {
 else if (sel_action_val=='tags')
 {
 var tags=postFiles.tags;
+alert("tags: "+tags);
 console.log("tags: "+tags);
 files_row = files_row + '<tr>'+
 '<td style="border:1px ;border: 1px solid #000000;text-align:right;padding:2px;">'+'<input type="checkbox" id="file_cb'+index+'" name="file_cb" class="file_cb" onclick="javascript:checkUncheck(this.name);" value="'+postFiles.fileUrl+'">'+'</td>'+
