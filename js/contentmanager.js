@@ -6623,6 +6623,9 @@ for(var ind=0;ind<tags.length;ind++)
 			completeTagIndex++;
 	}
 	availableTags = tagPopulatList;
+	$( "#tag_sel" ).autocomplete({
+      source: availableTags
+    });
 
 }
 
