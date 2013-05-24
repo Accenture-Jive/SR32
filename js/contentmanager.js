@@ -3360,13 +3360,13 @@ function filterCheckedUncheckTagUrl(){
                   alert("checkedItemsArray.length = "+checkedItemsArray.length);
                    console.log("checkedItemsArray.length = "+checkedItemsArray.length);
                  alert("uncheckItemArray.length = "+uncheckItemArray.length);
-                                //console.log("uncheckItemArray.length = "+uncheckItemArray.length);
+                 console.log("uncheckItemArray.length = "+uncheckItemArray.length);
 				catIndex = 0;
 				dotIndex = 0;
-	//alert("mainCheckedItems.length = "+mainCheckedItems.length);
-                                console.log("mainCheckedItems.length = "+mainCheckedItems.length);
-                           //     alert("mainUncheckItems.length = "+mainUncheckItems.length);
-                                console.log("mainUncheckItems.length = "+mainUncheckItems.length);
+			//alert("mainCheckedItems.length = "+mainCheckedItems.length);
+             console.log("mainCheckedItems.length = "+mainCheckedItems.length);
+                 alert("mainUncheckItems.length = "+mainUncheckItems.length);
+             console.log("mainUncheckItems.length = "+mainUncheckItems.length);
 								
 									
 									for(var index=0; index < mainCheckedItems.length;index++) {
@@ -3426,9 +3426,9 @@ function filterCheckedUncheckTagUrl(){
 			}
 		}
 		
-		//alert("checkItemArrayUpdated.length = "+checkItemArrayUpdated.length);
+		alert("checkItemArrayUpdated.length = "+checkItemArrayUpdated.length);
 		console.log("checkItemArrayUpdated.length = "+checkItemArrayUpdated.length);
-	//	alert("uncheckedItemArrayUpdated.length = "+uncheckedItemArrayUpdated.length);
+		alert("uncheckedItemArrayUpdated.length = "+uncheckedItemArrayUpdated.length);
 		console.log("uncheckedItemArrayUpdated.length = "+uncheckedItemArrayUpdated.length);
 								
 		
@@ -3440,7 +3440,7 @@ function filterCheckedUncheckTagUrl(){
 			//alert("new unchecked items : "+uncheckedItemArrayUpdated[index]);
 				console.log("new unchecked update items : "+uncheckedItemArrayUpdated[index]);
 		}
-		        updateTagsForNewContents1();
+		       // updateTagsForNewContents1();
 		
 		}
 
@@ -5720,8 +5720,8 @@ arrayIndex=0;
  contentUnCheckedIndex =0;
  mainCheckedItems = new Array();
  mainUncheckItems = new Array();
- //alert("mainCheckedItems.length = "+mainCheckedItems.length);
- //alert("mainUncheckItems.length = "+mainUncheckItems.length);
+ alert("mainCheckedItems.length = "+mainCheckedItems.length);
+ alert("mainUncheckItems.length = "+mainUncheckItems.length);
 alert("Please wait , as this operation may take some time . Press ok");
 osapi.jive.corev3.contents.get({
 type : 'file',
