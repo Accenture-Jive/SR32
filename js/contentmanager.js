@@ -6633,6 +6633,6 @@ for(var ind=0;ind<tags.length;ind++)
 });
 
 for(var i =0;i< tagPopulatList.length;i++) {
-	console.log("Got tag -->"+tagPopulatList[i];
+	console.log("Got tag -->"+tagPopulatList[i]);
 }
 }
