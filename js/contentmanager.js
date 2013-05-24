@@ -5,6 +5,7 @@ var deReferenceCatArrayIndex =0;
 var dotIndex  =0;
 var tagPopulatList = new Array();
 var completeTagIndex = 0;
+var fromRequestAction = '';
 
 //for categories
 var contentCheckedIndex =0;
@@ -1377,10 +1378,11 @@ else if(sel_action_val=="tags")
 alert("Inside tags...");
 tagPopulatList =  new Array();
 completeTagIndex = 0;
+fromRequestAction = 'fromSpaceRequestAction';
 populateContentforTags();
 
 
-$('#all_selected_items').css("margin-top", "80px");
+/*$('#all_selected_items').css("margin-top", "80px");
 $('#selected_items').css("margin-top", "80px");
 $("#tagFrom").css("margin-top", "-30px");
 $("#tag_from_space").css("margin-top", "10px");
@@ -1430,7 +1432,7 @@ document.getElementById("tag_from_space").innerHTML='<span id="myId" style="text
 
 $("#tag_from_space").show();
 $("#tag_from_group").hide();
-$("#tag_from_project").hide();
+$("#tag_from_project").hide();*/
 //categoryTest();
 }
 
@@ -1713,9 +1715,14 @@ categoryTest();
 
 else if(sel_action_val=="tags")
 {
+alert("Inside tags...");
+tagPopulatList =  new Array();
+completeTagIndex = 0;
+fromRequestAction = 'fromGroupRequestAction';
+populateContentforTags();
 // actions when the user choses to download files.
 //$('#tag_place').css("margin-top", "120px");
-$('#all_selected_items').css("margin-top", "80px");
+/*$('#all_selected_items').css("margin-top", "80px");
 $('#selected_items').css("margin-top", "80px");
 $("#tagFrom").css("margin-top", "-30px");
 $("#tag_from_group").css("margin-top", "10px");
@@ -1762,8 +1769,8 @@ $("#tag_place").css("margin-top", "40px");
 $("#tag_from_space").hide();
 $("#tag_from_group").show();
 $("#tag_from_project").hide();
-$("#add_tag").hide();
-categoryTest();
+$("#add_tag").hide();*/
+//categoryTest();
 }
 
 else if(sel_action_val=="select_action")
@@ -2034,7 +2041,7 @@ else if(sel_action_val=="tags")
 
 // actions when the user choses to download files.
 //$('#tag_place').css("margin-top", "120px");
-$('#all_selected_items').css("margin-top", "80px");
+/*$('#all_selected_items').css("margin-top", "80px");
 $('#selected_items').css("margin-top", "80px");
 $("#tagFrom").css("margin-top", "-30px");
 $("#tag_from_project").css("margin-top", "10px");
@@ -2084,8 +2091,8 @@ document.getElementById("tag_from_project").innerHTML='<span id="myId" style="te
 $("#tag_place").css("margin-top", "40px");
 $("#tag_from_space").hide();
 $("#tag_from_group").hide();
-$("#tag_from_project").show();
-categoryTest();
+$("#tag_from_project").show();*/
+//categoryTest();
 }
 
 else if(sel_action_val=="select_action")
@@ -6836,8 +6843,164 @@ function populatePollsForTags(space_url) {
 	   $( "#tag_sel" ).autocomplete({
 				  source: availableTags
 				});
+		alert("Done");
+		
+		if(fromRequestAction=='fromSpaceRequestAction') {
+			$('#all_selected_items').css("margin-top", "80px");
+			$('#selected_items').css("margin-top", "80px");
+			$("#tagFrom").css("margin-top", "-30px");
+			$("#tag_from_space").css("margin-top", "10px");
+			$("#tag_place").css("margin-top", "40px");
+			$("#selTag").css("margin-top", parseInt($("#tag_place").css("margin-top"))+35+'px');
+			//$("#selTag").css("margin-top", "60px");
+			$("#tag_sel").css("margin-top", "90px");
+			$("#add_tag_button").css("margin-top", "90px");
+			$("#tag_place").css("margin-left", '-65px');
+			$("#tagFrom").css("margin-left", '235px');
+			$("#selTag").css("margin-left", '205px');
+			$("#tag_sel").css("margin-left", '-75px');
+			$("#selTag").text("Enter Tag");
 
-	   alert("Done");
+
+			$("#tagTo").text("Assign tag to this content:").append('<br/>');
+			document.getElementById("tagTo").style.display="inline";
+			$("#tagTo").hide();
+			$("#dwnTo").hide();
+			$("#upTo").hide();
+			$("#tag_sel option").each(function() {
+				$(this).remove();
+			   });
+			document.getElementById("dwn_select_items_button").style.display="inline";
+			document.getElementById("tag_select_items_button").style.display="inline";
+			document.getElementById("tag_sel").style.display="inline";
+			document.getElementById("up_select_items_button").style.display="inline";
+			$("#dwn_select_items_button").hide();
+			$("#tag_select_items_button").hide();
+
+			$("#tag_sel").show();
+			$("#add_tag_button").show();
+			$("#selTag").show();
+			$("#up_select_items_button").hide();
+			$("#change_selection_div").hide();
+			$("#dwnShow").hide();
+			$("#catShow").hide();
+			$("#tagShow").show();
+			$("#upShow").hide();
+			$("#up_place").hide();
+			$("#add_tag").hide();
+			document.getElementById("dwn_place").style.display="inline";
+			document.getElementById("tag_place").style.display="inline";
+			$("#dwn_place").hide();
+			$("#tag_place").show();
+			document.getElementById("tag_from_space").innerHTML='<span id="myId" style="text-decoration:underline;">Space</span>'+': '+from_place_name;
+
+			$("#tag_from_space").show();
+			$("#tag_from_group").hide();
+			$("#tag_from_project").hide();
+		}
+		else if(fromRequestAction=='fromGroupRequestAction') {
+				$('#all_selected_items').css("margin-top", "80px");
+			$('#selected_items').css("margin-top", "80px");
+			$("#tagFrom").css("margin-top", "-30px");
+			$("#tag_from_group").css("margin-top", "10px");
+			$("#tag_place").css("margin-top", "40px");
+			$("#selTag").css("margin-top", parseInt($("#tag_place").css("margin-top"))+35+'px');
+			//$("#selTag").css("margin-top", "60px");
+			$("#tag_sel").css("margin-top", "90px");
+			$("#add_tag_button").css("margin-top", "90px");
+			$("#tag_place").css("margin-left", '-65px');
+			$("#tagFrom").css("margin-left", '235px');
+			$("#selTag").css("margin-left", '205px');
+			$("#tag_sel").css("margin-left", '-75px');
+			$("#selTag").text("Enter Tag");
+			$("#tagTo").text("Assign tag to this content:").append('<br/>');
+			document.getElementById("catTo").style.display="inline";
+			$("#tagTo").hide();
+			$("#dwnTo").hide();
+			$("#upTo").hide();
+			$("#tag_sel option").each(function() {
+				$(this).remove();
+			   });
+			document.getElementById("dwn_select_items_button").style.display="inline";
+			document.getElementById("tag_select_items_button").style.display="inline";
+			document.getElementById("tag_sel").style.display="inline";
+			document.getElementById("up_select_items_button").style.display="inline";
+			$("#dwn_select_items_button").hide();
+			$("#tag_select_items_button").hide();
+			$("#tag_sel").show();
+			$("#add_tag_button").show();
+			$("#selTag").show();
+			$("#up_select_items_button").hide();
+			$("#change_selection_div").hide();
+			$("#dwnShow").hide();
+			$("#catShow").hide();
+			$("#tagShow").show();
+			$("#upShow").hide();
+			$("#up_place").hide();
+			document.getElementById("dwn_place").style.display="inline";
+			document.getElementById("tag_place").style.display="inline";
+			$("#dwn_place").hide();
+			$("#tag_place").show();
+			document.getElementById("tag_from_group").innerHTML='<span id="myId" style="text-decoration:underline;">Group</span>'+': '+from_place_name;
+			$("#tag_place").css("margin-top", "40px");
+			$("#tag_from_space").hide();
+			$("#tag_from_group").show();
+			$("#tag_from_project").hide();
+			$("#add_tag").hide();
+		}
+		else {
+				$('#all_selected_items').css("margin-top", "80px");
+			$('#selected_items').css("margin-top", "80px");
+			$("#tagFrom").css("margin-top", "-30px");
+			$("#tag_from_project").css("margin-top", "10px");
+			$("#tag_place").css("margin-top", "40px");
+			$("#selTag").css("margin-top", parseInt($("#tag_place").css("margin-top"))+35+'px');
+			//$("#selTag").css("margin-top", "60px");
+			$("#tag_sel").css("margin-top", "90px");
+			$("#add_tag_button").css("margin-top", "90px");
+			$("#tag_place").css("margin-left", '-65px');
+			$("#tagFrom").css("margin-left", '235px');
+			$("#selTag").css("margin-left", '205px');
+			$("#tag_sel").css("margin-left", '-75px');
+			$("#selTag").text("Enter Tag");
+			$("#tagTo").text("Assign tag to this content:").append('<br/>');
+			document.getElementById("tagTo").style.display="inline";
+			$("#catTo").hide();
+			$("#tagTo").hide();
+			$("#dwnTo").hide();
+			$("#upTo").hide();
+			$("#tag_sel option").each(function() {
+				$(this).remove();
+			   });
+			$("#add_tag").hide();
+			document.getElementById("dwn_select_items_button").style.display="inline";
+			document.getElementById("tag_select_items_button").style.display="inline";
+			document.getElementById("tag_sel").style.display="inline";
+			document.getElementById("up_select_items_button").style.display="inline";
+			$("#dwn_select_items_button").hide();
+			$("#tag_select_items_button").hide();
+			$("#cat_sel").hide();
+			$("#tag_sel").show();
+			$("#add_tag_button").show();
+			$("#selCat").hide();
+			$("#selTag").show();
+			$("#up_select_items_button").hide();
+			$("#change_selection_div").hide();
+			$("#dwnShow").hide();
+			$("#catShow").hide();
+			$("#tagShow").show();
+			$("#upShow").hide();
+			$("#up_place").hide();
+			document.getElementById("dwn_place").style.display="inline";
+			document.getElementById("tag_place").style.display="inline";
+			$("#dwn_place").hide();
+			$("#tag_place").show();
+			document.getElementById("tag_from_project").innerHTML='<span id="myId" style="text-decoration:underline;">Project</span>'+': '+from_place_name;
+			$("#tag_place").css("margin-top", "40px");
+			$("#tag_from_space").hide();
+			$("#tag_from_group").hide();
+			$("#tag_from_project").show();
+		}
     });
 
 }
