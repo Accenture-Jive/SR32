@@ -3885,8 +3885,14 @@ console.log("temp_id= "+temp_id);
 addId[arrayIndex]=temp_id;
 console.log("Array val: "+addId[arrayIndex]);
 arrayIndex++;
-
+mainCheckedItems[contentCheckedIndex]=postBlogs.fileUrl;
+contentCheckedIndex++;
+checkFlagItem = true;
 }
+}
+if(checkFlagItem == false && !(selected_tag == '')) {
+	mainUncheckItems[contentUnCheckedIndex] = postBlogs.fileUrl;
+	contentUnCheckedIndex++;
 }
 
 }
@@ -4034,7 +4040,7 @@ contentCheckedIndex++;
 checkFlagItem = true;
 }
 }
-if(checkFlagItem == false && !(selected_cat == '')) {
+if(checkFlagItem == false && !(selected_tag == '')) {
 	mainUncheckItems[contentUnCheckedIndex] = postBlogs.fileUrl;
 	contentUnCheckedIndex++;
 }
@@ -4176,7 +4182,7 @@ contentCheckedIndex++;
 checkFlagItem = true;
 }
 }
-if(checkFlagItem == false && !(selected_cat == '')) {
+if(checkFlagItem == false && !(selected_tag == '')) {
 	mainUncheckItems[contentUnCheckedIndex] = postDoc.docUrl;
 	contentUnCheckedIndex++;
 }
@@ -4315,7 +4321,7 @@ contentCheckedIndex++;
 checkFlagItem = true;
 }
 }
-if(checkFlagItem == false && !(selected_cat == '')) {
+if(checkFlagItem == false && !(selected_tag == '')) {
 	mainUncheckItems[contentUnCheckedIndex] = postDisc.discUrl;
 	contentUnCheckedIndex++;
 }
@@ -4456,7 +4462,7 @@ contentCheckedIndex++;
 checkFlagItem = true;
 }
 }
-if(checkFlagItem == false && !(selected_cat == '')) {
+if(checkFlagItem == false && !(selected_tag == '')) {
 	mainUncheckItems[contentUnCheckedIndex] = postIdea.ideaUrl;
 	contentUnCheckedIndex++;
 }
@@ -4595,7 +4601,7 @@ contentCheckedIndex++;
 checkFlagItem = true;
 }
 }
-if(checkFlagItem == false && !(selected_cat == '')) {
+if(checkFlagItem == false && !(selected_tag == '')) {
 	mainUncheckItems[contentUnCheckedIndex] = postPolls.fileUrl;
 	contentUnCheckedIndex++;
 }
