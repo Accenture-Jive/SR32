@@ -5855,6 +5855,7 @@ mainCheckedItems[contentCheckedIndex]=postFiles.fileUrl;
 contentCheckedIndex++;
 checkFlagItem = true;
 }
+alert("checkFlagItem = "+checkFlagItem);
 if(checkFlagItem == false && !(selected_tag == '')) {
 	mainUncheckItems[contentUnCheckedIndex] = postFiles.fileUrl;
 	contentUnCheckedIndex++;
