@@ -6673,7 +6673,7 @@ function populateBlogforTags(blog_url,space_url) {
     });
 
 }
-function populateDocContentforTags(space_url) {
+function populateDocContentForTags(space_url) {
     osapi.jive.corev3.contents.get({
         type: 'post',
         fields: '@all',
