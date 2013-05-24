@@ -3440,7 +3440,7 @@ function filterCheckedUncheckTagUrl(){
 			//alert("new unchecked items : "+uncheckedItemArrayUpdated[index]);
 				console.log("new unchecked update items : "+uncheckedItemArrayUpdated[index]);
 		}
-		       // updateTagsForNewContents1();
+		        updateTagsForNewContents1();
 		
 		}
 
@@ -5726,8 +5726,8 @@ arrayIndex=0;
  contentUnCheckedIndex =0;
  mainCheckedItems = new Array();
  mainUncheckItems = new Array();
- alert("mainCheckedItems.length = "+mainCheckedItems.length);
- alert("mainUncheckItems.length = "+mainUncheckItems.length);
+ //alert("mainCheckedItems.length = "+mainCheckedItems.length);
+ //alert("mainUncheckItems.length = "+mainUncheckItems.length);
 alert("Please wait , as this operation may take some time . Press ok");
 osapi.jive.corev3.contents.get({
 type : 'file',
