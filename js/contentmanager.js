@@ -5465,7 +5465,7 @@ document.getElementById("form2").submit();
 
 $(document).ready(function()
 {   
-        $('form').ajaxForm({
+        $('form2').ajaxForm({
         beforeSubmit: function() {
            // $('#results').html('Submitting...');
 		   console.log('Submitting...');
