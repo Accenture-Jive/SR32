@@ -3301,7 +3301,7 @@ function filterCheckedUncheckTagUrl(){
 		
 	function filterCheckedUncheckTagUrl1(){
 
-
+	alert("Into filterCheckedUncheckTagUrl1");
 	 checkItemArrayUpdated = new Array();
  uncheckedItemArrayUpdated = new Array();
   checkedItemsArray = new Array();
