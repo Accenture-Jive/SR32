@@ -5840,7 +5840,6 @@ files_row = files_row + '<tr>'+
 
 for(var ind=0;ind<tags.length;ind++)
 {
-checkFlagItem = false;
 if (tags[ind]==selected_tag)
 {
 console.log("tags= "+tags);
@@ -5994,7 +5993,6 @@ blog_row = blog_row + '<tr>'+
 
 for(var ind=0;ind<tags.length;ind++)
 {
-checkFlagItem = false;
 if (tags[ind]==selected_tag)
 {
 console.log("tags= "+tags);
@@ -6135,7 +6133,6 @@ docs_row = docs_row + '<tr>'+
 
 for(var ind=0;ind<tags.length;ind++)
 {
-checkFlagItem = false;
 if (tags[ind]==selected_tag)
 {
 console.log("tags= "+tags);
@@ -6276,7 +6273,6 @@ disc_row = disc_row + '<tr>'+
 
 for(var ind=0;ind<tags.length;ind++)
 {
-checkFlagItem = false;
 if (tags[ind]==selected_tag)
 {
 console.log("tags= "+tags);
@@ -6418,7 +6414,6 @@ idea_row = idea_row + '<tr>'+
 
 for(var ind=0;ind<tags.length;ind++)
 {
-checkFlagItem = false;
 if (tags[ind]==selected_tag)
 {
 console.log("tags= "+tags);
@@ -6468,7 +6463,6 @@ place : space_url
 var polls = response.list;
 var postPolls;
 var poll_length=response.list.length;
-alert("selected_tag from poll"+selected_tag);
 if(poll_length==0)
 {
 poll_row='<table id="pollTable" border="0" class="jiveBorder" jive-data-cell="{&quot;color&quot;:&quot;#575757&quot;,&quot;textAlign&quot;:&quot;left&quot;,&quot;padding&quot;:&quot;2&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fontFamily&quot;:&quot;arial,helvetica,sans-serif&quot;,&quot;verticalAlign&quot;:&quot;baseline&quot;}" jive-data-header="{&quot;color&quot;:&quot;#FFFFFF&quot;,&quot;backgroundColor&quot;:&quot;#6690BC&quot;,&quot;textAlign&quot;:&quot;left&quot;,&quot;padding&quot;:&quot;2&quot;,&quot;fontFamily&quot;:&quot;arial,helvetica,sans-serif&quot;,&quot;verticalAlign&quot;:&quot;baseline&quot;}" style="border: 1px solid #000000; width: 450px;">'+
@@ -6561,7 +6555,6 @@ for(var ind=0;ind<tags.length;ind++)
 {
 if (tags[ind]==selected_tag)
 {
-checkFlagItem = false;
 console.log("tags= "+tags);
 console.log("selected_tag= "+selected_tag);
 //console.log(document.getElementById("poll_cb"+index).value);
