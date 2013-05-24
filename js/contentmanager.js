@@ -5831,6 +5831,7 @@ if(checkFlagItem == false && !(selected_cat == '')) {
 else if (sel_action_val=='tags')
 {
 var tags=postFiles.tags;
+checkFlagItem = false;
 alert("tags: "+tags);
 console.log("tags: "+tags);
 files_row = files_row + '<tr>'+
