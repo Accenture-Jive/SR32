@@ -1377,11 +1377,10 @@ else if(sel_action_val=="tags")
 {
 // actions when the user choses to download files.
 //$('#tag_place').css("margin-top", "120px");
-alert("Inside tags...");
 tagPopulatList =  new Array();
 completeTagIndex = 0;
 fromRequestAction = 'fromSpaceRequestAction';
-populateContentforTags();
+populateContentforTags(space_url,blog_url);
 
 
 /*$('#all_selected_items').css("margin-top", "80px");
@@ -1722,7 +1721,7 @@ alert("Inside tags...");
 tagPopulatList =  new Array();
 completeTagIndex = 0;
 fromRequestAction = 'fromGroupRequestAction';
-populateContentforTags();
+populateContentforTags(space_url,blog_url);
 // actions when the user choses to download files.
 //$('#tag_place').css("margin-top", "120px");
 /*$('#all_selected_items').css("margin-top", "80px");
@@ -3353,9 +3352,9 @@ function filterCheckedUncheckTagUrl(){
       console.log("new unchecked items : "+uncheckItemArray[index]);
     }
 
-                           //    alert("checkedItemsArray.length = "+checkedItemsArray.length);
-                                //console.log("checkedItemsArray.length = "+checkedItemsArray.length);
-                           //     alert("uncheckItemArray.length = "+uncheckItemArray.length);
+                  alert("checkedItemsArray.length = "+checkedItemsArray.length);
+                   console.log("checkedItemsArray.length = "+checkedItemsArray.length);
+                 alert("uncheckItemArray.length = "+uncheckItemArray.length);
                                 //console.log("uncheckItemArray.length = "+uncheckItemArray.length);
 				catIndex = 0;
 				dotIndex = 0;
@@ -6847,7 +6846,7 @@ function populatePollsForTags(space_url) {
 	   $( "#tag_sel" ).autocomplete({
 				  source: availableTags
 				});
-		alert("Done");
+	
 		
 		if(fromRequestAction=='fromSpaceRequestAction') {
 			$('#all_selected_items').css("margin-top", "80px");
