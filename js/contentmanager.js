@@ -5459,7 +5459,8 @@ document.getElementById("frame1").contentDocument.body.innerHTML = "<span id='my
 document.getElementById('redirectVal').value=redirection_url;
 
 //document.getElementById("form2").submit();
- $('#myForm').ajaxForm(function() { 
+ $('#myForm').submit(function(response) {
+				alert("response = "+JSON.stringify(response));
                 alert("Thank you for your comment!"); 
             }); 
 
