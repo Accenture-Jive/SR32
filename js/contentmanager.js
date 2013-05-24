@@ -6616,10 +6616,11 @@ for(var ind=0;ind<tags.length;ind++)
 		if(tagPopulatList[indexTag] == tags[ind]) {
 		tagExist  = true;
 		}
-		if(!tagExist) {
-			tagPopulatList[completeTagIndex]= tags[ind];
-		}
 	}
+	if(!tagExist) {
+			tagPopulatList[completeTagIndex]= tags[ind];
+			completeTagIndex++;
+		}
 
 }
 
