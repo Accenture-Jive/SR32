@@ -6631,7 +6631,7 @@ for(var ind=0;ind<tags.length;ind++)
 
 //populateBlogContent(space_url,blog_url);
 });
-
+alert("tagPopulatList = "+tagPopulatList.length);
 for(var i =0;i< tagPopulatList.length;i++) {
 	console.log("Got tag -->"+tagPopulatList[i]);
 }
