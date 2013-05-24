@@ -2043,6 +2043,11 @@ else if(sel_action_val=="tags")
 {
 
 // actions when the user choses to download files.
+alert("Inside tags...");
+tagPopulatList =  new Array();
+completeTagIndex = 0;
+fromRequestAction = 'fromProjectRequestAction';
+populateContentforTags(space_url,blog_url);
 //$('#tag_place').css("margin-top", "120px");
 /*$('#all_selected_items').css("margin-top", "80px");
 $('#selected_items').css("margin-top", "80px");
