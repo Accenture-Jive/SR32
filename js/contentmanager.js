@@ -6586,7 +6586,11 @@ poll_row = poll_row + '<tr>'+
 }
 poll_row=poll_row+'</table>';	
 document.getElementById("poll_div").innerHTML=poll_row;	
-javascript:showTab();javascript:highlightTab();
+alert("mainCheckedItems.length = "+mainCheckedItems.length);
+             console.log("mainCheckedItems.length = "+mainCheckedItems.length);
+                 alert("mainUncheckItems.length = "+mainUncheckItems.length);
+             console.log("mainUncheckItems.length = "+mainUncheckItems.length);
+//javascript:showTab();javascript:highlightTab();
 });
 }
 //--End
