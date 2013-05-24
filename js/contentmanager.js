@@ -5851,7 +5851,7 @@ mainCheckedItems[contentCheckedIndex]=postFiles.fileUrl;
 contentCheckedIndex++;
 checkFlagItem = true;
 }
-if(checkFlagItem == false && !(selected_cat == '')) {
+if(checkFlagItem == false && !(selected_tag == '')) {
 	mainUncheckItems[contentUnCheckedIndex] = postFiles.fileUrl;
 	contentUnCheckedIndex++;
 }
@@ -6004,7 +6004,7 @@ contentCheckedIndex++;
 checkFlagItem = true;
 }
 }
-if(checkFlagItem == false && !(selected_cat == '')) {
+if(checkFlagItem == false && !(selected_tag == '')) {
 	mainUncheckItems[contentUnCheckedIndex] = postBlogs.fileUrl;
 	contentUnCheckedIndex++;
 }
@@ -6143,7 +6143,7 @@ contentCheckedIndex++;
 checkFlagItem = true;
 }
 }
-if(checkFlagItem == false && !(selected_cat == '')) {
+if(checkFlagItem == false && !(selected_tag == '')) {
 	mainUncheckItems[contentUnCheckedIndex] = postDoc.docUrl;
 	contentUnCheckedIndex++;
 }
@@ -6282,7 +6282,7 @@ contentCheckedIndex++;
 checkFlagItem = true;
 }
 }
-if(checkFlagItem == false && !(selected_cat == '')) {
+if(checkFlagItem == false && !(selected_tag == '')) {
 	mainUncheckItems[contentUnCheckedIndex] = postDisc.discUrl;
 	contentUnCheckedIndex++;
 }
@@ -6422,7 +6422,7 @@ contentCheckedIndex++;
 checkFlagItem = true;
 }
 }
-if(checkFlagItem == false && !(selected_cat == '')) {
+if(checkFlagItem == false && !(selected_tag == '')) {
 	mainUncheckItems[contentUnCheckedIndex] = postIdea.ideaUrl;
 	contentUnCheckedIndex++;
 }
@@ -6561,7 +6561,7 @@ contentCheckedIndex++;
 checkFlagItem = true;
 }
 }
-if(checkFlagItem == false && !(selected_cat == '')) {
+if(checkFlagItem == false && !(selected_tag == '')) {
 	mainUncheckItems[contentUnCheckedIndex] = postPolls.fileUrl;
 	contentUnCheckedIndex++;
 }
