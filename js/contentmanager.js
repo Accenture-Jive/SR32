@@ -6831,7 +6831,7 @@ function populatePollsForTags(space_url) {
         });
        // populateIdeasForTags(space_url);
 	   for(var indexTag1 = 0;indexTag1 < availableTags.length;indexTag1++){
-		console.log("availableTags .. "+availableTags[i]);
+		console.log("availableTags .. "+availableTags[indexTag1]);
 	   }
 	   $( "#tag_sel" ).autocomplete({
 				  source: availableTags
