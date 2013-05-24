@@ -5459,26 +5459,13 @@ document.getElementById("frame1").contentDocument.body.innerHTML = "<span id='my
 document.getElementById('redirectVal').value=redirection_url;
 
 //document.getElementById("form2").submit();
-
+$('#form2').ajaxSubmit(callBack);
 
 }
 
-$(document).ready(function()
-{   
-        $('#form2').ajaxSubmit({
-               function(data) {
-            /*var $out = $('#results');
-            $out.html('Your results:');
-            $out.append('<div>
- 
- 
- 
- 
-<pre>'+ data +'</pre></div>');*/
-alert(JSON.stringify(data));
-        }
-    });
-})    
+function callBack(response) {
+	alert(JSON.stringify(response));
+}
 var flag=false;
 
 function uprefreshiframe() 
