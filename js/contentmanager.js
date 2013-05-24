@@ -6558,8 +6558,7 @@ javascript:showTab();javascript:highlightTab();
 }
 //--End
 //-- for auto completion of tags
- $(function() {
-    /*var availableTags = [
+ var availableTags = [
       "ActionScript",
       "AppleScript",
       "Asp",
@@ -6582,9 +6581,9 @@ javascript:showTab();javascript:highlightTab();
       "Ruby",
       "Scala",
       "Scheme"
-    ];*/
-	availableTags = tagPopulatList;
-    $( "#tag_sel" ).autocomplete({
+    ];
+ $(function() {
+      $( "#tag_sel" ).autocomplete({
       source: availableTags
     });
   });
@@ -6623,6 +6622,7 @@ for(var ind=0;ind<tags.length;ind++)
 			tagPopulatList[completeTagIndex]= tags[ind];
 			completeTagIndex++;
 	}
+	availableTags = tagPopulatList;
 
 }
 
