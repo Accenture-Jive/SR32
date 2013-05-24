@@ -5465,12 +5465,8 @@ document.getElementById('redirectVal').value=redirection_url;
 
 $(document).ready(function()
 {   
-        $('#form2').ajaxForm({
-        beforeSubmit: function() {
-           // $('#results').html('Submitting...');
-		   console.log('Submitting...');
-        },
-        success: function(data) {
+        $('#form2').ajaxSubmit({
+               function(data) {
             /*var $out = $('#results');
             $out.html('Your results:');
             $out.append('<div>
