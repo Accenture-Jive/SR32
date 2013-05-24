@@ -6633,7 +6633,7 @@ function populateContentforTags(space_url, blog_url) {
 
 }
 
-function populateBlogforTags(blog_url) {
+function populateBlogforTags(blog_url,space_url) {
     osapi.jive.corev3.contents.get({
         type: 'post',
         fields: '@all',
