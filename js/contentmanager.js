@@ -1132,12 +1132,12 @@ $("#tag_sel").hide();
 document.getElementById("add_tag").innerHTML=$('#tag_sel').val();
 $("#add_tag").css("margin-left", '250px');
 $("#add_tag").show();
-getDocs(space_url);
+/*getDocs(space_url);
 getFiles(space_url);
 getDiscussions(space_url);
 getIdeas(space_url);
 getPolls(space_url);
-getBlogs(blog_url);
+getBlogs(blog_url);*/
 }
 
 }
@@ -5717,6 +5717,8 @@ function populateContent1() {
 console.log("Space url : "+space_url);
 console.log("blog url : "+blog_url);
 populateContent(space_url,blog_url);
+selected_cat=document.getElementById('cat_sel').value;
+//selected_tag=$('#tag_sel').val();
 }
 function populateContent(){
 // fetches the files from the selected space/group/project using the SPACE_URL.
@@ -5729,6 +5731,7 @@ arrayIndex=0;
  alert("mainCheckedItems.length = "+mainCheckedItems.length);
  alert("mainUncheckItems.length = "+mainUncheckItems.length);
 alert("Please wait , as this operation may take some time . Press ok");
+alert("selected_tag from file"+selected_tag);
 osapi.jive.corev3.contents.get({
 type : 'file',
 fields : '@all',
@@ -5894,6 +5897,7 @@ place : blog_url
 var blogs = response.list;
 var postBlogs;
 var blogs_length=response.list.length;
+alert("selected_tag from blog"+selected_tag);
 if(blogs_length==0)
 {
 // action when the selected space/group/project has no blogs.
@@ -6037,6 +6041,7 @@ place : space_url
 var documents = response.list;
 var postDoc;
 var docs_length=response.list.length;
+alert("selected_tag frm doc"+selected_tag);
 if (docs_length==0)
 {
 docs_row='<table id="docsTable" border="0" class="jiveBorder" jive-data-cell="{&quot;color&quot;:&quot;#575757&quot;,&quot;textAlign&quot;:&quot;left&quot;,&quot;padding&quot;:&quot;2&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fontFamily&quot;:&quot;arial,helvetica,sans-serif&quot;,&quot;verticalAlign&quot;:&quot;baseline&quot;}" jive-data-header="{&quot;color&quot;:&quot;#FFFFFF&quot;,&quot;backgroundColor&quot;:&quot;#6690BC&quot;,&quot;textAlign&quot;:&quot;left&quot;,&quot;padding&quot;:&quot;2&quot;,&quot;fontFamily&quot;:&quot;arial,helvetica,sans-serif&quot;,&quot;verticalAlign&quot;:&quot;baseline&quot;}" style="border: 1px solid #000000; width: 450px;">'+
@@ -6178,6 +6183,7 @@ place : space_url
 var disc = response.list;
 var postDisc;
 var disc_length=response.list.length;
+alert("selected_tag from disc"+selected_tag);
 if(disc_length==0)
 {
 disc_row='<table id="discTable" border="0" class="jiveBorder" jive-data-cell="{&quot;color&quot;:&quot;#575757&quot;,&quot;textAlign&quot;:&quot;left&quot;,&quot;padding&quot;:&quot;2&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fontFamily&quot;:&quot;arial,helvetica,sans-serif&quot;,&quot;verticalAlign&quot;:&quot;baseline&quot;}" jive-data-header="{&quot;color&quot;:&quot;#FFFFFF&quot;,&quot;backgroundColor&quot;:&quot;#6690BC&quot;,&quot;textAlign&quot;:&quot;left&quot;,&quot;padding&quot;:&quot;2&quot;,&quot;fontFamily&quot;:&quot;arial,helvetica,sans-serif&quot;,&quot;verticalAlign&quot;:&quot;baseline&quot;}" style="border: 1px solid #000000; width: 450px;">'+
@@ -6316,6 +6322,7 @@ place : space_url
 var idea = response.list;
 var postIdea;
 var idea_length=response.list.length;
+alert("selected_tag from idea"+selected_tag);
 if(idea_length==0)
 {
 idea_row='<table id="ideaTable" border="0" class="jiveBorder" jive-data-cell="{&quot;color&quot;:&quot;#575757&quot;,&quot;textAlign&quot;:&quot;left&quot;,&quot;padding&quot;:&quot;2&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fontFamily&quot;:&quot;arial,helvetica,sans-serif&quot;,&quot;verticalAlign&quot;:&quot;baseline&quot;}" jive-data-header="{&quot;color&quot;:&quot;#FFFFFF&quot;,&quot;backgroundColor&quot;:&quot;#6690BC&quot;,&quot;textAlign&quot;:&quot;left&quot;,&quot;padding&quot;:&quot;2&quot;,&quot;fontFamily&quot;:&quot;arial,helvetica,sans-serif&quot;,&quot;verticalAlign&quot;:&quot;baseline&quot;}" style="border: 1px solid #000000; width: 450px;">'+
@@ -6456,6 +6463,7 @@ place : space_url
 var polls = response.list;
 var postPolls;
 var poll_length=response.list.length;
+alert("selected_tag from poll"+selected_tag);
 if(poll_length==0)
 {
 poll_row='<table id="pollTable" border="0" class="jiveBorder" jive-data-cell="{&quot;color&quot;:&quot;#575757&quot;,&quot;textAlign&quot;:&quot;left&quot;,&quot;padding&quot;:&quot;2&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fontFamily&quot;:&quot;arial,helvetica,sans-serif&quot;,&quot;verticalAlign&quot;:&quot;baseline&quot;}" jive-data-header="{&quot;color&quot;:&quot;#FFFFFF&quot;,&quot;backgroundColor&quot;:&quot;#6690BC&quot;,&quot;textAlign&quot;:&quot;left&quot;,&quot;padding&quot;:&quot;2&quot;,&quot;fontFamily&quot;:&quot;arial,helvetica,sans-serif&quot;,&quot;verticalAlign&quot;:&quot;baseline&quot;}" style="border: 1px solid #000000; width: 450px;">'+
