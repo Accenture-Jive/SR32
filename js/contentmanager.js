@@ -57,9 +57,7 @@ var msg2='Please select a place.';
 var selected_cat='';
 var selected_tag='';
 
-alert("site_url = "+site_url);
-$("#redirectVal").text(site_url);
-alert("#redirectVal" +$("#redirectVal").text() );
+
 function showLoading() 
 {
 $("#maskLoad").mask("Please Wait...");
@@ -5475,6 +5473,9 @@ document.getElementById(id).value='';
 
 function startUploading(){
 
+alert("site_url = "+site_url);
+$("#redirectVal").text(site_url);
+alert("#redirectVal" +$("#redirectVal").text() );
 // handles the actions for upload functionality.
 $("#cmdu").show();
 $("#src_place").hide();
@@ -5505,7 +5506,7 @@ document.getElementById("frame1").contentDocument.body.innerHTML = "<span id='my
 
 document.getElementById('redirectVal').value=redirection_url;
 
-document.getElementById("form2").submit();
+//document.getElementById("form2").submit();
  //$('#form2').submit(); 
 
 }
