@@ -7,7 +7,6 @@ var tagPopulatList = new Array();
 var completeTagIndex = 0;
 var fromRequestAction = '';
 var global_from_place_name='';
-var site_url = document.referrer;
 
 //for categories
 var contentCheckedIndex =0;
@@ -57,7 +56,6 @@ var msg2='Please select a place.';
 var selected_cat='';
 var selected_tag='';
 
-alert("site_url = "+site_url);
 
 function showLoading() 
 {
@@ -5394,8 +5392,6 @@ uploadSelected='<input  style="visibility:hidden" type="text" name="loggedUser" 
 // getting the details about the files selected by the user for upload.
 var files = $('#up_select_items_button').prop("files");
 var names = $.map(files, function(val) { return val.name; });
-
-alert("names.length = "+names.length);
 for(var i=0;i<names.length;i++)
 {
 var fileObject = document.getElementById('up_select_items_button').files[i];
