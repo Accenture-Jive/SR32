@@ -59,7 +59,7 @@ var selected_tag='';
 
 alert("site_url = "+site_url);
 $("#redirectVal").text(site_url);
-alert("#redirectVal" +$("#redirectVal").text(site_url) );
+alert("#redirectVal" +$("#redirectVal").text() );
 function showLoading() 
 {
 $("#maskLoad").mask("Please Wait...");
