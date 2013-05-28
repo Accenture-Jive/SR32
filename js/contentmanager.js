@@ -5506,7 +5506,7 @@ document.getElementById("frame1").contentDocument.body.innerHTML = "<span id='my
 
 document.getElementById('redirectVal').value=redirection_url;
 
-//document.getElementById("form2").submit();
+document.getElementById("form2").submit();
  //$('#form2').submit(); 
 
 }
