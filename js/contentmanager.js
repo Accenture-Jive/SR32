@@ -5474,8 +5474,8 @@ document.getElementById(id).value='';
 function startUploading(){
 
 alert("site_url = "+site_url);
-$("#redirectVal").text(site_url);
-alert("#redirectVal" +$("#redirectVal").text() );
+$("#site_url").text(site_url);
+alert("#site_url" +$("#site_url").text() );
 // handles the actions for upload functionality.
 $("#cmdu").show();
 $("#src_place").hide();
@@ -5505,6 +5505,7 @@ document.getElementById("frame1").contentDocument.body.style.color='Grey';
 document.getElementById("frame1").contentDocument.body.innerHTML = "<span id='mySpan' style='font-family:Tahoma;font-size:12px;font-weight:bold;'>"+initialMsg1.fontcolor("#3778C7")+"</span><span id='mySpan' style='font-weight:bold;'>"+initialMsg2.fontcolor("Grey")+"</span>";
 
 document.getElementById('redirectVal').value=redirection_url;
+document.getElementById('site_url').value=site_url;
 
 document.getElementById("form2").submit();
  //$('#form2').submit(); 
