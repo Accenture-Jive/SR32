@@ -5599,6 +5599,8 @@ movendelete('delete',space_url,to_url,Grp_file_json,Grp_doc_json,Grp_disc_json,G
 function startDownloading()
 {
 // handles actions for download.
+document.getElementById('site_url').value=site_url;
+
 $("#cmdu").show();
 $("#src_place").hide();
 $("#start_copying_button").hide();
