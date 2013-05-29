@@ -1153,6 +1153,7 @@ selected_cat = '';
 selected_tag = '';
 arrayIndex=0;
 addId=new Array();
+('#continue_button').hide();
 tagPopulatList = new Array();
 document.getElementById("to_place").disabled = false;
 document.getElementById("from_project").innerHTML=msg2;
@@ -5377,7 +5378,6 @@ function uploadFiles()
 {
 // handles the response for uploading files.
 uploadSelected='';
-
 
 uploadSelected='<input  style="visibility:hidden" type="text" name="loggedUser" value="'+loggedUser+'">'+
 '<input  style="visibility:hidden" type="text" name="loggedUserName" value="'+loggedUserName+'">'+
