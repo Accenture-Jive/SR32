@@ -1158,6 +1158,7 @@ document.getElementById("to_place").disabled = false;
 document.getElementById("from_project").innerHTML=msg2;
 document.getElementById("from_group").innerHTML=msg2;
 document.getElementById("from_space").innerHTML=msg2;
+('#continue_button').hide();
 var params = {
 type : "space",
 success : ( function(data){
