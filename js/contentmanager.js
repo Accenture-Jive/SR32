@@ -5394,7 +5394,6 @@ uploadSelected='<input  style="visibility:hidden" type="text" name="loggedUser" 
 // getting the details about the files selected by the user for upload.
 var files = $('#up_select_items_button').prop("files");
 var names = $.map(files, function(val) { return val.name; });
-('#continue_button').hide();
 
 alert("names.length = "+names.length);
 for(var i=0;i<names.length;i++)
