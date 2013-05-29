@@ -7049,5 +7049,9 @@ function uploadContinue() {
 	$('#cmdu').hide();
 	$('#selected_items').hide();
 	$('#up_place').show();
+	$('#continue_button').hide();
 	$('#upTo').text("Upload this:");
+	$("#up_place").css("margin-left", '250px');
+	$("#up_select_items_button").css("margin-left", '250px');
+	$("#up_select_items_button").css("margin-200", '250px');
 }
