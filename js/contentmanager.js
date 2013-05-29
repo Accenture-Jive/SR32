@@ -1158,7 +1158,6 @@ document.getElementById("to_place").disabled = false;
 document.getElementById("from_project").innerHTML=msg2;
 document.getElementById("from_group").innerHTML=msg2;
 document.getElementById("from_space").innerHTML=msg2;
-('#continue_button').hide();
 var params = {
 type : "space",
 success : ( function(data){
@@ -5378,7 +5377,7 @@ function uploadFiles()
 {
 // handles the response for uploading files.
 uploadSelected='';
-('#continue_button').hide();
+
 uploadSelected='<input  style="visibility:hidden" type="text" name="loggedUser" value="'+loggedUser+'">'+
 '<input  style="visibility:hidden" type="text" name="loggedUserName" value="'+loggedUserName+'">'+
 '<input  style="visibility:hidden" type="text" name="to_url" value="'+to_url+'">'+
