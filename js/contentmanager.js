@@ -5480,7 +5480,6 @@ alert("#site_url" +$("#site_url").text() );
 // handles the actions for upload functionality.
 $("#cmdu").show();
 $("#src_place").hide();
-document.getElementById("#continue_button").style.visibility="visible";	
 var files = $('#up_select_items_button').prop("files");
 var names = $.map(files, function(val) { return val.name; });
 for(var i=0;i<names.length;i++)
