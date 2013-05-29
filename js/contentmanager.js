@@ -5499,7 +5499,7 @@ document.getElementById("selected_items").innerHTML=iframe;
 
 var initialMsg1='Your files are now being uploaded. Please <u>do not close</u> this window.!<br/><br/>';
 //var initialMsg2='You will be redirected to the uploaded files once the upload is complete.<br/>';
-var initialMsg2='Open the following link in a new tab to check whether your files have been uploaded: File Upload Review Page.<br/><br/>After you have verified that the files have been uploaded click the button below:<br><input type="button" id="continue_button" value="Continue" name="continue_button" style="margin-left:255px;visibility:hidden; float:left" onclick=""/>';
+var initialMsg2='Open the following link in a new tab to check whether your files have been uploaded: File Upload Review Page.<br/><br/>After you have verified that the files have been uploaded click the button below:<br><input type="button" id="continue_button" value="Continue" name="continue_button" style="" onclick=""/>';
 
 document.getElementById("frame1").contentDocument.body.style.fontFamily="Tahoma";	
 document.getElementById("frame1").contentDocument.body.style.fontSize = "12px";
