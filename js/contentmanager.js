@@ -7053,5 +7053,5 @@ function uploadContinue() {
 	$('#upTo').text("Upload this:");
 	$("#up_place").css("margin-left", '250px');
 	$("#up_select_items_button").css("margin-left", '250px');
-	$("#up_select_items_button").css("margin-200", '250px');
+	$("#up_select_items_button").css("margin-top", '250px');
 }
