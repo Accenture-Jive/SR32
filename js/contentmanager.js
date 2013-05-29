@@ -7044,10 +7044,10 @@ function populatePollsForTags(space_url) {
 
 function uploadContinue() {
 	
-	('#src_place').show();
-	('#up_select_items_button').show();
-	('#cmdu').hide();
-	('#selected_items').hide();
-	('#up_place').show();
-	('#upTo').text("Upload this:");
+	$('#src_place').show();
+	$('#up_select_items_button').show();
+	$('#cmdu').hide();
+	$('#selected_items').hide();
+	$('#up_place').show();
+	$('#upTo').text("Upload this:");
 }
