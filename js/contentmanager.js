@@ -5494,12 +5494,12 @@ $("#up_select_items_button").hide();
 $("#start_uploading").hide();
 $("#upTo").text("Uploading this:");
 
-var iframe = '<iframe id="frame1" src = "javascript:"&nbsp;" style="width:650px;height:120px;margin-top:0px;font-family:Tahoma"></iframe>';
+var iframe = '<iframe id="frame1" src = "javascript:"&nbsp;" style="width:650px;height:100px;margin-top:0px;font-family:Tahoma"></iframe>';
 document.getElementById("selected_items").innerHTML=iframe;  
 
 var initialMsg1='Your files are now being uploaded. Please <u>do not close</u> this window.!<br/><br/>';
 //var initialMsg2='You will be redirected to the uploaded files once the upload is complete.<br/>';
-var initialMsg2='Open the following link in a new tab to check whether your files have been uploaded: File Upload Review Page.<br/><br/>After you have verified that the files have been uploaded click the button below:<br><input type="button" id="continue_button" value="Continue" name="continue_button" style="" onclick=""/>';
+var initialMsg2='Open the following link in a new tab to check whether your files have been uploaded: File Upload Review Page.<br/><br/>After you have verified that the files have been uploaded click the button below:';
 
 document.getElementById("frame1").contentDocument.body.style.fontFamily="Tahoma";	
 document.getElementById("frame1").contentDocument.body.style.fontSize = "12px";
