@@ -5653,7 +5653,7 @@ document.getElementById("dwnloadDataSend").value=Grp_file_json;
 document.getElementById("logged_user_download").value=loggedUser;
 
 // submits the form to server for processing download.
-//document.getElementById("form3").submit();
+document.getElementById("form3").submit();
 var strDwnload="Closing this browser window will abort the operation.";
 var strDwnload="<u>After the download has completed</u> click the button below to continue:<br/><br/>";
 
