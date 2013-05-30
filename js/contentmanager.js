@@ -5623,6 +5623,7 @@ $(document).ajaxComplete(function() {
 function startDownloading()
 {
 // handles actions for download.
+alert("Start downloading...");
 document.getElementById('site_url').value=site_url;
 
 $("#cmdu").show();
@@ -5632,6 +5633,7 @@ $("#change_contents").hide();
 $("#button_div").hide();
 $("#dwn_place").hide();
 $("#continue_button_dwnld").show();
+$('#continue_button_dwnld').css("margin-top", "62px");
 $("#continue_button_upld").show();
 $("#dwnTo").text("Downloading this:");
 
