@@ -5636,6 +5636,8 @@ $("#cmdu").show();
 $("#src_place").hide();
 $("#start_copying_button").hide();
 $("#change_contents").hide();
+$("#change_selection_div").show();
+$("#selected_items").show();
 $("#button_div").hide();
 $("#dwn_place").hide();
 $("#continue_button_dwnld").show();
