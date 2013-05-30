@@ -4914,6 +4914,9 @@ if(sel_action_val == "download") {
 $('#selected_items').css("margin-top", "95px");
 $("#change_selection_div").show();
 $("#selected_items").show();
+	if(downloadContinueAction) {
+		$('#continue_button_dwnld').css("margin-left, "250px");
+	}
 }
 else{
 $('#selected_items').css("margin-top", "-10px");
@@ -7099,4 +7102,5 @@ function downloadContinue() {
 	$("#dwn_place").css("margin-left", '250px');
 	$("#dwn_select_items_button").css("margin-left", '250px');
 	$('#selected_items').hide();
+	downloadContinueAction = true;
 }
