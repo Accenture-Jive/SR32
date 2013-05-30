@@ -5631,6 +5631,7 @@ $("#start_copying_button").hide();
 $("#change_contents").hide();
 $("#button_div").hide();
 $("#dwn_place").hide();
+$("#continue_button_dwnld").show();
 $("#dwnTo").text("Downloading this:");
 
 document.getElementById("dwnloadDataSend").value=Grp_file_json;
