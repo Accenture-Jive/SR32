@@ -7092,4 +7092,7 @@ function downloadContinue() {
 	$('#dwn_select_items_button').show();
 	$('#continue_button_dwnld').hide();
 	$('#dwnTo').text("Download this:");
+	$("#dwn_place").css("margin-left", '250px');
+	$("#dwn_select_items_button").css("margin-left", '250px');
+	$('#selected_items').hide();
 }
