@@ -5416,6 +5416,7 @@ uploadSelected=uploadSelected+'<tr>'+
 uploadSelected=uploadSelected+'</table>';
 
 $("#change_selection_div").show();
+$("#selected_items").show();
 //$("#up_select_items_button").hide();
 $("#change_contents").hide();
 $("#start_copying_button").hide();
@@ -7049,7 +7050,6 @@ function uploadContinue() {
 	$('#cmdu').hide();
 	$('#selected_items').hide();
 	$('#up_place').show();
-	$('#change_selection_div').show();
 	$('#continue_button').hide();
 	$('#upTo').text("Upload this:");
 	$("#up_place").css("margin-left", '250px');
