@@ -5632,6 +5632,7 @@ $("#start_copying_button").hide();
 $("#change_contents").hide();
 $("#button_div").hide();
 $("#dwn_place").hide();
+$("#continue_button_dwnld").show();
 
 $("#dwnTo").text("Downloading this:");
 
@@ -5647,9 +5648,7 @@ var ieSpan='<span id="ieSpan" style="font-family:Tahoma;font-size:12px;font-colo
 '<span id="ieSpan2" style="font-weight:bold;">'+strDwnload.fontcolor("#3778C7")+'</span>';
 
 document.getElementById("selected_items").innerHTML=ieSpan;
-$("#continue_button_dwnld").show();
-$('#continue_button_dwnld').css("margin-top", "62px");
-$("#continue_button_upld").show();
+
 }
 
 
