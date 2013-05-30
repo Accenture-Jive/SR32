@@ -1154,7 +1154,7 @@ selected_cat = '';
 selected_tag = '';
 arrayIndex=0;
 addId=new Array();
-('#continue_button').hide();
+('#continue_button_upld').hide();
 tagPopulatList = new Array();
 document.getElementById("to_place").disabled = false;
 document.getElementById("from_project").innerHTML=msg2;
@@ -1491,6 +1491,8 @@ selected_cat = '';
 selected_tag = '';
 arrayIndex=0;
 addId=new Array();
+('#continue_button_upld').hide();
+
 document.getElementById("to_place").disabled = false;
 document.getElementById("from_project").innerHTML=msg2;
 document.getElementById("from_group").innerHTML=msg2;
@@ -1827,6 +1829,7 @@ selected_cat = '';
 selected_tag = '';
 arrayIndex=0;
 addId=new Array();
+('#continue_button_upld').hide();
 document.getElementById("to_place").disabled = false;
 document.getElementById("from_project").innerHTML=msg2;
 document.getElementById("from_group").innerHTML=msg2;
@@ -5442,7 +5445,7 @@ document.getElementById("selected_items").innerHTML=uploadSelected;
 $('#up_select_items_button').css("margin-top", "333px");
 if(uploadContinueAction) {
 	$('#up_select_items_button').css("margin-left", "5px");
-	$("#continue_button").css("margin-left", '250px');
+	$("#continue_button_upld").css("margin-left", '250px');
 
 }
 else {
@@ -5491,7 +5494,7 @@ alert("#site_url" +$("#site_url").text() );
 // handles the actions for upload functionality.
 $("#cmdu").show();
 $("#src_place").hide();
-$("#continue_button").show();
+$("#continue_button_upld").show();
 var files = $('#up_select_items_button').prop("files");
 var names = $.map(files, function(val) { return val.name; });
 for(var i=0;i<names.length;i++)
@@ -7060,7 +7063,7 @@ function uploadContinue() {
 	$('#cmdu').hide();
 	$('#selected_items').hide();
 	$('#up_place').show();
-	$('#continue_button').hide();
+	$('#continue_button_upld').hide();
 	$('#upTo').text("Upload this:");
 	$("#up_place").css("margin-left", '250px');
 	$("#up_select_items_button").css("margin-left", '250px');
