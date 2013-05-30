@@ -5638,10 +5638,10 @@ document.getElementById("logged_user_download").value=loggedUser;
 
 // submits the form to server for processing download.
 //document.getElementById("form3").submit();
-//var strDwnload="Closing this browser window will abort the operation.";
-var strDwnload="After that process is complete a download dialog will pop up giving you the option to save the zip file on your local hard drive.<br/><br/><u>After the download has completed</u> click the button below to continue:";
+var strDwnload="Closing this browser window will abort the operation.";
+var strDwnload="<u>After the download has completed</u> click the button below to continue:<br/><br/>";
 
-var ieSpan='<span id="ieSpan" style="font-family:Tahoma;font-size:12px;font-color:#3778C7;"><br/>Download is being prepared. DO NOT CLOSE THIS WINDOW.<br/>A zip file containing all selected contents is being assembled by the server.<br/><br/></span>'+
+var ieSpan='<span id="ieSpan" style="font-family:Tahoma;font-size:12px;font-color:#3778C7;"><br/>Download is being prepared. DO NOT CLOSE THIS WINDOW.<br/>A zip file containing all selected contents is being assembled by the server.<br/>After that process is complete a download dialog will pop up giving you the option to save the zip file on your local hard drive.<br/><br/></span>'+
 '<span id="ieSpan2" style="font-weight:bold;">'+strDwnload.fontcolor("#3778C7")+'</span>';
 
 document.getElementById("selected_items").innerHTML=ieSpan;
