@@ -119,6 +119,7 @@ sel_action_val = sel_action.options[sel_action.selectedIndex].value;
 var dialog_obj3 = $("#uploadIE");
 dialog_obj3.dialog("close");
 $('#continue_button_upld').hide();
+uploadContinueAction = false;
 if(sel_action_val=="copy"){
 
 src_space_name='';
@@ -1155,6 +1156,7 @@ selected_tag = '';
 arrayIndex=0;
 addId=new Array();
 ('#continue_button_upld').hide();
+uploadContinueAction = false;
 tagPopulatList = new Array();
 document.getElementById("to_place").disabled = false;
 document.getElementById("from_project").innerHTML=msg2;
@@ -1492,6 +1494,7 @@ selected_tag = '';
 arrayIndex=0;
 addId=new Array();
 ('#continue_button_upld').hide();
+uploadContinueAction = false;
 
 document.getElementById("to_place").disabled = false;
 document.getElementById("from_project").innerHTML=msg2;
@@ -1830,6 +1833,7 @@ selected_tag = '';
 arrayIndex=0;
 addId=new Array();
 ('#continue_button_upld').hide();
+uploadContinueAction = false;
 document.getElementById("to_place").disabled = false;
 document.getElementById("from_project").innerHTML=msg2;
 document.getElementById("from_group").innerHTML=msg2;
