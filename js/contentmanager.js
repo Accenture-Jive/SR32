@@ -5418,7 +5418,6 @@ uploadSelected=uploadSelected+'</table>';
 $("#change_selection_div").show();
 $("#selected_items").show();
 $("#start_uploading").show();
-$("#up_select_items_button").css("margin-left", parseInt($("#upload_selected_items").css("margin-left"))+'px');
 //$("#up_select_items_button").hide();
 $("#change_contents").hide();
 $("#start_copying_button").hide();
@@ -5441,6 +5440,8 @@ document.getElementById("selected_items").innerHTML=uploadSelected;
 }
 $('#up_select_items_button').css("margin-top", "333px");
 $('#up_select_items_button').css("margin-left", "-320px");
+$("#up_select_items_button").css("margin-left", parseInt($("#upload_selected_items").css("margin-left"))+'px');
+
 }
 
 function clickclear(thisfield) {
