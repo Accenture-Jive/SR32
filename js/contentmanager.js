@@ -9,7 +9,7 @@ var fromRequestAction = '';
 var global_from_place_name='';
 var site_url = document.referrer;
 var uploadContinueAction = false;
-
+var downloadContinueAction = false;
 //for categories
 var contentCheckedIndex =0;
 var contentUnCheckedIndex =0;
@@ -120,6 +120,7 @@ var dialog_obj3 = $("#uploadIE");
 dialog_obj3.dialog("close");
 $('#continue_button_upld').hide();
 uploadContinueAction = false;
+downloadContinueAction = false;
 if(sel_action_val=="copy"){
 
 src_space_name='';
@@ -1156,7 +1157,9 @@ selected_tag = '';
 arrayIndex=0;
 addId=new Array();
 $('#continue_button_upld').hide();
+$('#continue_button_dwnld').hide();
 uploadContinueAction = false;
+downloadContinueAction = false;
 tagPopulatList = new Array();
 document.getElementById("to_place").disabled = false;
 document.getElementById("from_project").innerHTML=msg2;
@@ -1494,8 +1497,9 @@ selected_tag = '';
 arrayIndex=0;
 addId=new Array();
 $('#continue_button_upld').hide();
+$('#continue_button_dwnld').hide();
 uploadContinueAction = false;
-
+downloadContinueAction = false;
 document.getElementById("to_place").disabled = false;
 document.getElementById("from_project").innerHTML=msg2;
 document.getElementById("from_group").innerHTML=msg2;
@@ -1833,7 +1837,9 @@ selected_tag = '';
 arrayIndex=0;
 addId=new Array();
 $('#continue_button_upld').hide();
+$('#continue_button_dwnld').hide();
 uploadContinueAction = false;
+downloadContinueAction = false;
 document.getElementById("to_place").disabled = false;
 document.getElementById("from_project").innerHTML=msg2;
 document.getElementById("from_group").innerHTML=msg2;
@@ -7077,4 +7083,13 @@ function uploadContinue() {
 	$("#up_select_items_button").css("margin-left", '250px');
 	$("#up_select_items_button").css("margin-top", '200px');
 	uploadContinueAction = true;
+}
+
+function downloadContinue() {
+	$('#src_place').show();
+	$('#cmdu').hide();
+	$('#dwn_place').show();
+	$('#dwn_select_items_button').show();
+	$('#continue_button_dwnld').hide();
+	$('#dwnTo').text("Download this:");
 }
