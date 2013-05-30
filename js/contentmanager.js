@@ -4912,6 +4912,8 @@ Grp_blog_json='';
 Grp_poll_json='';
 if(sel_action_val == "download") 
 $('#selected_items').css("margin-top", "95px");
+$("#change_selection_div").show();
+$("#selected_items").show();
 else
 $('#selected_items').css("margin-top", "-10px");
 $("#button_div").hide();
