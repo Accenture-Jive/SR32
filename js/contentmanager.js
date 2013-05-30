@@ -5417,6 +5417,7 @@ uploadSelected=uploadSelected+'</table>';
 
 $("#change_selection_div").show();
 $("#selected_items").show();
+$("#start_uploading").show();
 //$("#up_select_items_button").hide();
 $("#change_contents").hide();
 $("#start_copying_button").hide();
