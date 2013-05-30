@@ -4912,6 +4912,8 @@ Grp_blog_json='';
 Grp_poll_json='';
 if(sel_action_val == "download") 
 $('#selected_items').css("margin-top", "95px");
+$("#change_selection_div").show();
+$("#selected_items").show();
 else
 $('#selected_items').css("margin-top", "-10px");
 $("#button_div").hide();
@@ -5636,8 +5638,6 @@ $("#cmdu").show();
 $("#src_place").hide();
 $("#start_copying_button").hide();
 $("#change_contents").hide();
-$("#change_selection_div").show();
-$("#selected_items").show();
 $("#button_div").hide();
 $("#dwn_place").hide();
 $("#continue_button_dwnld").show();
