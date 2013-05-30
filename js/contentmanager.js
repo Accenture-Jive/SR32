@@ -5442,6 +5442,8 @@ document.getElementById("selected_items").innerHTML=uploadSelected;
 $('#up_select_items_button').css("margin-top", "333px");
 if(uploadContinueAction) {
 	$('#up_select_items_button').css("margin-left", "5px");
+	$("#continue_button").css("margin-left", '250px');
+
 }
 else {
 $('#up_select_items_button').css("margin-left", "-320px");
