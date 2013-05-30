@@ -4914,6 +4914,9 @@ if(sel_action_val == "download") {
 $('#selected_items').css("margin-top", "95px");
 $("#change_selection_div").show();
 $("#selected_items").show();
+	if(downloadContinueAction) {
+		$('#continue_button_dwnld').css("margin-top", "250px");	
+	}
 }
 else{
 $('#selected_items').css("margin-top", "-10px");
