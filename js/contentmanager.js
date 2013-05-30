@@ -8,7 +8,7 @@ var completeTagIndex = 0;
 var fromRequestAction = '';
 var global_from_place_name='';
 var site_url = document.referrer;
-var uploadContinue = false;
+var uploadContinueAction = false;
 
 //for categories
 var contentCheckedIndex =0;
@@ -5440,7 +5440,7 @@ document.getElementById("start_uploading").disabled = true;
 document.getElementById("selected_items").innerHTML=uploadSelected;
 }
 $('#up_select_items_button').css("margin-top", "333px");
-if(uploadContinue) {
+if(uploadContinueAction) {
 	$('#up_select_items_button').css("margin-left", "5px");
 }
 else {
@@ -7063,5 +7063,5 @@ function uploadContinue() {
 	$("#up_place").css("margin-left", '250px');
 	$("#up_select_items_button").css("margin-left", '250px');
 	$("#up_select_items_button").css("margin-top", '200px');
-	uploadContinue = true;
+	uploadContinueAction = true;
 }
