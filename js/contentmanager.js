@@ -1156,7 +1156,7 @@ selected_tag = '';
 arrayIndex=0;
 addId=new Array();
 $('#continue_button_upld').hide();
-$('#continue_button_dwnld').hide();
+$('#continue_button_dwnld').show();
 uploadContinueAction = false;
 tagPopulatList = new Array();
 document.getElementById("to_place").disabled = false;
