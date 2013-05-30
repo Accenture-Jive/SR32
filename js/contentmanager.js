@@ -5438,7 +5438,6 @@ document.getElementById("selected_items").innerHTML=uploadSelected;
 }
 $('#up_select_items_button').css("margin-top", "333px");
 $('#up_select_items_button').css("margin-left", "-320px");
-$('#selected_items').css("margin-top", "80px");
 }
 
 function clickclear(thisfield) {
