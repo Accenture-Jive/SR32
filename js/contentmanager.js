@@ -118,7 +118,7 @@ sel_action_val = sel_action.options[sel_action.selectedIndex].value;
 
 var dialog_obj3 = $("#uploadIE");
 dialog_obj3.dialog("close");
-
+$('#continue_button_upld').hide();
 if(sel_action_val=="copy"){
 
 src_space_name='';
