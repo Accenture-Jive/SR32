@@ -4915,7 +4915,7 @@ $('#selected_items').css("margin-top", "95px");
 $("#change_selection_div").show();
 $("#selected_items").show();
 	if(downloadContinueAction) {
-		$('#continue_button_dwnld').css("margin-top", "250px");	
+		$('#continue_button_dwnld').css("margin-left", "250px");	
 	}
 }
 else{
