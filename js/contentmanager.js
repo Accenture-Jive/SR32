@@ -6227,7 +6227,7 @@ count : 50,
 place : space_url
 }).execute(function(response) {
 //console.log("Discussions: "+JSON.stringify(response));
-`
+
 var disc = response.list;
 var postDisc;
 var disc_length=response.list.length;
