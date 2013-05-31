@@ -5512,7 +5512,7 @@ alert("#site_url" +$("#site_url").text() );
 // handles the actions for upload functionality.
 $("#cmdu").show();
 $("#src_place").hide();
-alert($("#continue_button_upld").css("margin-top", parseInt($("#selected_items").css("margin-top"))+30+'px'));
+alert($("#continue_button_upld").css("margin-top", ));
 $("#continue_button_upld").css("margin-top", parseInt($("#selected_items").css("margin-top"))+30+'px');
 $("#continue_button_upld").css("margin-left", parseInt($("#cmdu").css("margin-left")));
 
