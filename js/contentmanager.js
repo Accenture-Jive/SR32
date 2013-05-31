@@ -399,6 +399,7 @@ $("#delShow").hide();
 $("#upShow").hide();
 $("#up_place").hide();
 $('#up_place').css("margin-top", "110px");
+$('#up_place').css("margin-left", "-75px");
 $("#del_from_space").hide();
 $("#del_from_group").hide();
 $("#del_from_project").hide();
