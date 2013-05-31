@@ -5513,7 +5513,7 @@ alert("#site_url" +$("#site_url").text() );
 $("#cmdu").show();
 $("#src_place").hide();
 alert(parseInt($("#continue_button_upld").css("margin-top")));
-$("#continue_button_upld").css("margin-top", parseInt($("#selected_items").css("margin-top"))-30+'px');
+$("#continue_button_upld").css("margin-top", parseInt($("#selected_items").css("margin-top"))+'px');
 $("#continue_button_upld").css("margin-left", parseInt($("#cmdu").css("margin-left")));
 
 $("#continue_button_upld").show();
