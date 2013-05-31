@@ -444,7 +444,7 @@ $("#cat_from_group").hide();
 $("#cat_from_project").hide();
 $("#catTo").hide();
 $("#cat_select_items_button").hide();
-
+$("#add_tag").hide();
 $("#selTag").hide();
 $("#tag_place").hide();
 $("#tag_sel").hide();
