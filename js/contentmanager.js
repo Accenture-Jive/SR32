@@ -372,6 +372,7 @@ $("#tag_from_space").hide();
 $("#tag_from_group").hide();
 $("#tag_from_project").hide();
 $("#add_tag_button").hide();
+$("#add_tag").hide();
 $("#tagTo").hide();
 $("#tag_select_items_button").hide();
 $("#dwn_from_space").hide();
