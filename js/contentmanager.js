@@ -455,7 +455,7 @@ $("#tag_from_project").hide();
 $("#tagTo").hide();
 $("#tag_select_items_button").hide();
 $("#add_tag_button").hide();
-
+$('#up_place').css("margin-left", "-75px");
 
 $("#dwn_from_group").hide();
 $("#dwn_from_project").hide();
@@ -5512,7 +5512,9 @@ alert("#site_url" +$("#site_url").text() );
 // handles the actions for upload functionality.
 $("#cmdu").show();
 $("#src_place").hide();
-$("#continue_button_upld").css("margin-top", parseInt($("#cmdu").css("margin-top"))-100+'px');
+alert($("#continue_button_upld").css("margin-top", parseInt($("#selected_items").css("margin-top"))+30+'px'));
+$("#continue_button_upld").css("margin-top", parseInt($("#selected_items").css("margin-top"))+30+'px');
+$("#continue_button_upld").css("margin-left", parseInt($("#cmdu").css("margin-left")));
 
 $("#continue_button_upld").show();
 var files = $('#up_select_items_button').prop("files");
