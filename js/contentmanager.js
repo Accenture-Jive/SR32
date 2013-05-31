@@ -365,6 +365,7 @@ $("#cat_from_project").hide();
 $("#catTo").hide();
 $("#cat_select_items_button").hide();
 $("#selTag").hide();
+$("#add_tag").hide();
 $("#tag_place").hide();
 $("#tag_sel").hide();
 $("#tagFrom").hide();
