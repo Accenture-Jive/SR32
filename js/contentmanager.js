@@ -8,7 +8,7 @@ var completeTagIndex = 0;
 var fromRequestAction = '';
 var global_from_place_name='';
 var site_url = document.referrer;
-var uploadContinueAction = false;
+var ` = false;
 var downloadContinueAction = false;
 //for categories
 var contentCheckedIndex =0;
@@ -354,6 +354,7 @@ if(browserName=="MSIE")
 
 src_space_name='';
 dest_space_name='';
+uploadContinueAction = false;
 $("#cmdu").text("Upload");
 $("#cat_place").hide();
 $("#selCat").hide();
