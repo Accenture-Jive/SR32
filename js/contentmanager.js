@@ -5517,7 +5517,12 @@ $("#src_place").hide();
 //alert(parseInt($("#continue_button_upld").css("margin-top")));
 //$("#continue_button_upld").css("margin-top", parseInt($("#selected_items").css("margin-top"))+parseInt($("#selected_items").css("height"))+10+'px');
 $("#continue_button_upld").css("margin-top",'-70px');
+if(uploadContinueAction) {
+$("#continue_button_upld").css("margin-left",'250px');
+}
+else {
 $("#continue_button_upld").css("margin-left",'-50px');
+}
 
 $("#continue_button_upld").show();
 var files = $('#up_select_items_button').prop("files");
