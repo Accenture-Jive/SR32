@@ -5515,7 +5515,8 @@ alert("#site_url" +$("#site_url").text() );
 $("#cmdu").show();
 $("#src_place").hide();
 //alert(parseInt($("#continue_button_upld").css("margin-top")));
-$("#continue_button_upld").css("margin-top", parseInt($("#selected_items").css("margin-top"))+parseInt($("#selected_items").css("height"))+10+'px');
+//$("#continue_button_upld").css("margin-top", parseInt($("#selected_items").css("margin-top"))+parseInt($("#selected_items").css("height"))+10+'px');
+$("#continue_button_upld").css("margin-top",'100px');
 $("#continue_button_upld").css("margin-left", parseInt($("#cmdu").css("margin-left")));
 
 $("#continue_button_upld").show();
