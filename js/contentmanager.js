@@ -4943,6 +4943,7 @@ if(sel_action_val=="delete")
 {
 document.getElementById("start_copying_button").style.visibility="visible";
 document.getElementById("start_uploading").style.visibility="hidden";
+$('#selected_items').css("margin-top", "80px");
 }else if(sel_action_val=="download")
 {
 document.getElementById("start_copying_button").style.visibility="visible";
