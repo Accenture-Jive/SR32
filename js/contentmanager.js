@@ -2404,7 +2404,7 @@ document.getElementById("up_select_items_button").style.display="inline";
 document.getElementById("del_select_items_button").style.display="inline";
 $("#up_select_items_button").show();
 $('#up_select_items_button').css("margin-top", "200px");
-$('#up_select_items_button').css("margin-left", "-75px");
+$('#up_select_items_button').css("margin-left", "250px");
 $("#del_select_items_button").hide();
 $("#change_selection_div").hide();
 $("#button_div").hide();
